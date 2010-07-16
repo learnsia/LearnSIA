@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+<holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Introduction to Principles of Survivability and Information Assurance</emphasis></para>
+
+<para>Overview: These are the exam questions for the Introduction to Principles of Survivability and Information Assurance.</para>
+
+<para>Who is the audience for "Principles of Survivability and Information Assurance"?</para>
+<para>What does the acronym "SFU" stand for?</para>
+<para>What are the major topic areas of the SIA Curriculum?</para>
+<para>Fill in the blank in this sentence: "System administrators view the set of problems they face and the solutions to those problems through _______________________."</para>
+<para>What should system administrators do instead?</para>
+<para>What role does technology play in solutions to problems?</para>
+<para>Why is it important to understand the Principles of Survivability and Information Assurance?</para>
+<para>Fill in the blanks in this sentence: One of the goals of this course is to discuss what is _______ for the system administrator and what is ___.'</para>
+<para>Define survivability</para>
+
+</section>
+</article>

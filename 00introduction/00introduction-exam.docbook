@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+  <holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Introduction to Principles of Survivability and Information Assurance</emphasis></para>
+
+<para>Overview: These are the exam questions for the Introduction to Principles of Survivability and Information Assurance.</para>
+
+<qandaset>
+
+<qandaentry>
+<question><para>Who is the audience for "Principles of Survivability and Information Assurance"?</para></question>
+<answer><para><emphasis role="bold">Experienced system administrators and their immediate managers.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What does the acronym "SFU" stand for?</para></question>
+<answer><para><emphasis role="bold">Survivable Functional Unit</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What are the major topic areas of the SIA Curriculum?</para></question>
+<answer><para><emphasis role="bold">Principles of Survivability and Information Assurance, Information Assurance Networking Fundamentals, and Sustaining, Improving, and Building Survivable Functional Units (SFUs)</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Fill in the blank in this sentence: "System administrators view the set of problems they face and the solutions to those problems through _______________________."</para></question>
+<answer><para><emphasis role="bold">the eyes of the technologies they know.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What should system administrators do instead?</para></question>
+<answer><para><emphasis role="bold">System administrators should seek the fundamental issues of the problems that confront them.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What role does technology play in solutions to problems?</para></question>
+<answer><para><emphasis role="bold">Technology is applied when the fundamental issues of the problems are understood.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Why is it important to understand the Principles of Survivability and Information Assurance?</para></question>
+<answer><para><emphasis role="bold">Because the principles lay the groundwork for the rest of the courses in the SIA Curriculum.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Fill in the blanks in this sentence: One of the goals of this course is to discuss what is _______ for the system administrator and what is ___.'</para></question>
+<answer><para><emphasis role="bold">"in scope"' and 'not "in scope"'</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Define survivability</para></question>
+<answer><para><emphasis role="bold">Survivability, in the context of computer systems, is the capability of a system to fulfill its mission in a timely manner, despite attacks, failures, or accidents.</emphasis></para></answer>
+</qandaentry>
+
+</qandaset>
+</section>
+</article>

@@ -1,0 +1,479 @@
+/*
+ * @(#)style.css 1.0  2006-05-21
+ *
+ * Copyright (c) 2006 Werner Randelshofer
+ * Hausmatt 10, Immensee, CH-6405, Switzerland
+ * All rights reserved.
+ */
+
+/* This design is based on a design grid which is 24 pixels wide and 18 pixels high
+ * 
+ *
+ */
+ 
+/* ----------------- */
+/* General           */
+/* ----------------- */
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	margin: 0px 0px 0px 24px;
+	list-style-type: disc;
+	list-style-position: outside;
+	padding: 0px;
+}
+ol {
+	margin: 0px 0px 0px 35px;
+	list-style-type: decimal;
+	list-style-position: outside;
+	padding: 0px;
+}
+li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 8px 0px;
+	padding: 0px;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+img {
+	border: solid 0px #000000;
+}
+
+/* ----------------- */
+/* Pages */
+/* ----------------- */
+.pageBody {
+	background-color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	margin: 0;
+	padding: 0;
+}
+.pageBody h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	margin: 0px;
+}
+.pageBody h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 0px;
+}
+.pageBody h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+.pageBody p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	margin: 0;
+	line-height: 16px;
+}
+.pageMainTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	text-align: right;
+	padding: 8px 0 0 0;
+}
+.pageSubTitle {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+	padding: 8px 0 0 0;
+}
+.pageLogo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 16px;
+	padding: 8px 0 0 0;
+}
+.pageMediaDiv {
+	background: #f0f0f0;
+}
+p.pageInfo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	line-height: 14px;
+	color: #000066;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* ----------------- */
+/* Table of contents */
+/* ----------------- */
+/* Structure for treetoc: 
+ * <body id="tocBody">
+ *   <div id="tocHeader">
+ *      <div id="#tocTitle">...</div>
+ *      <div id="#tocTreeButtons">...</div>
+ *   </div>
+ *   <div id="tocTree">...</div>
+ *   <div id="tocFooter">
+ *     <div id="tocNavButtons>...</div>
+ *   </div>
+ * </body>
+ *
+ * Structure for layertoc: 
+ * <body id="tocBody">
+ *   <div id="tocHeader">
+ *      <div id="#tocTitle">...</div>
+ *      <div id="#tocLayerButtons">...</div>
+ *   </div>
+ *   <div id="tocLayers">...</div>
+ *   <div id="tocFooter">...</div>
+ * </body>
+ */
+.tocBody {
+	background-color: #F0F0F0;
+}
+.tocBody a {
+	color: #000000;
+	text-decoration: none;
+}
+.tocBody a:hover {
+	/*color: #000000;*/
+	text-decoration: underline;
+}
+#tocHeader {
+	top:0px;
+}
+#tocTitle {
+	padding: 4px 0 0 4px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0px;
+	font-weight: bold;
+	line-height: 14px;
+	height:50px; /* height+padding must be a multiple of 18 */
+}
+.tocTitle a {
+	color: #000000;
+}
+/* Used for layertoc */
+.toc1 {
+	margin: 0;
+	padding: 0;
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: inside;
+	border: 0;
+}
+.toc1 li {
+	margin: 0 0 0 0;
+	padding: 2px 0 2px 0px;
+	border-top: 1px solid #FFFFFF;
+	border-right: 0 solid #FFFFFF;
+	border-bottom: 0 solid #FFFFFF;
+	border-left: 0 solid #FFFFFF;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.toc2 {
+	margin: 0px;
+	padding: 0 0 0 0px;
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: inside;
+	border: 0;
+}
+.toc2 li {
+	margin: 0 0 0 6px;
+	padding: 2px 0 2px 8px;
+	border-top: 0 solid #FFFFFF;
+	border-right: 0 solid #FFFFFF;
+	border-bottom: 0 solid #FFFFFF;
+	border-left: 0 solid #FFFFFF;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/* Used for treetoc */
+#tocTree {
+	margin: 0px;
+    padding: 0px;
+	top:81px;
+	right:0px;
+	left:0px;
+	bottom:0px;
+	overflow:scroll;
+	position: absolute;
+}
+
+#tocTree li {
+	border-top: 1px solid #FFFFFF;
+	padding: 2px 0 2px 4px;
+	margin: 0 0 0 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+#tocTree ul {
+	list-style-type: none;	
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+#tocTree li li {
+	padding-left: 14px;
+	border-top: none;
+}
+#tocTree a {
+	padding: 2px 2px 2px 2px;
+}
+a.tocNode {
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: 2px 50%;
+	margin: 0 2px 0 2px;
+}
+a.tocNode:hover {
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-position: 2px 50%;
+}
+
+.tocNodeCollapsed ul {
+	display: none;
+}
+
+.tocNodeExpanded a.tocNode {
+	color: #000000;
+	background-image: url(tocNodeExpanded.gif);
+}
+.tocNodeCollapsed a.tocNode {
+	color: #000000;
+	background-image: url(tocNodeCollapsed.gif);
+}
+.tocNodeLeaf a.tocNode {
+	color: #000000;
+	background-image: url(tocNodeLeaf.gif);
+}
+
+.tocStatusNotAttempted {
+}
+.tocStatusBrowsed {
+}
+.tocStatusPassed {
+}
+.tocStatusFailed {
+}
+.tocStatusCurrent {
+	font-weight: bold;
+	background: #CCC;
+}
+.tocStatusNoSCO {
+}
+.tocStatusNoSCO a.tocItem {
+}
+.tocStatusNoSCO a.tocItem:hover {
+	text-decoration: none;
+}
+.tocStatusNoLayer {
+	color: #999999;
+}
+.tocStatusNoLayer a.tocItem {
+	color: #999999;
+}
+.tocStatusNoLayer a.tocItem:hover {
+	color: #999999;
+	text-decoration: none;
+}
+
+#tocTreeButtons {
+	padding: 0 0 0 4px;
+}
+#tocTreeButtons a {
+	font-size: 10px;
+	color: #222222;
+}
+
+#tocNavButtons {
+	font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+#tocFooter {
+    margin-left: 4px;
+	left:0px;
+	right:0px;
+	position:absolute;
+	bottom:0px;
+}
+/* Used for layertoc */
+.tocTopics .tocStatusCurrent,
+.tocTopics .tocStatusFailed,
+.tocTopics .tocStatusNotAttempted,
+.tocTopics .tocStatusPassed,
+.tocTopics .tocStatusNoLayer,
+.tocTopics .tocStatusBrowsed {
+    padding-left:5px;
+}
+
+/* ----------------- */
+/* Background Area */
+/* ----------------- */
+.backgroundBody {
+	background-color: #000033;
+}
+
+/* ----------------- */
+/* Navigation bar */
+/* ----------------- */
+.navBody {
+	background-color: #F0F0F0;
+}
+.navBody a {
+	color: #000000;
+	text-decoration: none;
+}
+.navBody a:hover {
+	/*color: #000000;*/
+	text-decoration: underline;
+}
+.navBody .navItem {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	text-decoration: none;
+}
+.navBody .navCurrent {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+	background-color: #CCCCCC;
+}
+.navBody .navNoLayer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #999999;
+	text-decoration: none;
+}
+.navBody .navButton {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+.navBody .navButtonDisabled,
+.navBody a.navButtonDisabled,
+.navBody a.navButtonDisabled:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+	color: #999999;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* ----------------- */
+/* Statistics */
+/* ----------------- */
+.statisticsBody .statisticsTitle {
+	font-size: 10px;
+	font-weight: bold;
+}
+.statisticsBody .statistics {
+	font-size: 10px;
+}
+.statisticsBody a.statistics {
+	font-size: 10px;
+	color: #0000ee;
+	text-decoration: underline;
+}
+/* ----------------- */
+/* Logging */
+/* ----------------- */
+.logBody {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+.logBody .logMilestone {
+	font-weight: bold;
+	margin-top: 16px;
+}
+.logBody .logInfo {
+	color: #000000;
+	margin-bottom: 16px;
+}
+.logBody .logAPI {
+	color: #000099;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(logAPI.gif);
+	padding: 0px 0px 0px 14px;
+}
+.logBody .logAPISuccess {
+	color: green;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(logAPISuccess.gif);
+	padding: 0px 0px 0px 14px;
+}
+.logBody .logAPIFailure {
+	color: red;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(logAPIFailure.gif);
+	padding: 0px 0px 0px 14px;
+}
+.logBody .logInternal {
+	color: #777777;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(logInternal.gif);
+	padding: 0px 0px 0px 14px;
+}
+.logBody .logInternalSuccess {
+	color: #777777;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(logInternalSuccess.gif);
+	padding: 0px 0px 0px 14px;
+}
+.logBody .logInternalFailure {
+	color: #333333;
+	background-position: left;
+	background-repeat: no-repeat;
+	background-image: url(logInternalFailure.gif);
+	padding: 0px 0px 0px 14px;
+}
+

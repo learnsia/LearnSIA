@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % instructor "IGNORE">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+<holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+<section>
+<title>Principle 1: Survivability Is an Enterprise-Wide Concern</title>
+<para>&syllabusBegin;</para>
+<para>This module provides a fundamental understanding of the concepts of survivability. It includes the differences between security and survivability, a clear understanding of mission survivability, and the methods and techniques that can be implemented to make information systems survivable within an organization.</para>
+<para>This module should take 2 hours, including Guided Tours and Exercises.</para>
+<para>The required reading must be done in advance of this class and students may be quizzed on the materials.</para>
+<para>&syllabusEnd;</para>
+</section>
+<section>
+<title>Reading Assignments</title>
+<para><emphasis role="bold">Required readings:</emphasis></para>
+<para><emphasis>1.	<ulink url="http://www.cert.org/archive/html/protect-critical-systems.html">Survivability: Protecting Your Critical Systems</ulink>, [Ellison 99].</emphasis></para>
+<para><emphasis>1.	<ulink url="http://www.cert.org/archive/pdf/busperspec.pdf">2.	Survivability.a New Technical and Business Perspective on Security</ulink>, [Lipson 99].</emphasis></para>
+<para><emphasis role="bold">Recommended readings:</emphasis></para>
+<para>None</para>
+<para>Survivability is the first key principle of information assurance. It is intended to permeate all levels of an organization, from the leadership that sets corporate direction, through middle management that approves requests for capital and time needed for other levels to achieve survivability, to programming that practices survivability, and systems administration that recommends and installs technology in support of survivability. It is important to know about survivability and how to engineer it into existing and new functional units.</para>
+<para>Survivability is much more real-time oriented than, for example, disaster recovery, in which a functional unit's constituency knows about disasters and what to expect when they occur. In contrast, intrusions and outages related to failures are typically unexpected. Organizations that do not anticipate them and plan accordingly can be adversely affected by their constituency's reactions to such an outage.</para>
+</section>
+<section>
+<title>1: Survivability is an enterprise-wide concern</title>
+<informaltable frame="none">
+<tgroup cols="2" rowsep="0">
+<thead>
+<row>
+<entry></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin1a.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+<entry>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin1b.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>This module introduces survivability of network computer systems as an enterprise-wide concern. The survivability of a system of networked computers reflects on the survivability of their mission within an enterprise, and the survivability of essential missions may actually affect the survivability of the entire enterprise. Mission survivability of network computer systems is the key and will be the focus of this principle.</para>
+<para>Students should become familiar with the following important terms as defined in <ulink url="http://www.atis.org/glossary/"><emphasis>Telecom Glossary [ANST]</emphasis></ulink>:</para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Information systems security (INFOSEC and/or ISS):</emphasis> [The] protection of information systems against unauthorized access to or modification of information, whether in storage, processing or transit, and against the denial of service to authorized users, including those measures necessary to detect, document, and counter such threats.</para></listitem>
+<listitem><para><emphasis role="bold">Information assurance:</emphasis> Information operations (IO) that protect and defend information and information systems (IS) by ensuring their availability, integrity, authentication, confidentiality, and non-repudiation. This includes providing for restoration of information systems by incorporating protection, detection, and reaction capabilities.</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Learning Outcomes</title>
+<para>
+<simplelist>
+<member><emphasis role="bold">Survivability and its goals with respect to an enterprise's mission</emphasis></member>
+<member><emphasis role="bold">How specific computer systems support the mission</emphasis></member>
+<member><emphasis role="bold">Information needed to determine the survivability of an entity</emphasis></member>
+<member><emphasis role="bold">How to improve mission survivability</emphasis></member>
+</simplelist>
+</para>
+<para>After completing this module, you will be able to describe and apply these survivability concepts.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Survivability</emphasis></para>
+<para><emphasis role="bold">Disruptions and unauthorized modification of data</emphasis></para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Actions that can occur</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Strategies to mitigate these actions</emphasis></para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Survivability example and summary</emphasis></para> 
+<para>These are the topics that will be covered in this module.</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Time Allocation:</emphasis> Up to 1 hour</para>
+<para><emphasis role="bold">Teaching Tips:</emphasis></para>
+<para>An overview of the topics/issues should be given at the beginning of the lecture to provide students a roadmap of topics.</para>
+<para>The lecture (approx. 60 minutes) should be intertwined with "appetizer" questions on each important issue and group discussions to get students involved in digesting the concepts presented.</para>
+<para>&instructEnd;</para>
+]]>
+<para>This is an introductory module presenting the basic goals of the SIA Curriculum and the principles to be covered in this course.  It is intended to set the stage and define the intended audience.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Survivability</emphasis></para>
+<para>Disruptions and unauthorized modification of data</para>
+<itemizedlist>
+<listitem><para>Actions that can occur</para></listitem>
+<listitem><para>Strategies to mitigate these actions</para></listitem>
+</itemizedlist>
+<para>Survivability example and summary</para> 
+</section>
+<section>
+<title>Survivability Defined</title>
+<informaltable frame="none">
+<tgroup cols="2" rowsep="0">
+<thead>
+<row>
+<entry></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+<entry>
+<para><emphasis role="bold"><emphasis>System:</emphasis></emphasis> networks and large-scale "systems of systems"</para>
+<para><emphasis role="bold"><emphasis>Mission:</emphasis></emphasis> meeting established high-level requirements/goals</para>
+<para><emphasis role="bold"><emphasis>Critical:</emphasis></emphasis> critical factor specified or implied by mission requirements</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Survivability - The capability of a system to fulfill its mission, in a timely manner, in the presence of attacks, failures, or accidents</emphasis></para>
+<para><emphasis role="bold">Survivability</emphasis></para>
+<para>In recent years, there have been dramatic changes in the character of security problems, in their technical and business contexts, and in the goals and purposes of their stakeholders. As a consequence, many of the assumptions underlying traditional security technologies are no longer valid. Failure to recognize the depth and breadth of these changes prevents effective solutions to modern security problems.</para> 
+<para>Examining survivability allows us to look at security with a new technical and business perspective, which is essential to our search for solutions. Moreover, a survivability approach expands the view of security from a narrow technical specialty practiced by experts to a risk-management issue requiring the participation of an entire organization (executive management, security experts, application domain experts, and other stakeholders) to protect mission-critical systems from cyber attacks, failures, and accidents.</para>
+<para>Survivability requires a systematic approach to assure that systems operating in an unbounded network are robust in the presence of attacks and able to survive intrusions.  This approach is described further in <emphasis>Survivability: Protecting Your Critical Systems [Ellison 99]</emphasis>:</para>
+<blockquote><para>The term "system" is used in the broadest possible sense, to include networks and large-scale systems of systems. In particular, the focus of survivability is on unbounded networked systems where traditional security precautions are inadequate. The term "mission" refers to a set of very high-level (i.e., abstract) requirements or goals. Judgments as to whether or not a mission has been fulfilled are typically made in the context of external conditions that may affect the achievement of the mission's goals. Timeliness is a critical factor that is typically included in (or implied by) the very high-level requirements that define a mission. However, timeliness is such an important factor that it is included explicitly in the definition of survivability.</para></blockquote>
+<informaltable frame="none">
+<tgroup cols="2" rowsep="0">
+<thead>
+<row>
+<entry></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin1b.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+<entry>
+<para><emphasis role="bold"><emphasis>Attacks:</emphasis></emphasis> orchestrated by an intelligent adversary</para>
+<para><emphasis role="bold"><emphasis>Failures:</emphasis></emphasis> deficiencies in elements on which the system depends</para>
+<para><emphasis role="bold"><emphasis>Accidents:</emphasis></emphasis> randomly occurring events</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>The following excerpts from <emphasis>Survivability: Protecting Your Critical Systems [Ellison 99]</emphasis> expand on the impact of attacks, failures, and accidents:</para>
+<blockquote><para><emphasis>"The mere threat of an attack can have as severe an impact on a system as an actual occurrence. A system that assumes an overly defensive position because of the threat of an attack may significantly reduce its functionality and divert excessive resources to monitoring the environment and protecting system assets."</emphasis></para></blockquote>
+<blockquote><para><emphasis>"With respect to system survivability, a distinction between an attack and a failure or accident is less important than the impact of the event. Our survivability approach concentrates on the effect of a potentially damaging event. Typically, for a system to survive, it must react to (and recover from) a damaging effect (e.g., the integrity of a database is compromised) long before the underlying cause is identified. In fact, the reaction and recovery must be successful whether or not the cause is ever determined."</emphasis></para></blockquote>
+<para>Survivability concentrates on recovery from a damaging effort, not the cause.  Mission fulfillment must survive not a particular sub-system or component.</para>
+<table frame="all">
+<title>Review</title>
+<tgroup cols="1" rowsep="0">
+<thead>
+<row>
+<entry><para>Test Your Understanding:</para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para>Given this definition, identify a non-computer example of an enterprise with respect to survivability. Address the following with respect to your example:</para>
+<itemizedlist>
+<listitem><para>Identify the enterprise's mission within the context of survivability goals and timeliness with respect to a critical service.</para></listitem>
+<listitem><para>What kind of attacks, failures, or accidents might occur to affect the survivability of this critical service, and what is their likelihood of occurring?</para></listitem>
+<listitem><para>What actions could be taken by the enterprise to ensure survivability of the critical service?</para></listitem>
+</itemizedlist>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>Appetizer Questions</para>
+<para><emphasis role="bold">Time Allocation:</emphasis> approx. 5 minutes</para>
+<para>Present the following non-computer cases for open discussion.  The discussion should provoke thinking about the meaning of survivability and draw comparisons or analogies to network system survivability.</para>
+<para>What are the properties of survivability for a family of five (two parents, three kids, and a dog), in a normal suburban house suffering a sudden, violent criminal attack?</para>
+<para>What are the key indicators of survivability for a 30-year-old, 1200-employee steel manufacturer facing immediate bankruptcy?</para>
+<para>In the above cases, does survivability mean the same as security?</para>
+<para>&instructEnd;</para>
+]]>
+</section>
+<section>
+<title>Security vs. Survivability</title>
+<informaltable frame="all" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para>Security
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/secvssuv1_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></entry>
+<entry><para>Survivability
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/secvssuv2_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para>Focus on protecting information</para>
+</entry>
+<entry>
+<para>Focus on continuity of operations</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Systems are seen as bounded and under central administrative control</para>
+</entry>
+<entry>
+<para>Systems are seen as open, unbounded, with distributed administrative control</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Considered an overhead expense</para>
+</entry>
+<entry>
+<para>Considered an investment; essential to the business of the organization</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Narrow technical specialty with technology- based solutions</para>
+</entry>
+<entry>
+<para>Part of enterprise risk management; business driven, management-based solutions</para>
+</entry>
+</row>
+<row>
+<entry>
+<para>Protect system components</para>
+</entry>
+<entry>
+<para>No component immune; ensure mission sustained</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Security versus Survivability</emphasis></para>
+<para>Survivability is an emerging discipline that blends computer security with business risk management for the purpose of protecting highly distributed information services and assets. A fundamental assumption is that no system is totally immune to attacks, accidents, or failures. Therefore, the focus of this new discipline is not only to thwart computer intruders, but also to ensure the sustainment of mission-critical functions and the delivery of an essential set of services despite cyber-attacks.  The "essential set of services" will depend on specific individual situations.  Improving survivability in the presence of cyber-attacks also improves the capacity to survive accidents and system failures that are not malicious in nature.</para>
+<para>Traditional computer security is a highly specialized discipline that seeks to thwart intruders through technical means that are largely independent of the application or system being protected. Firewalls, cryptography, access control, authentication, and other mechanisms used in computer security are meant to protect in much the same way, regardless of the specific application being protected.  In contrast, survivability has a very sharp mission focus and is more akin to risk management.</para>
+<para>Ultimately, it is the mission that must survive and not any particular component of the system or even the system itself.  The mission must go on even if an attack causes significant damage or destruction of the system that supports the mission.  The shift toward risk management, an approach that is highly intertwined with the mission-specific features of the application being protected is the most radical paradigm shift that is occurring as the new discipline of information survivability continues to emerge.</para>
+<para>Survivability solutions are best understood as risk management strategies that first depend on an intimate knowledge of the mission being protected.  The mission focus expands survivability solutions beyond purely independent ("one size fits all") technical solutions, even if those solutions are broad-based and extend beyond traditional computer security to include fault tolerance, reliability, usability, and so forth [Lipson 99].</para>
+<para><emphasis role="bold">Security as a component of survivability</emphasis></para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/postal_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para><emphasis role="bold">The postal analogy</emphasis></para>
+<para>The U.S. Postal Service's system of receiving, transporting, and delivering mail has several survivability components.</para>
+<informaltable frame="all" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para>Mission</para></entry>
+<entry><para>Security Components</para></entry>
+<entry><para>Other Key Components</para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Timely delivery of mail</para>
+</entry>
+<entry valign="top">
+<para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Locked mailboxes</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Segregated cargo on flights</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Camera's in post offices</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Frequent inspections</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Extensive security policies</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Federal laws and strict enforcement etc.</emphasis></para></listitem>
+</itemizedlist>
+</para>
+</entry>
+<entry valign="top">
+<para><emphasis role="bold">Automation</emphasis></para>
+<para>- Bar codes, optical scanners, web-tracking, computerized parsing, etc.</para>
+<para><emphasis role="bold">Fault Tolerance</emphasis></para>
+<para>- Alternate flights/hubs, substitute letter-carriers, inter-post office communication</para>
+<para><emphasis role="bold">Management</emphasis></para>
+<para>- Extensive training program, personnel accountability, infusion of pride, etc.</para>
+<para><emphasis role="bold">Design</emphasis></para>
+<para>- Zip code system, levels of service, hub and spoke "topology", etc.</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>The U.S. Postal Service (USPS) mail delivery system is analogous to large-scale, complex information technology (IT) systems and data networks.  In this case, we are attempting to accomplish the mission of delivering mail in a timely manner.  There are many risks associated with this: loss/theft of mail, slow transport and delivery, etc.  The USPS applies numerous solutions as synergistic survivability components:</para>
+<itemizedlist>
+<listitem><para>Security - Security is critical to sustaining the mission in this analogy.  Physical security is implemented by having locked mailboxes and cargo containers on commercial flights as well as secure sorting and storage rooms in post offices that are inaccessible to the general public.  Personnel security is implemented by having cameras in post office sorting rooms and by conducting announced and unannounced inspections of post office operations.  Organizational security is implemented by enforcing extensive policies and procedures on how mail is to be securely handled.  Federal laws support security measures and deter violators by inflicting stiff consequences for non-compliance.</para></listitem>
+<listitem><para>Automation - Automation sustains the mission by streamlining operations and reducing the chance of human error.  Bar codes and high-speed optical scanning are implemented at all regional hubs (and many post offices as well) and improve the accuracy and efficiency of routing mail.  This system has been modernized continually and now has direct connectivity to the USPS Web site, enabling customers to track mail online.  While technology provides great benefit to the mission of the USPS, it cannot solve all problems or mitigate all risks or potential failures.  Again, this component is part of a larger survivability construct.</para></listitem>
+<listitem><para>Fault tolerance - Fault tolerance attempts to eliminate single points of failure and can also provide a degree of redundancy and fail-over in the system.  If a fully loaded plane cannot fly due to mechanical problems, the system can accommodate this by using another plane, carrier, or means of transport.  If your postman is sick, you'll still receive your mail that day.  If your letter arrives at the wrong community post office, USPS personnel will re-route it to the correct one.</para></listitem>
+<listitem><para>Management structure - Management structure in the USPS ensures that all members are properly trained.  It has mature rating and evaluation programs and corrective measures that effectively provide for personnel accountability.  It has also had great success instilling pride in its employees; they don't want to lose letters because it hurts the reputation of the USPS as an organization and also hurts their customers.  Maintaining and nurturing tradition has helped to ensure a motivated workforce.</para></listitem>
+<listitem><para>Design - The design of the system is essential to its success.  Zip codes make routing and transport logical (much the same way as IP routing does) and they allow for scalability.  There are many levels of service customers can choose.  If speed is important, they can choose overnight express mail, although it comes at a cost.  If guaranteed delivery is critical, then a patron can choose registered mail, which operates on an unbroken chain of receipts and constant physical security.  It is so trustworthy that the U.S. military routinely sends classified documents (up to Secret) via registered mail.  Customers can even pay an extra 50 cents and track their packages via the Internet.  The mail system operates in a logical hub-and-spoke topology.  When you mail a letter across the country, it goes first to your local hub (your community post office) and then is routed to a regional hub.  From the regional hub, it is transported to the destination regional hub. The letter is then sent to the destination community post office and finally out to the spoke, the addressee's specific location.  This topology has checks built into the system at all stages of transport and allows for reliable, fast, efficient, and inexpensive service.</para></listitem>
+</itemizedlist>
+<para>All of these survivability components are synergistic, working together to sustain the mission.  IT systems and data networks have many of the same characteristics, problems, and challenges.  Security is a crucial part of maintaining a survivable system, but it will not be effective in the absence of other symbiotic solutions.  Implementing survivability components based on prudent risk management conclusions can help achieve and sustain the mission of the organization.</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Time Allocation:</emphasis> 10 minutes</para>
+<para>Group Discussion</para>
+<para>This discussion is to help students understand the definition of survivability and its distinctions from and relation to security.  Divide the class into two or three groups.</para>
+<para>Tell groups to use the U.S. Postal Service case analysis as an example, pick one of the two cases given in the appetizer questions (the family case or the steel manufacturer case), identify the mission, and come up with a list of security components and survivability components.</para>
+<para>At the end of the discussion, have a spokesperson for each group give a one-minute report.</para>
+<para>&instructEnd;</para>
+]]>
+</section>
+<section>
+<title>The Layered Approach to Security</title>
+<para><emphasis role="bold">Applying synergistic solutions in an attempt to accomplish the mission and mitigate potential failures</emphasis></para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para>Mission</para></entry>
+<entry><para>Layers of Survivability</para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Safely Transport Passengers</para>
+</entry>
+<entry valign="top">
+<para>
+<itemizedlist>
+<listitem><para>Multiple airbags</para></listitem>
+<listitem><para>Seatbelts, bumpers</para></listitem>
+<listitem><para>Crush-zones</para></listitem>
+<listitem><para>Reinforced  cockpit</para></listitem>
+<listitem><para>Helmets</para></listitem>
+<listitem><para>Driver licensing and education</para></listitem>
+<listitem><para>Traffic laws, etc.</para></listitem>
+</itemizedlist>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/car_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">The Layered Approach to Survivability</emphasis></para>
+<para>The following analogies illustrate the concept of survivability.</para>
+<para>Analogy 1: Driving</para>
+<para>Applying multiple survivability measures (airbags, seat belts, bumpers, etc.) increases the likelihood of accomplishing the mission (safe transportation of passengers), while reducing the chance of failure.  These measures are applied as a holistic system, not numerous, stand-alone pieces.  For example, the airbags in a car work in conjunction with the seatbelt system.  If passengers are not wearing their seatbelts and are in a serious accident, it is unlikely that they will escape uninjured solely as a result of the airbags deploying.</para>
+<para>Analogy 2: The Village Farmer</para>
+<para>Consider a village farmer with the mission of supplying food to a village. The farmer may have a fence around the crops to keep out deer, rabbits, and other intruders (traditional security).  The farmer may have an irrigation system to be used in the event of insufficient rainfall (redundancy).  He or she may plant a variety of crops so that even if environmental conditions (e.g., pests) adversely affect one crop, others will survive (diversity).  All of this is well and good.  But even if all the crops fail and no food is grown, the mission can still succeed if the farmer has an alternate strategy based on the mission of providing food - not necessarily growing food using the local ecosystem.  If the crops fail, the farmer may turn to hunting or fishing to provide the life-sustaining mission fulfillment that fellow villagers depend upon.  Is hunting a security, reliability, or fault tolerance strategy?  None, because it is outside the system for growing food.  This is a risk management strategy that can be formulated only with an intimate understanding of the mission that must survive.  Detailed technical expertise on fence-building or even agriculture is helpful but inadequate compared to strategies based on an intimate knowledge of the mission requirements <emphasis>[Lipson 99]</emphasis>.</para>
+</section>
+<section>
+<title>The Layered Approach to Survivability (cont'd)</title>
+<para><emphasis role="bold">Starts with and is defined by risk management</emphasis></para>
+<para>The military base analogy:</para>
+<para><emphasis role="bold">MISSION</emphasis></para>
+<para>Secure Military Base Facilities</para>
+<para><emphasis role="bold">LAYERS OF SURVIVABILITY</emphasis></para>
+<para><emphasis role="bold">Base Gymnasium:</emphasis></para> 
+<itemizedlist>
+<listitem><para>Barbed wire/fence around base perimeter</para></listitem>
+<listitem><para>Only 1 entrance where armed MP checks everyone's ID card</para></listitem>
+<listitem><para>Locks on doors and window</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Headquarters Layers:</emphasis></para>
+<itemizedlist>
+<listitem><para>Barbed wire/fence around base perimeter</para></listitem>
+<listitem><para>Only 1 entrance to base where armed MP checks everyone's ID card</para></listitem>
+<listitem><para>Internal perimeter electrified fence around headquarters</para></listitem>
+<listitem><para>MPs at internal gate checking special headquarters-only pass and ID</para></listitem>
+<listitem><para>Biometric scan for entry into reinforced door</para></listitem>
+<listitem><para>Comprehensive security policies and strict enforcement</para></listitem>
+<listitem><para>Quarterly security awareness training to headquarters staff</para></listitem>
+<listitem><para>Backup generators, water and food reserves</para></listitem>
+<listitem><para>Bomb, fire, biological and chemical-resistant facility</para></listitem>
+</itemizedlist>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/military_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+<para><emphasis role="bold">The Layered Approach to Survivability</emphasis></para>
+<para>Analogy 3: Secure Military Base Facilities</para>
+<para>An analogy of secure military base facilities focuses on risk management and its importance to survivability.  Before you can apply appropriate survivability measures to an asset, you must evaluate its importance to the mission of the organization, and then identify risks associated with that asset.  After the risks have been articulated, risk management decisions are made and appropriate survivability measures (safeguards) may be set in place.</para>
+<para>In this analogy, the base gymnasium is of less importance to the overall mission of the military organization on the base.  Because of this, relatively few survivability measures have been applied to mitigate the risk of intrusion.</para>
+<para>In contrast, the headquarters is considered to be the most vital building on the military base.  It is central to all operations in both peacetime and war.  Because the risks associated with it are much higher and more varied, many layers of survivability measures have been applied to it.  Additionally, because the complexity of these measures is far greater than the complexity of the measures for the gym, the overall investment for the headquarters is greater.</para>
+<para>An organization's public Web server will likely be more important to its mission than an individual employee's desktop workstation.  As a result, greater efforts will likely be made to ensure the survivability of the Web server's mission.</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Class Discussion and Associated Questions:</emphasis> (approx. 5 minutes):</para>
+<para>Describe and draw a diagram of a Web server network fragment (e.g., a college academic Web server that supports faculty and student Web page hosting, FTP, academic e-mail, Telnet, CGI, ASP, and small database applications). Describe what it produces, what it consumes, what it relies upon, and how access is granted.</para>
+<para> Ask the class to think about these questions:</para>
+<orderedlist numeration="arabic">
+<listitem><para>What is the mission of this network?</para></listitem>
+<listitem><para>How is the mission achieved?</para></listitem>
+<listitem><para>What could disrupt the Web service so that it fails to achieve its mission?</para></listitem>
+<listitem><para>Does this disruption threaten the survivability of the mission and if so, what could be done to improve mission survivability?</para></listitem>
+</orderedlist>
+<para>&instructEnd;</para>
+]]>
+</section>
+<section>
+<title>Unbounded Systems</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para><emphasis role="bold">Unbounded Systems</emphasis></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<itemizedlist>
+<listitem><para>Bounded and unbounded systems connected in a network</para></listitem>
+<listitem><para>Behavior not completely understood; incomplete view</para></listitem>
+<listitem><para>No unified administrative control; cannot exercise control outside of local domain</para></listitem>
+<listitem><para>Depends on trust information supplied by neighbors</para></listitem>
+<listitem><para>Administrators limited in having outside entities follow security policy</para></listitem>
+</itemizedlist>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/unbounded_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Unbounded Systems</emphasis></para>
+<para>Many enterprise network systems are no longer "bounded" (i.e., a centrally networked environment, under organizational control, and full visibility to systems that are in a globally networked environment). Such stand-alone mainframe or corporate environments that were once physically isolated have evolved into distributed client server networks connected to the Internet with peer-to-peer services and networking.  It is no longer the case that access is permitted only within the physical facilities that house the network: remote access is now a given.</para>
+<para>Instead, enterprise network systems are "unbounded" (i.e., well-defined geographic, political, cultural, and legal or jurisdictional boundaries to systems characterized by the absence of these boundaries). Systems under centralized administrative control with trustworthy, known, inside users have evolved to systems with distributed administrative control, no central authority, and unknown users. These networked systems are interdependent instead of insular and fortress-like, with less distinction between system insiders and outsiders. Formerly well-defined outsider roles no longer fit customers, collaborators, partners, contractors, or vendors who have access to the network based on these roles.</para>
+<para>System administrators of unbounded systems are often faced with the following issues <emphasis>[Allen 02]</emphasis>: </para>
+<itemizedlist>
+<listitem><para>Do strategic and tactical security decisions concerning networks that are connected to the Internet recognize that there are no well-defined geographical, political, and technological boundaries? </para></listitem>
+<listitem><para>Is there an active contact list of other system administrators for the primary networks that connect with our enterprise's network? </para></listitem>
+<listitem><para>Are system administrators up to date on the latest threats, attacks, and solutions?</para></listitem>
+<listitem><para>Are system and network configurations up to date with the latest patches?</para></listitem>
+<listitem><para>Another effect on system administrators that is derived from unbounded systems is the shift from single responsibility to shared organizational responsibility to distributed responsibility. This is a shift from having a single point of known responsibility to correct failures to having shared, sometimes unknown, responsibility. In other words, going from "I know who to contact when I have a problem and I can describe the problem" to a situation better described as "I cannot precisely identify what or where the problem is and I may not know who to contact if it occurs outside of my organization's administrative control". System administrators of unbounded systems are often faced with the following issues [Allen 02]:</para></listitem>
+<listitem><para>Do all authorized users know whom to contact when they detect suspicious, unexpected, or unusual behavior? </para></listitem>
+<listitem><para>Do the recipients of this information know how to process each request, dealing with highest priority requests first, and who to contact for further assistance?</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Internet Trends Affecting Survivability</title>
+<para><emphasis role="bold">Increase in intrusions</emphasis></para>
+<para><emphasis role="bold">Vulnerabilities reported</emphasis></para>
+<para><emphasis role="bold">Hosts attached to the Internet</emphasis></para>
+<para><emphasis role="bold">Attack sophistication</emphasis></para>
+<!--
+
+Year 	# of Vulns 	% of Total
+2004 	2,451 	100.00
+2005 	4,932 	100.00
+2006 	6,608 	100.00
+2007 	6,514 	100.00
+2008 	5,632 	100.00
+2009 	5,733 	100.00
+2010 	0 	0.00
+
+-->
+
+</section>
+<section>
+<title>Attack Sophistication vs. Intruder Technical Knowledge</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/attack-sophis.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>The level of knowledge required by intruders is getting steadily lower, yet their ability to perpetrate sophisticated attacks against the survivability of systems has increased.</para>
+<para>Contributing factors include:</para>
+<itemizedlist>
+<listitem><para>Explosion of computer and Internet availability</para></listitem>
+<listitem><para>Increase in broadband availability in residential areas</para></listitem>
+<listitem><para>Low priority of security for software developers </para></listitem>
+<listitem><para>Difficulty patching vulnerabilities on all systems</para></listitem>
+<listitem><para>Graphical user interface (GUI) based tools that exploit known software vulnerabilities</para></listitem>
+<listitem><para>Availability of "malware" (malicious software) authoring/editing tools</para></listitem>
+<listitem><para>Introduction of tools that attempt to exploit multiple vulnerabilities (i.e., Nimda)</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Characteristics of Survivable Systems</title>
+<para><emphasis role="bold">Essential services: functions of the system that must be maintained in the presence of attacks, failures, and accidents</emphasis></para>
+<itemizedlist>
+<listitem><para>Specified minimum levels of integrity, confidentiality, performance must be maintained</para></listitem>
+<listitem><para>Can include alternate sets of essential services that are not simultaneously available</para></listitem>
+<listitem><para>Cannot be dependent on survival of a specific resource</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Key properties of survivable systems</emphasis></para>
+<itemizedlist>
+<listitem><para>Resistance to attacks</para></listitem>
+<listitem><para>Recognition of attacks and the extent of the damage</para></listitem>
+<listitem><para>Recovery of full and essential services after an attack</para></listitem>
+<listitem><para>Adaptation and evolution to reduce effectiveness of future attacks</para></listitem>
+</itemizedlist>
+<blockquote><para>The following are important excerpts from Survivability: Protecting Your Critical Systems [Ellison 99] regarding characteristics of survivable systems:</para>
+<para>"As noted essential services are defined as the functions of the system that must be maintained when the environment is hostile, or when failures or accidents occur that threaten the system.</para>
+<para>Central to the delivery of essential services is the capability of a system to maintain essential properties (i.e., specified levels of integrity, confidentiality, performance, and other quality attributes). Thus, it is important to define minimum levels of quality attributes that must be associated with essential services.</para>
+<para>The capability to deliver essential services (and maintain the associated essential properties) must be sustained even if a significant portion of the system is incapacitated. Furthermore, this capability should not be dependent upon the survival of a specific information resource, computation, or communication link. A survivable financial system is one that maintains the integrity, confidentiality, and availability of essential information and financial services, even if particular nodes or communication links are incapacitated because of an intrusion or accident, and that recovers compromised information and services in a timely manner. The financial system's survivability might be judged by using a composite measure of the disruption of the stock trades or bank transactions (i.e., a measure of the disruption of essential services).</para>
+<para>Ultimately, mission fulfillment must survive, not any portion or component of the system. In some cases if an essential service is lost, it can be replaced by another service that supports the mission fulfillment in a different but equivalent way. As a result, we define essential services to include alternate sets of essential services (perhaps mutually exclusive) that need not be simultaneously available. For example, a set of essential services to support power delivery may include both the distribution of electricity and the operation of a natural gas pipeline."</para></blockquote>
+<para>To maintain an enterprise's capabilities to deliver essential services, their survivable systems must exhibit the following four key properties indicated in Survivability: Protecting Your Critical Systems <emphasis>[Ellison 99]</emphasis>:</para>
+<itemizedlist>
+<listitem><para>Resistance to attacks (i.e., strategies for repelling attacks)</para></listitem>
+<listitem><para>Recognition of attacks and the extent of their damage (i.e., strategies for detecting attacks and intrusions, understanding the current state of the system, evaluating the extent of the damage)</para></listitem>
+<listitem><para>Recovery of full and essential services after attack (i.e., strategies for restoring compromised information or functionality, limiting the extent of the damage, restoring essential services with the time constraints of the mission)</para></listitem>
+<listitem><para>Adaptation and evolution to reduce the effectiveness of future attacks (i.e., strategies for improving system survivability based on knowledge gained from intrusions)</para></listitem>
+</itemizedlist>
+<table frame="all">
+<title>Review</title>
+<tgroup cols="1" rowsep="0">
+<thead>
+<row>
+<entry><para>Test Your Understanding:</para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<para>Identify examples of possible processes, actions, or responsibilities that a system administrator may undertake to mitigate or respond to these problems associated with each of these four properties of survivable systems.</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Time Allocation:</emphasis> 10 minutes:</para>
+<para><emphasis role="bold">Comprehension Check or Pop Quiz</emphasis></para>
+<para>Have students answer the following questions orally as a comprehension check on the assigned reading.  You may choose to use these questions as a pop quiz and have students provide individual written answers instead.  Graded quiz should be handed back the next class.</para>
+<para>Answer the following questions briefly according to the information in the reading.</para>
+<orderedlist>
+<listitem><para>How is survivability defined by the authors?</para></listitem>
+<listitem><para>To what do essential services for a survivable system refer?</para></listitem>
+<listitem><para>True or False (Circle T or F): The Internet is an example of an unbounded environment with many client-server network applications.</para></listitem>
+<listitem><para>True or False (Circle T or F): If the significant hardware and software portions of a system remain intact, the system has achieved survivability.</para></listitem>
+<listitem><para>Name any one of the four key properties necessary for a survivable system to deliver essential services______________________________________________</para></listitem>
+</orderedlist>
+<para>Suggested Answers</para>
+<orderedlist>
+<listitem><para>The capability of a system to fulfill its mission, in a timely manner, in the presence of attacks, failures, or accidents.</para></listitem>
+<listitem><para>The functions of the system that must be maintained when the environment is hostile, or when failures or accidents occur that threaten the system.</para></listitem>
+<listitem><para>True</para></listitem>
+<listitem><para>False</para></listitem>
+<listitem>
+<para>1)  Resistance to attacks</para>
+<para>2)  Recognition of attacks and the extent of damage</para>
+<para>3)  Restoring essential services within the time constraints and recovery of full services in a timely manner after an attack</para>
+<para>4)  Adaptation and evolution to reduce effectiveness of future attacks</para>
+</listitem>
+</orderedlist>
+<para>&instructEnd;</para>
+]]>
+</section>
+<section>
+<title>Topics</title>
+<para>Survivability</para>
+<para><emphasis role="bold">Disruptions and unauthorized modification of data</emphasis></para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Actions that can occur</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Strategies to mitigate these actions</emphasis></para></listitem>
+</itemizedlist>
+<para>Survivability example and summary</para>
+</section>
+<section>
+<title>Anticipates Failures and Intrusions</title>
+<para><emphasis role="bold">You won't necessarily have warning - plan for the worst:</emphasis></para>
+<itemizedlist>
+<listitem><para>Natural disasters, terrorism, hackers, equipment failure, human-error, disgruntled employees, etc.</para></listitem>
+<listitem><para>Evaluate and prioritize assets</para></listitem>
+<listitem><para>Identify risks</para></listitem>
+<listitem><para>Apply appropriate protection strategies</para></listitem>
+</itemizedlist>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/anticipate_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>Many enterprises have contingency plans for dealing with business interruptions caused by natural disasters or accidents. Although the majority of cyber attacks are relatively minor in nature, a cyber attack on an organization's critical networked information systems has the potential to cause severe and prolonged business disruption, whether the business has been targeted specifically or is a random victim of a broad-based attack.  If a cyber attack disrupts critical business functions and interrupts the essential services that customers depend upon, then the survival of the enterprise itself is at risk. <emphasis role="bold">(Principle 3: Not all data is of equal value to the enterprise - risk must be managed)</emphasis>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin3-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>An example would be the Web services offered by major banks. If a bank's home page were to be defaced as part of a cyber attack, it would very likely decrease the confidence that patrons have in the bank's ability to safeguard their money.  These patrons may decide to move their money elsewhere. Therefore, relatively benign attacks (from an operational stand-point) can cause significant damage to the overall business survivability of an organization.</para>
+<para>One significant difference between disruptions caused by natural disasters and those caused by cyber attacks (besides the notion of an intelligent adversary behind a cyber attack) is that with a natural disaster there is a customer expectation of diminished service. A business disruption caused by a cyber attack will likely be seen by an enterprise's customers as a sign of incompetence.  Unless the cyber attack is widespread and well publicized, no customer sympathy will be forthcoming [Lipson 99].</para>
+<para>It is essential that survivability be treated holistically when managing IT systems and information assets.  Sustaining the mission of the organization is, after all, the primary motivation for investing in survivability components in the first place - not just protecting systems from intruders.</para>
+</section>
+<section>
+<title>Protecting Information Assets</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<itemizedlist>
+<listitem><para>Avoidance</para></listitem>
+<listitem><para>Prevention</para></listitem>
+<listitem><para>Detection</para></listitem>
+<listitem><para>Containment and response</para></listitem>
+<listitem><para>Recovery</para></listitem>
+<listitem><para>Improvement</para></listitem>
+</itemizedlist>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/key_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>A comprehensive approach to implementing and sustaining information security can include the following strategies and practices:</para>
+<para><emphasis role="bold">Avoidance</emphasis></para>
+<para>A desirable strategy for improving security is to avoid configurations that present unnecessary opportunities for problems to occur. For example, if users of systems on a particular network do not require direct access to external networks, and inbound connections are forbidden, then there is no reason to connect the network to external networks in the first place.</para>
+<para><emphasis role="bold">Prevention</emphasis></para>
+<para>Prevention refers to the implementation of measures and controls to minimize the possibility of security problems occurring. For example, it may be necessary to store different kinds of data on a common file server. To prevent unauthorized access to each kind of data, access controls should allow users to see only those kinds of data they have permission to see.</para>
+<para><emphasis role="bold">Detection</emphasis></para>
+<para>Despite all efforts to prevent unauthorized access to information assets and resources, security incidents are bound to occur. It is therefore necessary to implement measures to detect possible information security problems when they occur. For example, it may be appropriate for you to deploy network traffic monitors to alert you to unauthorized connection attempts to your networked systems.</para>
+<para><emphasis role="bold">Containment and response</emphasis></para>
+<para>When information security incidents occur, you will have to work quickly to contain the damage and respond to prevent further unauthorized activity.  Preparation and practice in handling security incidents is an essential part of maintaining readiness to respond when incidents occur.</para>
+<para><emphasis role="bold">Recovery</emphasis></para>
+<para>When system failures and security incidents occur, you will need to have resources and data backups available to restore your data, systems, networks, and security infrastructure to a "known-good" state.  This means that preparation and ongoing effort must be applied in advance to back up data and systems.</para>
+<para><emphasis role="bold">Improvement</emphasis></para>
+<para>New threats to the security of information and information systems are discovered every day. Intruders actively seek ways to infiltrate systems in search of information and resources. As a result, it is necessary to engage in a continuous effort to sustain and improve the security of the networked information systems under your administrative control. As security incidents occur, lessons learned help to identify areas in need of improvement. Staying up to date regarding newly discovered problems and the means to mitigate them are essential elements of a continuous security improvement process.</para>
+</section>
+<section>
+<title>Topics</title>
+<para>Survivability</para>
+<para>Disruptions and unauthorized modification of data</para>
+<itemizedlist>
+<listitem><para>Actions that can occur</para></listitem>
+<listitem><para>Strategies to mitigate these actions</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Survivability example and summary</emphasis></para>
+</section>
+<section>
+<title>Example: Web Service Survivability</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/webserver-ex.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Class Discussion</emphasis></para>
+<para><emphasis role="bold">Time Allocation:</emphasis> 30 minutes:</para>
+<para><emphasis role="bold">Comprehension Check or Pop Quiz</emphasis></para>
+<para>Go over the sample case study given and have students discuss and answer the four questions in the "Test Your understanding" section. Divide students into two or three groups to work on the discussion and report discussion results to the class.</para>
+<para>&instructEnd;</para>
+]]>
+<para><emphasis role="bold">Example: Survivability of an enterprise's critical Web service</emphasis></para>
+<para>Imagine you are responsible for the computer system services of a fictional e-commerce company called XYZprice.com. In addition to selling products from its own catalog, XYZprice provides the ability for a customer to directly browse a catalog from an affiliated supplier, and to have those items added to your XYZprice shopping cart. The sequence of events that occurs in a transaction is as follows:</para>
+<orderedlist>
+<listitem><para>Through the XYZprice Web page, a customer indicates that they want to directly look at affiliated suppliers. catalogs and possibly purchase some items that may not currently appear on the XYZprice product database. A message is sent from the Web Browser the XYZprice Web Server over the Internet.</para></listitem>
+<listitem><para>The XYZprice Web Server assembles a list of affiliated suppliers that support selecting products from their catalog and having them added to the customer's XYZprice shopping cart. An updated Web page is sent from the XYZprice Web Server to the customer's Web Browser over the Internet.</para></listitem>
+<listitem><para>The customer selects a specific supplier's catalog. Information is sent from the customer's Web Browser to a particular supplier's Web Server over the Internet, creating a session that allows the customer to view and add products from the supplier's catalog to a local shopping cart. When finished, the customer clicks on the Checkout button on the Web page.</para></listitem>
+<listitem><para>The supplier's Web Server sends a message over the Internet to the customer's Web Browser, returning the list of items selected to the customer.</para></listitem>
+<listitem><para>The customer elects to checkout and purchases the selected items. A message is sent from the customer's Web Browser over the Internet to the XYZprice Web Server, providing the list of purchased items. The XYZprice Web Server assembles the data for the customer transaction and forwards it to the XYZprice Transaction Web Server over the Internet.</para></listitem>
+<listitem><para>The XYZprice Transaction Web Server processes and approves the request, and then generates and forwards a purchase order for products to the supplier's Web Server over the Internet.</para></listitem>
+</orderedlist>
+<informaltable frame="all" pgwide="0">
+<tgroup cols="1" rowsep="1">
+<thead>
+<row>
+<entry><para><emphasis role="bold">Test your understanding:</emphasis></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>From this example, use the concepts discussed in this module concerning the survivability of enterprise systems to answer the following questions:</para>
+<itemizedlist>
+<listitem><para>What is the mission of XYZprice.com?</para></listitem>
+<listitem><para>How is their mission achieved?</para></listitem>
+<listitem><para>What disruptions of the Web services provided can occur so that XYZprice fails to achieve its mission?</para></listitem>
+<listitem><para>Does the disruption threaten the survivability of XYZprice's mission and, if so, what could be done to improve its survivability?</para></listitem>
+</itemizedlist>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>Use the XYZprice transaction Web Server example to help students complete the following case study. Analyze the college academic Web server (that supports faculty and student Web page hosting, FTP, academic email, Telnet, CGI, ASP, and small database applications) using the same principles and example. Describe what it produces, what it consumes, what it relies upon, and how access is granted. Ask students to give some responses to these questions:</para>
+<orderedlist numeration="loweralpha">
+<listitem><para>What is the mission of this network?</para></listitem>
+<listitem><para>How is the mission achieved?</para></listitem>
+<listitem><para>What could disrupt the Web service so that it fails to achieve its mission?</para></listitem>
+<listitem><para>Does this disruption threaten the survivability of the mission and if so, what could be done to improve mission survivability?</para></listitem>
+</orderedlist>
+<para>&instructEnd;</para>
+]]>
+</section>
+<section>
+<title>Summary</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/review_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>The following important summary points for "Principle1, Survivability is an enterprise-wide concern" provide relevance for future reference and assessment.</para>
+<orderedlist>
+<listitem><para>Survivability is an enterprise-wide concern.  Security is just a component of survivability.</para></listitem>
+<listitem><para>Mission survivability is the key: it is linked to the survivability of its systems and components.</para></listitem>
+<listitem><para>A survivability approach expands the view of security from a narrow technical specialty, accessible only to security experts, toward a risk-management perspective.</para></listitem>
+<listitem><para>Unbounded systems are affected by the Internet (trends indicate increases in intrusions, vulnerabilities, number of hosts, and more sophisticated attacks). Enterprise network systems are "unbounded" (i.e., well-defined geographic, political, cultural, and legal or jurisdictional boundaries to systems characterized by the absence of these boundaries).</para></listitem>
+<listitem><para>The focus of survivability is on unbounded networked systems where traditional security precautions are inadequate. These networked systems are interdependent instead of insular and fortress-like, with less distinction between system insiders and outsiders.</para></listitem>
+<listitem><para>Survivability concentrates on recovery from a damaging effect, not the cause. The mere threat of an attack can have as severe an impact on a system as an actual occurrence.</para></listitem>
+<listitem><para>Apply synergistic, layered solutions in an attempt to accomplish the mission and mitigate potential failures.</para></listitem>
+<listitem><para>A fundamental assumption is that no system is totally immune to attacks, accidents, or failures. Anticipate failures and intrusions.</para></listitem>
+<listitem><para>Firewalls, cryptography, access control, authentication, and other mechanisms used in computer security are meant to protect an underlying application in much the same way regardless of the specific application being protected. Ultimately, it is the mission that must survive and not any particular component of the system or even the system itself.</para></listitem>
+<listitem><para>Essential services are defined as the functions of the system that must be maintained when the environment is hostile, or when failures or accidents occur that threaten the system. </para></listitem>
+<listitem><para>Central to the delivery of essential services is the capability of a system to maintain essential properties (i.e., specified levels of integrity, confidentiality, performance, and other quality attributes). If an essential service is lost, it can be replaced by another service that supports the mission fulfillment in a different but equivalent way that need not be simultaneously available.</para></listitem>
+<listitem><para>Survivable systems must exhibit the following key properties: resistance to attacks, recognition of attacks, recovery of essential services after an attack, and adaptation to reduce the effectiveness of future attacks.</para></listitem>
+<listitem><para>Information assets (information, hardware, software, people) and other supporting assets must be evaluated and prioritized to determine if they are critical assets, which have an integral relationship with the mission of the organization.</para></listitem>
+<listitem><para>For risk to exist there must be threats and vulnerabilities to critical assets. Risk can be managed but not eliminated.</para></listitem>
+<listitem><para>Intruders can be difficult to identify, as they have various means, motives and opportunities at their disposal.</para></listitem>
+</orderedlist>
+<para>These are important summary points from the discussion of Principle 1: Survivability is an enterprise-wide concern. Students should be able to enumerate or substantiate these points for future reference and assessment.</para>
+</section>
+<section>
+<title>EXAM</title>
+<para>Exam</para>
+<para>Exam on Principle 1 - Survivability Is an Enterprise-Wide Concern</para>
+</section>
+</article>

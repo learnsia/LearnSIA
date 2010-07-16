@@ -1,0 +1,26 @@
+
+body {
+	border: none;
+    font-family: Verdana, Arial;
+    font-size: 12px;
+
+	 margin: 30px;
+	background: #FFFFFF;
+
+}
+
+p {
+	text-align: justify;
+}
+
+hr {
+	border: 0px navy solid;
+}
+
+pre {
+	background: #EEEEEE;
+}
+
+.example {
+	background: #EEEEEE;
+}
