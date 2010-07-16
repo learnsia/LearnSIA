@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % instructor "IGNORE">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+<holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+<section>
+<title>Principle 3: Not All Data Is of Equal Value to the Enterprise-Risk Must Be Managed</title>
+<para>&syllabusBegin;</para>
+<para>This module introduces the topic of risk management within the context of information assets. Not all data is of equal value to an enterprise. A key concept is being able to evaluate the relative importance of specific data (information assets) to fulfilling the mission and to prioritize security resources in accordance with an asset's criticality. To make effective asset protection choices, one must understand information assets, threats against these assets, vulnerabilities that can be exploited, impacts of vulnerability exploitation, and loss outcomes. There are risk evaluation and management approaches that system administrators need to understand, participate in, use to obtain risk mitigation strategies, and use to determine work priorities.</para>
+<para>This module should take 4 hours.</para>
+<para>The required reading must be done in advance of this class.</para>
+<para>&syllabusEnd;</para>
+</section>
+<section>
+<title>Reading Assignments</title>
+<para><emphasis role="bold">Required readings:</emphasis></para>
+<orderedlist>
+<listitem><para>"OCTAVE&reg; Information Security Risk Evaluation" [CERT d]</para></listitem>
+<listitem><para>Introduction to the OCTAVE&reg; Approach [Alberts 03]</para></listitem>
+</orderedlist>
+<para><emphasis role="bold">Recommended readings:</emphasis></para>
+<orderedlist>
+<listitem><para>"OCTAVE Method Implementation Guide, Version 2.0" [Alberts 01a]</para></listitem>
+<listitem><para>OCTAVE<superscript>SM</superscript> Catalog of Practices, Version 2.0 [Alberts 01b]</para></listitem>
+<listitem><para>OCTAVE<superscript>SM</superscript> Method Implementation Guide Version 2.0 Volume 17:Appendix C: Complete Example [Alberts 01c]</para></listitem>
+<listitem><para>Managing Information Security Risks: The OCTAVE<superscript>SM</superscript> Approach [Alberts 02]</para></listitem>
+<listitem><para>"Security: Technical, Social, and Legal Challenges" [Arbaugh 02]</para></listitem>
+<listitem><para>"Understanding Risk" [Erwin 02]</para></listitem>
+<listitem><para>"Risk Management Guide for Information Technology Systems" [Stoneburner 02]</para></listitem>
+<listitem><para>"Asset-Based Information Security Risk Assessments" [Dorofee 05]</para></listitem>
+</orderedlist>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Time Allocation:</emphasis>  4 hours</para>
+<para><emphasis role="bold">Reading Assignment</emphasis></para>
+<para>Prior to class have the students read both the short "OCTAVE&reg; Information Security Risk Evaluation" and Introduction to the OCTAVE&reg; Approach.  Ideally, the students would also read "Security: Technical, Social, and Legal Challenges" and "Understanding Risk", but these last two articles are not freely available on the Internet and thus will require not only permission to use, but in all likelihood a fee to use.</para>
+<para>Use the Sample OCTAVE&reg; Scenarios file for in-class examples and homework-note that this file contains sample answers also. These scenarios can be used for discussion, as a class demonstration, or individual or small groups work inside or outside of class.  The OCTAVESM Catalog of Practices, Version 2.0 document is a handout later in this module-in the discussion with respect to Phase 1 Process S1-Evaluate Organizational Security Practices slide. Finally, the OCTAVE<superscript>SM</superscript> Method Implementation Guide Version 2.0 Volume 17:Appendix C: Complete Example  [Alberts 01c] contains a complete worked example.</para>
+<para><emphasis role="bold">Check Understanding</emphasis></para>
+<para>Ask students for examples of risks where they work and how well they are identified and mitigated. Capture some of these for use as examples to illustrate in this module.</para>
+<para>&instructEnd;</para>
+]]>
+</section>
+<section>
+<title>Principle 3: Not all data is of equal value to the enterprise - risk must be managed.</title>
+<para>Not all data is of equal value to an enterprise. A key concept is being able to evaluate the relative importance of specific data (information assets) to fulfilling the mission and to prioritize security resources in accordance with an asset's criticality. To make effective asset protection choices, one must understand information assets, threats against these assets, vulnerabilities that can be exploited, impacts of vulnerability exploitation, and loss outcomes. There is risk evaluation and management approaches that system administrators need to understand, participate in, use to obtain risk mitigation strategies, and use to determine work priorities.</para>
+</section>
+<section>
+<title>Learning Outcomes</title>
+<para><emphasis role="bold">Define the concepts of risk and risk management</emphasis></para>
+<para><emphasis role="bold">Understand the importance of identifying and prioritizing assets</emphasis></para>
+<para><emphasis role="bold">Describe an approach to risk evaluation and its results </emphasis></para>
+<para><emphasis role="bold">Understand an administrator's role in risk management</emphasis></para>
+<para>At the conclusion of this module, you should be able to be conversant in key terms and topics related to risk management and understand the responsibility to identify and protect the most critical assets first. You will be able to use risk evaluation as a means for informing their work and making choices in the face of limited resources.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Define terminology and concepts </emphasis></para>
+<itemizedlist>
+<listitem><para>Risk, risk impacts, and risk management</para></listitem>
+<listitem><para>Assets, requirements, threats, vulnerabilities, and controls</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Risk evaluation</emphasis></para>
+<itemizedlist>
+<listitem><para>Threat/asset specific</para></listitem>
+<listitem><para>OCTAVE&reg;</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Administrator responsibilities</emphasis></para>
+
+</section>
+</article>
