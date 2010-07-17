@@ -40,6 +40,10 @@
 <listitem><para>"Risk Management Guide for Information Technology Systems" [Stoneburner 02]</para></listitem>
 <listitem><para>"Asset-Based Information Security Risk Assessments" [Dorofee 05]</para></listitem>
 </orderedlist>
+<para>
+<footnote><para>&reg; - OCTAVE is registered in the U.S. Patent and Trademark Office by Carnegie Mellon University.</para>
+<para><superscript>SM</superscript> - Operationally Critical Threat, Asset, and Vulnerability Evaluation is a service mark of Carnegie Mellon University. </para></footnote>
+</para>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para><emphasis role="bold">Time Allocation:</emphasis>  4 hours</para>
@@ -76,6 +80,843 @@
 <listitem><para>OCTAVE&reg;</para></listitem>
 </itemizedlist>
 <para><emphasis role="bold">Administrator responsibilities</emphasis></para>
+<para>The purpose of this lecture is to familiarize you with risk and asset management.  One of the key concepts is the determination and valuation of assets.  In most organizations, identifying and prioritizing assets based on their value, cost, or importance constitute this valuation and determination process.  This lecture focuses on an organization's ability to select and prioritize assets based on the asset's importance or relevance in fulfilling the mission and objectives, as well as impacts to the organization if the asset is compromised.</para>
+<para>This lecture explains risk, risk impact, assets, asset categories, risk evaluation, and risk management.  It covers one recommended risk evaluation method (OCTAVE&reg;), the potential impacts of risk events, and how to determine mitigation strategies for managing and reducing risk, as well as the administrator's role in these activities.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Define terminology and concepts </emphasis></para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Risk, risk impacts, and risk management</emphasis></para></listitem>
+<listitem><para>Assets, requirements, threats, vulnerabilities, and controls</para></listitem>
+</itemizedlist>
+<para>Risk evaluation</para>
+<itemizedlist>
+<listitem><para>Threat/asset specific</para></listitem>
+<listitem><para>OCTAVE&reg;</para></listitem>
+</itemizedlist>
+<para>Administrator responsibilities</para>
+<para>First we establish terminology, definitions, and concepts that are used throughout the lecture.</para>
+</section>
+<section>
+<title>Anticipate Failures and Intrusions</title>
+<para><emphasis role="bold">You won't necessarily have warning</emphasis></para>
 
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+<para><emphasis role="bold">Failures and Intrusions</emphasis></para>
+<para>Many organizations have contingency plans for dealing with business interruptions caused by natural disasters or accidents.  Although impacts resulting from the majority of cyberattacks are manageable, a cyberattack on an organization's critical networked information systems has the potential to cause severe and prolonged business disruption. This can occur whether the business has been targeted specifically or is a random victim of a broad-based attack.  If a cyberattack disrupts critical business functions and interrupts the essential services that customers depend upon, then the survival of the business may be at risk.  One example is the Web services offered by major banks.  If a bank's home page is defaced as part of a cyberattack, it likely decreases the confidence that patrons have in the bank's ability to safeguard their money.  These patrons may decide to move their money elsewhere.  Therefore, relatively benign attacks (from an operational standpoint) can cause significant damage to the overall business survivability of an organization.</para>
+<para>One significant difference between disruptions caused by natural disasters and those caused by cyberattacks is that with a natural disaster a customer expects diminished service. A business disruption caused by a cyberattack likely is seen by enterprise customers as a sign of incompetence. Unless the cyberattack is widespread and well publicized, little customer sympathy is forthcoming [Lipson 99].</para>
+<para>It is essential that survivability be treated holistically when managing IT systems and information assets.  Sustaining the mission of the organization is, after all, the primary motivation for investing in survivability components-not just protecting systems from intruders.</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+<para>This lecture describes how asset prioritization, risk identification, and risk management can be employed to minimize business disruption in the face of failures and intrusions.</para>
+</section>
+<section>
+<title>Risk</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="1" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold"><emphasis>Risk</emphasis> is the possibility of suffering loss, destruction, modification, or denial of availability of an asset.</emphasis></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>Risk is the possibility of suffering harm or loss.  With respect to information, risk is the possibility of suffering a loss (or impact) due to disclosure, destruction, modification, or denial of access to the information.  Risk comprises an event (a threat scenario), a consequence (impact on the organization), and uncertainty (whether the threat scenario will occur). These risk impacts can directly affect security requirements-confidentiality, integrity, and availability-of the information as well as enterprise survivability and security.</para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+<para>For a risk to exist, the following must be present:</para>
+<para>Assets of value to an organization or individual that must be protected (critical assets)</para>
+<para>Threats to these critical assets (possibility of disclosure, modification, destruction, or interruption)</para>
+<para>Vulnerabilities that may provide an opportunity for threats to be realized in a manner that discloses, modifies, destroys, or interrupts access to an asset</para>
+<para>Before risks can be managed, they must be identified.  One way to examine for potential risk is to list the components of risk in an asset-driven scenario and gauge the risk's likelihood of occurrence.</para>
+<para><emphasis role="bold">Example of Risk</emphasis></para>
+<para>For example, let's consider a home user making a consumer purchase over the Internet.  In this situation, the user must submit customer information to the web site (i.e., item, quantity, name of customer, address of customer, payment type, credit card number, etc.) to complete the purchase. Therefore from the user's point of view, risk certainly exists, even if the user is not explicitly aware of the risk or is seemingly unconcerned. The asset at risk is the customer's information, the threat is anyone on the Internet with malicious intent, and the vulnerability is any technology weakness that allows the information to be observed and captured.</para>
+<para><emphasis role="bold">How to Think About Risk Qualitatively</emphasis></para>
+<para>Risks can be measured both qualitatively and quantitatively.  First, let's discuss the more straightforward and more commonly used qualitative approach. Qualitative measures of high, medium, and low provide the simplest means of assigning values to risk impacts. These measures provide enough of a benchmark to compare impacts across all critical assets. Qualifying risk means understanding the negative impact to the asset as well as the likelihood of the threat.  This impact occurs when the asset is disclosed, modified, destroyed, or access to the asset is interrupted.  To the home user in the scenario above, qualifying the risk means looking at the result and impact of having their personal information disclosed.  Users are probably most concerned with their financial exposure and liability, identity loss, and laws and regulations to which they may be subjected. Users can rate these concerns as high, medium, or low.</para>
+<para>Quantifying the risk means determining the likelihood that the risk will occur.  Here the home user needs to consider the probability of someone performing several different attacks retrieve a user's personal information. This determination takes into account questions such as the following:</para>
+<blockquote><para>How likely is it that someone may observe the information in transit between the home user and the Web site (and possibly decode any encrypted network traffic)?</para>
+<para>How likely is it that the software handling personal information is vulnerable to attack?</para>
+<para>How likely is it that this user will be singled out over all of the other web commerce transactions happening at the seller's web site?</para>
+<para>How likely is it that an attacker might gain access to the information once it has arrived at the seller's Web site?</para></blockquote>
+<para>These are a small sample of the potential risks in this simple transaction.  For the home user to understand these risks, he or she must appreciate the potential impact.  This rests on an understanding of potential threat sources (humans, system problems, viruses, etc.) that may exploit vulnerabilities manifest. This potential is a continuum ranging from negligible to actual, over the life of the information being transmitted, stored, and processed.</para>
+</section>
+<section>
+<title>Information Security Risk</title>
+<para><emphasis role="bold">Information security risk is a type of organizational risk that needs to be managed.</emphasis></para>
+<para><emphasis role="bold">Managing information security risks requires a partnership among</emphasis></para>
+<itemizedlist>
+<listitem><para>all levels of staff </para></listitem>
+<listitem><para>business units and þe IT department</para></listitem>
+<listitem><para>partners </para></listitem>
+<listitem><para>contractors</para></listitem>
+<listitem><para>service providers</para></listitem>
+<listitem><para>end users</para></listitem>
+</itemizedlist>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+<para>Managing risks is already a part of the corporate world. Managing information security risks is just an extension of that. What tends to be forgotten is that information security risks exist at all levels of the enterprise, and cannot be relegated to just the IT department. Improperly designed security controls can make employees' work so difficult that they begin bypassing security controls just to do their jobs.</para>
+<para>Effectively managing information security risks requires cooperation and input from everyone. Do not forget all of your customers, partners, suppliers, end users, service providers, and anyone else who accesses, processes, or in any way interacts with your systems and critical information. </para>
+</section>
+<section>
+<title>Risk Impact</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry>
+<para><emphasis role="bold">Realized security risks may result in the following:</emphasis></para>
+</entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<itemizedlist>
+<listitem><para>oss of reputation and competitive position</para></listitem>
+<listitem><para>Loss of customers</para></listitem>
+<listitem><para>Increase in operating costs and staff hours</para></listitem>
+<listitem><para>Loss of revenue</para></listitem>
+<listitem><para>Loss of life or property</para></listitem>
+<listitem><para>Loss due to monetary fine,aw suit, or regulatory penalty</para></listitem>
+<listitem><para>Loss or compromise of critical information and key technologies</para></listitem>
+<listitem><para>Loss of trust in the organization'systems and networks</para></listitem>
+</itemizedlist>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>Understanding a risk's impact forms the basis for evaluating outcomes of risk: loss, destruction, modification, and interruption. Impact is the realization of a risk.  To evaluate the outcome of a risk, we start by developing evaluation criteria for risk scenarios.</para>
+<para>Let's consider a home user who sets up a personal web server to display his or her resume.  To manage risk, our home user identifies his or her assets, considers the possible negative outcomes, and characterizes the impact of an asset being compromised.  Here, our home user recognizes that one asset is the web server while another is the resume file.  Selecting the resume, the possible negative outcomes to this information asset include the following:</para>
+<itemizedlist>
+<listitem><para>Destruction of the resume file</para></listitem>
+<listitem><para>Modification of the resume content </para></listitem>
+<listitem><para>Pirating the resume data</para></listitem>
+<listitem><para>Interruption of its presentation to the Internet</para></listitem>
+<listitem><para>Our home user should be able to define potential failure conditions, such as the following:</para></listitem>
+<listitem><para>Destruction, causing an expenditure of effort to recover or recreate the information</para></listitem>
+<listitem><para>Modification, causing a prospective employer to consider the candidate either adequate or inadequate for the position, depending on what information was changed</para></listitem>
+<listitem><para>Theft, causing a loss of creative and competitive marketing of the individual's skills or background</para></listitem>
+<listitem><para>Interruption, denying potential employers access to the candidate's information</para></listitem>
+</itemizedlist>
+<para>Finally, the home user must evaluate the impacts, deciding whether he or she really cares about the potential impacts to the assets involved.  If yes, then mitigation strategies should be implemented; if no, then the potential risk impacts are accepted in addition to the consequences of loss or harm should the risk be realized.</para>
+<para>From the perspective of the insurance industry (as reported by The Fidelity and Deposit Companies), risk is categorized as shown below. This is meaningful given that the insurance industry sells "risk transfer" services:</para>
+<itemizedlist>
+<listitem><para>electronic publishing liability</para></listitem>
+<listitem><para>property damage</para></listitem>
+<listitem><para>business interruption</para></listitem>
+<listitem><para>damage to reputation </para></listitem>
+<listitem><para>restoration costs</para></listitem>
+<listitem><para>intellectual property loss</para></listitem>
+<listitem><para>business income loss</para></listitem>
+<listitem><para>extortion</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Risk Management</title>
+<blockquote><para><emphasis role="bold">Risk management is a process used to identify, analyze, and mitigate the risk (comprised of assets, threats, vulnerabilities, and controls); and provide strategies for sustaining the security requirements of an information asset.</emphasis></para></blockquote>
+<para>Risk management should be a well-defined and established process.  Effective risk management can save resources, reduce mishaps, and even save lives.</para>
+</section>
+<section>
+<title>Risk Management Options</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>Organizations have four options when deciding how to manage risks:</para>
+<para><emphasis role="bold">Accept</emphasis></para>
+<para>If an organization chooses to accept risk, it does so with full knowledge of the potential threats and vulnerabilities to the asset.  It may be that the asset's exposure is acceptable or within some level tolerance. For example, an organization recognizes the threat that usernames and passwords could be compromised by administering systems remotely with Telnet, a text-in-the-clear protocol. However, the organization decides that the risk is not great enough to warrant a control (such as encrypted sessions with SSH or IPsec).</para>
+<para><emphasis role="bold">Mitigate</emphasis></para>
+<para>Mitigating risk is actively applying controls to reduce the asset's level of exposure.  In the above Telnet example, the organization could mitigate the risk by (a) denying all administrative traffic to the remote systems that is not encrypted and authenticated, and (b) writing an organizational policy that acts as a deterrent (such as any attempt to compromise access controls on enterprise systems will be met with severe disciplinary action).</para>
+<para><emphasis role="bold">Transfer</emphasis></para>
+<para>Transferring risk occurs when an organization decides to contract with a third party to mitigate the risk. However, keep in mind that the organization continues to own the risk. For example, an organization can transfer the risk of losing data (and support the goal of mission survivability) by contracting with a service provider who maintains an offsite data backup and recovery capability.  Although risk transference does not change probability or severity of a threat, it may decrease the probability or severity of the organization's risk exposure. At a minimum, the organization's risk exposure is greatly decreased or eliminated because the possible losses or costs are shifted to another entity.</para>
+ 
+<para><emphasis role="bold">Avoid</emphasis></para>
+<para>Avoiding risk means that the organization eliminates the asset's exposure or even the asset itself. An example might be the replacement of historically vulnerable platforms (like Internet Information Server) with hardened platforms like Bastille/Apache Web server. </para>
+</section>
+<section>
+<title>Risk Mitigation by Transfer</title>
+<para><emphasis role="bold">Outsourcing risk mitigation</emphasis></para>
+<para><emphasis role="bold">Trust dilemma</emphasis></para>
+<para><emphasis role="bold">Residual risk</emphasis></para>
+<para><emphasis role="bold">Risk Transfer</emphasis></para>
+<para>Because you cannot identify, let alone mitigate, all risks, at some point you have to trust someone or something to take the appropriate action or to function as designed.  For example, you may have to trust people, systems, or programs to handle and operate on information in a manner that meets its security requirements.</para>
+<para>If an organization has transferred risk mitigation to another party such as a managed security service provider (MSSP), the risk has not been completely removed.  The client organization must trust in the effectiveness of the MSSP.  As a result, there is still a residual risk that the MSSP may not be able to meet the expectations of the client all of the time.  The responsibility (and consequences) of transferred risks are still retained by the organization.</para>
+<para>Historically, programming and computer science have been taught in an environment that assumes that trust exists.  As a result, most systems and software currently deployed are not designed to sufficiently guard against breaches of trust that threaten information survivability.</para>
+<para>Do not place blind trust in the individuals and technology that protects information assets. Implement monitoring controls for the risk you have accepted as well as the risk that you currently mitigate.  In fact, monitoring accepted or transferred risks works in the same fashion as monitoring known, mitigated risks.  For monitoring to be effective, risks that are managed or accepted must again be documented and understood by the organization and its employees.</para>
+</section>
+<section>
+<title>Organizational Gap</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></entry>
+<entry><para>
+
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Enterprise Management</emphasis></para>
+<para>- Business</para>
+<para>- Planning</para>
+<para>- Budget</para>
+</entry>
+<entry valign="top">
+<para><emphasis role="bold">Network</emphasis></para>
+<para>- Hack Points</para>
+<para>- Communication</para>
+<para>- Systems Administration</para>
+<para>- Network Support</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>There is a gap in understanding and communication between enterprise management and IT management regarding security.</para>
+<para>Risk evaluation and management help in achieving some degree of institutional learning, such that an organization is able to continue to improve its security posture following a risk evaluation.</para>
+<para>Risk evaluation helps managers to select security solutions within the context of their own business goals and resource and funding constraints.</para>
+</section>
+<section>
+<title>Identifying and Managing Risk</title>
+<para><emphasis role="bold">Requires:</emphasis></para>
+<itemizedlist>
+<listitem><para>Identifying and prioritizing assets</para></listitem>
+<listitem><para>Relating threats and vulnerabilities</para></listitem>
+<listitem><para>Performing risk evaluation</para></listitem>
+<listitem><para>Recognizing risk must be managed</para></listitem>
+</itemizedlist>
+<blockquote><para>Risk can be mitigated, but cannot be eliminated.</para></blockquote>
+<para>Identifying assets involves a discussion within the organization to determine what categories of assets exist, who owns each asset, and what level of protection is necessary for each asset. This exchange of information should happen between the managers, staff, and IT personnel on a periodic basis and as part of the organization's review of its information security policy.  These events enable the organization to identify its current protection strategy for each asset and any changes to the asset's priority as seen by different levels of the organization. Assets may be mission critical, non-critical but sensitive, or general in nature. This discussion aids in prioritizing assets and it should be documented and reflected in organizational policy, procedures, standards, and guidelines (see <emphasis role="bold">Principle 4: Information assurance policy governs actions).</emphasis></para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>Identifying asset threats and vulnerabilities is part of a risk evaluation activity and requires that those who are responsible for protecting the information assets have an appreciation of the range of threats and vulnerabilities.  Once the range is understood, the likelihood of any one threat acting adversely on an asset must be identified.</para>
+<para>The results of a risk evaluation include protection strategies (plans, policies, technological mechanisms) that will help to mitigate identified risks.  For example, an identified risk for a medical organization may be that "modification of paper medical records by unauthorized individuals can lead to loss of life, financial or punitive penalties, or loss of customer confidence."  This risk is stated as a risk scenario that identifies the critical assets (paper medical records), threats to the asset (personnel exceeding their privileges or unauthorized outsiders), outcome (modification of the records), and impact (public safety, financial, customer confidence, legal).  Risk evaluation determines which risks need to be considered and a qualitative measure of their impact (high, medium, low).</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Define terminology and concepts </emphasis></para>
+<itemizedlist>
+<listitem><para>Risk, risk impacts, and risk management</para></listitem>
+<listitem><para><emphasis role="bold">Assets, requirements, threats, vulnerabilities, and controls</emphasis></para></listitem>
+</itemizedlist>
+<para>Risk evaluation</para>
+<itemizedlist>
+<listitem><para>Threat/asset specific</para></listitem>
+<listitem><para>OCTAVE&reg;</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Assets</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Asset: something of value to the enterprise</emphasis></para>
+<itemizedlist>
+<listitem><para>Categories</para></listitem>
+<listitem><para>Information Assets</para></listitem>
+<listitem><para>Technology Assets</para></listitem>
+<listitem><para>Critical Assets</para></listitem>
+<listitem><para>Other Supporting Assets</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>An asset is anything of value to an organization.  Assets can be categorized as information assets (for example, business and customer data), technology assets (hardware, software), and supporting assets (facilities, utilities, services).  Assets in any of these categories may be identified as critical, that is, most important.</para>
+<para>Your organization may choose to categorize assets according to sensitivity or function.  Asset definitions can be highly subjective and asset value even more so. Therefore, another way to approach assets and asset value is to consider the worth of the asset in both quantitative and qualitative terms. By examining an asset's value (qualities of the asset's presence and absence), you may discover a more meaningful categorization approach.</para>
+<para><emphasis role="bold">Information Assets</emphasis></para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para><emphasis role="bold">Information and data repositories</emphasis></para>
+<itemizedlist>
+<listitem><para>Business strategies</para></listitem>
+<listitem><para>Product information</para></listitem>
+<listitem><para>Customer data</para></listitem>
+<listitem><para>Business partner data</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Processes</emphasis></para>
+<para><emphasis role="bold">Key staff knowledge</emphasis></para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Information assets include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Business short term and long term competitive strategies</para></listitem>
+<listitem><para>Sensitive product development and release information</para></listitem>
+<listitem><para>Customer contract and purchasing histories</para></listitem>
+<listitem><para>Data being processed on, stored on, or transmitted between systems</para></listitem>
+<listitem><para>Backup and archive data (on-site and off-site storage volumes and locations)</para></listitem>
+<listitem><para>Paper documents</para></listitem>
+<listitem><para>Escrowed encryption keys</para></listitem>
+<listitem><para>Software distribution media</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Processes that are assets include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Strategic and operational planning</para></listitem>
+<listitem><para>Market analysis</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
+<itemizedlist>
+<listitem><para>Product selection and development</para></listitem>
+<listitem><para>Personnel processes (hiring, termination, compensation)</para></listitem>
+<listitem><para>IT processes (configuration management, change control, release management)</para></listitem>
+</itemizedlist>
+
+<para><emphasis role="bold">Key staff members whose knowledge can be described as an asset include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Senior and middle management</para></listitem>
+<listitem><para>Technical and non-technical staff </para></listitem>
+<listitem><para>Public relations</para></listitem>
+<listitem><para>Help desk, facilities, security, CSIRTs</para></listitem>
+<listitem><para>Contractors, vendors, suppliers, partners</para></listitem>
+<listitem><para>Government, police, fire fighters </para></listitem>
+</itemizedlist>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Technology Assets (aka Containers</emphasis></para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Hardware</emphasis></para>
+<itemizedlist>
+<listitem><para>Desktops</para></listitem>
+<listitem><para>Laptops</para></listitem>
+<listitem><para>Mobile devices</para></listitem>
+<listitem><para>Servers</para></listitem>
+<listitem><para>Routers</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Software</emphasis></para>
+<itemizedlist>
+<listitem><para>Operating systems</para></listitem>
+<listitem><para>Other system software</para></listitem>
+<listitem><para>System configurations</para></listitem>
+<listitem><para>Services</para></listitem>
+<listitem><para>Applications and tools (COTS, custom)</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Technology Assets (aka Containers)</emphasis></para>
+<para><emphasis role="bold">Hardware assets include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Desktop and laptop computers</para></listitem>
+<listitem><para>Mobile devices (PDAs, cell phones)</para></listitem>
+<listitem><para>Servers</para></listitem>
+<listitem><para>Mainframes</para></listitem>
+<listitem><para>Network equipment (routers, switches, firewalls)</para></listitem>
+<listitem><para>Wiring infrastructure</para></listitem>
+<listitem><para>Wireless support infrastructure</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
+<para><emphasis role="bold">Software assets include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Commercial off-the-shelf (COTS) software</para></listitem>
+</itemizedlist>
+<para>-	Operating systems</para>
+<para>-	Desktop software</para>
+<para>-	Mainframe applications</para>
+<itemizedlist>
+<listitem><para>Custom software</para></listitem>
+</itemizedlist>
+<para>-	In-house development</para>
+<para>-	Outsourced development</para>
+<para>-	Ad hoc scripts</para>
+<para>-	Undocumented tools used by employees</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Supporting Assets </emphasis></para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Facilities</emphasis></para>
+<para><emphasis role="bold">Utilities</emphasis></para>
+<para><emphasis role="bold">Outsourced Services</emphasis></para>
+</entry>
+<entry valign="top">
+<para>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Facilities include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Physical space</para></listitem>
+<listitem><para>Heating/ventilation/air conditioning (HVAC) support</para></listitem>
+<listitem><para>Power</para></listitem>
+<listitem><para>Water</para></listitem>
+<listitem><para>Telephone</para></listitem>
+<listitem><para>Security</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Utilities include the following:</emphasis></para>
+<itemizedlist>
+<listitem><para>Power</para></listitem>
+<listitem><para>Water</para></listitem>
+<listitem><para>Telephone</para></listitem>
+</itemizedlist>
+<para>- Leased lines (T1, T3, ISDN)</para>
+<para>- Voice lines</para>
+<para>- Cell phones</para>
+</entry>
+<entry valign="top">
+<itemizedlist>
+<listitem><para>Pager services</para></listitem>
+<listitem><para>Service level agreements</para></listitem>
+</itemizedlist>
+<para>- Hardware maintenance</para>
+<para>- HVAC support</para>
+<itemizedlist>
+<listitem><para>Outsourced services include the following:</para></listitem>
+<listitem><para>Off-site IT services</para></listitem>
+</itemizedlist>
+<para>- Information storage</para>
+<para>- Web services</para>
+<itemizedlist>
+<listitem><para>Consultants</para></listitem>
+<listitem><para>Utilities</para></listitem>
+<listitem><para>Legal services</para></listitem>
+<listitem><para>Public relations</para></listitem>
+<listitem><para>Managed or monitored security</para></listitem>
+</itemizedlist>
+<para>- Physical</para>
+<para>- Network</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Critical Assets</emphasis></para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">A large, adverse impact occurs if the asset is</emphasis></para>
+<itemizedlist>
+<listitem><para>Disclosed to unauthorized people</para></listitem>
+<listitem><para>Modified without authorization</para></listitem>
+<listitem><para>Lost</para></listitem>
+<listitem><para>Destroyed</para></listitem>
+<listitem><para>Inaccessible </para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Require the greatest level of protection and investment</emphasis></para>
+<para>Critical assets are assets that have an integral relationship with the mission of the organization.  This means that loss or damage to a critical asset would cause disruption to the operational or functional mission of the organization to a point where the mission could fail.  Each organization defines a unique set of critical assets that align with mission success or failure.</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Examples of critical assets include the following:</para>
+<itemizedlist>
+<listitem><para>Intellectual property</para></listitem>
+</itemizedlist>
+<para>- Patents, copyrights</para>
+<para>- Software under development</para>
+<para>- Systems acquisition or development projects</para>
+<itemizedlist>
+<listitem><para>Corporate financial data</para></listitem>
+</itemizedlist>
+<para>- Payroll information by employee, department, organization</para>
+<para>- Financial earnings, revenue, and loss statements</para>
+<para>- Stock dividend information</para>
+<itemizedlist>
+<listitem><para>Customer sales information</para></listitem>
+</itemizedlist>
+<itemizedlist>
+<listitem><para>-Names, addresses, credit card/account numbers, purchase histories, demographic information</para></listitem>
+<listitem><para>Human resource information</para></listitem>
+</itemizedlist>
+<para>-Names of employees, departments, salaries</para>
+</entry>
+<entry valign="top">
+<para>- Hiring, administrative punishment, and disability information</para>
+<itemizedlist>
+<listitem><para>Network architecture information</para></listitem>
+</itemizedlist>
+<para>- Network topology diagrams</para>
+<para>- Desktop or systems replacement plans</para>
+<para>- Strategic infrastructure plans</para>
+<para>- Vulnerability assessment reports</para>
+<para>- Types and locations of infrastructure (general purpose, storage, server, networking, and security devices)</para>
+<para>U.S. Government or military classified information</para>
+<para>- Compartmentalized information</para>
+<para>- Deployment and strategic plans</para>
+<para>- Intelligence information, logistic movements/support</para>
+<para>- Technical specifications on equipment, weapons, projects</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Security Requirements</emphasis></para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Each asset has requirements for confidentiality, integrity, and availability that should be</emphasis></para>
+<itemizedlist>
+<listitem><para>Communicated</para></listitem>
+<listitem><para>Detailed</para></listitem>
+<listitem><para>Documented</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>Each asset has requirements for confidentiality, integrity, and availability that should be</para>
+<itemizedlist>
+<listitem><para>Communicated throughout the organization, especially from the owner of the asset to the person(s) responsible for its safety and security</para></listitem>
+<listitem><para>Detailed, explaining under what conditions and to what degree the requirements must be enforced</para></listitem>
+<listitem><para>Documented, describing the requirements, the responsible owner(s), and party charged with its protection</para></listitem>
+</itemizedlist>
+<para>Security requirements should be understood at all levels of the organization and by all roles involved in the asset's protection.  They should be described with enough detail for a specific requirement to be allocated to the responsible owner (manager, user, system/security administrator, etc.) or the technology protecting the asset.  They should be documented in security policies, plans, and procedures. Refer to Principle 10: Communication skill is critical to reach all constituencies.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</section>
+<section>
+<title>IA Regulations and Standards</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para><emphasis role="bold">Additional Sources of Security Requirements</emphasis></para>
+<itemizedlist>
+<listitem><para>National legislation</para></listitem>
+<listitem><para>Insurance industry requirements</para></listitem>
+<listitem><para>Customer demand</para></listitem>
+<listitem><para>E-torts and e-pacts</para></listitem>
+</itemizedlist>
+<para>The following are examples of legislation that influence security requirements:</para>
+<blockquote><para>The Information Technology Management Reform Act (ITMRA) of 1996 is also known as the Clinger Cohen Act and primarily affects federal government agencies.</para>
+<para>The Health Insurance Portability and Accountability Act (HIPAA) of 1997 addresses the handling of patient information. Many academic institutions have associated medical facilities and student health centers so are subject to HIPAA.</para>
+<para>The Child Online Privacy Protection Act (COPPA) of 1998 requires certain commercial Web sites to obtain parental consent before collecting, using, or disclosing personal information from children under 13.</para>
+<para>The Gramm-Leach-Bliley Act of 1999 applies to financial institutions and protects customer data and privacy.</para>
+<para>The Sarbanes-Oxley Act of 2002 was created in response to accounting improprieties such as Enron's. CEOs and CFOs are required to inform their directors of significant internal control deficiencies that could adversely affect their ability to report financial data. "Major accounting firms now recommend that clients disclose their security plans in much the same way they disclose financial performance" [Leibs 03]</para>
+<para>Per Dave McCurdy, EIA president, directors' and officers' insurance rates double after the Enron indictment</para>
+<para>A California law (effective 7/1/03) requires businesses that own databases to disclose security breaches if certain personal information was or may have been compromised. [A number of other states have enacted or are considering enacting similar laws.  See http://www.pirg.org/consumer/credit/statelaws.htm#breach for information.]</para>
+<para>"Expected to come into force in 2004, the Basel II Capital Accords require financial services firms to explicitly set aside cash reserves to cover operational and market risk. This is in addition to reserves required for credit risk. Digital security comprises a significant portion of operational risk. Firms that can demonstrate effective management of their e-business portfolio risk will be allowed to reduce the amount of operational set-aside. Therefore, better application security will - literally - be like money in the bank." [Jacquith 02]</para></blockquote>
+<para>E-torts: non-contractual and non-statutory claims for injuries arising from any one or more e-risks E-pacts: contractual terms used to define contractual rights to property and limited rights or remedies</para>
+<para>Having to meet emerging IA regulations and standards will affect your organization and its ability to conduct ongoing business operations if it isn't already. Your security standard of due care/due diligence will affect your insurance rates.</para>
+</section>
+<section>
+<title>Threats, Vulnerabilities, and Controls</title>
+<para><emphasis role="bold">Controls</emphasis></para>
+<para>A control is a safeguard or countermeasure employed to reduce the risk associated with a specific threat or group of threats as in the following examples:</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Access Control technologies</para>
+<para>Firewalls</para>
+<para>Access Control Lists on files and directories</para>
+<para>Physical security systems like locks and card scanners</para>
+<para>Encryption technologies</para>
+</entry>
+<entry valign="top">
+<para>Redundancy in Systems</para>
+<para>Clustered servers</para>
+<para>Redundant sources of power and HVAC</para>
+<para>Cross-utilization and training of IT personnel</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Threats</emphasis></para>
+<para>A threat is any event that will cause an undesirable impact or loss to an organization if it occurs.  Examples of threats include the following:</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead> 
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Intrusions and disruptions to information systems</para>
+<para>Viruses, Worms, and Trojan Horses</para>
+<para>Denials of Service</para>
+<para>Sniffing network traffic</para>
+<para>Stealing data assets</para>
+</entry>
+<entry valign="top">
+<para>Loss of assets that are single points of failure</para>
+<para>Critical data that is not backed up</para>
+<para>Single, critical piece of network infrastructure (i.e. a core router)</para>
+<para>Keys that are used to encrypt critical data</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para><emphasis role="bold">Vulnerabilities</emphasis></para>
+<para>A vulnerability is the absence or weakness of a safeguard.  It can also be described as a weakness in an asset or the methods of ensuring that the asset is survivable.  Examples of vulnerabilities include the following:</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Software and hardware flaws</para>
+<para>Buffer overflows</para>
+<para>Weak default configurations</para>
+<para>Under-engineered hardware (i.e., not enough memory, disk space, etc.)</para>
+</entry>
+<entry valign="top">
+<para>Lack of policies and procedures</para>
+<para>Undefined access controls</para>
+<para>Lack of documentation</para>
+<para>Users unaware of survivability issues</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>For system and network administrators, the most readily identifiable sources of risk are threat and vulnerability.  The loss or impact of an event (caused by inappropriate, accidental, negligent, or intentional acts) result from threats exploiting vulnerabilities, creating and outcome of disclosure, modification, destruction, or interruption of access to an asset.</para>
 </section>
 </article>
