@@ -15,7 +15,7 @@
 </copyright>
 </articleinfo>
 <section>
-<title>Prinple 4: Information Assurance Policy Governs Action</title>
+<title>Principle 4: Information Assurance Policy Governs Action</title>
 <para>&syllabusBegin;</para>
 <para>This module introduces Principle 4: Information assurance policy governs actions.</para>
 <para>The following discussion of security practices is an excerpt from The CERT Guide to System and Network Security Practices [Allen 01]:</para>
@@ -65,7 +65,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/takeaction_1.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -78,7 +78,6 @@
 <para><emphasis role="bold">Enumerate characteristics of an effective policy</emphasis></para>
 <para><emphasis role="bold">Describe an administrator's role in policy formulation and implementation</emphasis></para>
 <para><emphasis role="bold">Describe what general questions a user should be able to answer with respect to IA policy</emphasis></para>
-
 <para>An administrator's job, in large part, is to keep the enterprise's computing infrastructure up and running in a secure manner. But what does this mean? Security policy guides both this process and an administrator's decisions and actions by defining requirements that must be fulfilled. Some occasions when a security policy could help guide actions include the following:</para>
 <itemizedlist>
 <listitem><para>adding new users to the system or removing users no longer employed by the enterprise</para></listitem>
@@ -86,8 +85,16 @@
 <listitem><para>configuring a firewall or intrusion detection system including what traffic should be blocked and what alerts are high priority</para></listitem>
 <listitem><para>monitoring system, network, file and directory, and user activities including determining what constitutes suspicious behavior</para></listitem>
 </itemizedlist>
-<para><emphasis role="bold">Principle 6:</emphasis> Survivable Functional Units are a helpful way to think about an enterprise's networks describes a method by which systems and networks can be constructed to provide reliable service that reflects enterprise policy.</para>
-
+<para><emphasis role="bold">Principle 6: Survivable Functional Units are a helpful way to think about an enterprise's networks</emphasis> describes a method by which systems and networks can be constructed to provide reliable service that reflects enterprise policy.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin6-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
 <para>Policies, when written properly, clearly articulate roles, responsibilities, and authority to act, and, as a result, protect and guide administrators.</para>
 <para>This lecture will assist an administrator in answering the following questions:</para>
 <itemizedlist>
@@ -149,31 +156,27 @@
 <para>Security requirements are satisfied by</para>
 
 <itemizedlist>
-<listitem><para>performing asset and risk evaluation as described in Principle 3: Not all data is of equal value - risk must be managed </para></listitem>
-<listitem><para>establishing, deploying, maintaining, and enforcing information assurance policies</para></listitem>
-</itemizedlist>
-<para>
+<listitem><para>performing asset and risk evaluation as described in <emphasis role="bold">Principle 3: Not all data is of equal value - risk must be managed</emphasis>
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/prin3-logo.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
-</para>
-<itemizedlist>
-<listitem><para>defining, deploying, and maintaining a technology roadmap for policy implementation that is reflected in infrastructure design and operations as outlined in Principle 8: The road map guides implementation choices (all technology is not equal) </para></listitem>
+</para></listitem>
+<listitem><para>establishing, deploying, maintaining, and enforcing information assurance policies</para></listitem>
+<listitem><para>defining, deploying, and maintaining a technology roadmap for policy implementation that is reflected in infrastructure design and operations as outlined in <emphasis role="bold">Principle 8: The road map guides implementation choices (all technology is not equal)</emphasis>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin8-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></listitem>
 <listitem><para>ensuring that roles and responsibilities are clearly defined including those of administrators</para></listitem>
 </itemizedlist>
-<para>
-<screenshot>
-<mediaobject>
-<imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
-</imageobject>
-</mediaobject>
-</screenshot>
-</para>
 <para>Security requirements derive from an enterprise's mission and business objectives. These objectives provide a strategic understanding of what information assets need to be protected from compromise, damage, and loss. Performing risk management adds clarity and detailed guidance for information asset protection. Risk assessment (as part of risk management) is used to identify critical assets, identify threats to those assets, and formulate asset protection strategies based on identified risks. The presence of security policies demonstrates due diligence in the protection of information assets, which is critical for mitigating legal liability.</para>
 <para>Using explicit and implicit security requirements and the enhanced understanding resulting from risk management processes, responsible parties can develop and maintain security policies and responsive infrastructure designs that satisfy these requirements.</para>
 <para>Information assurance and security are requirements of infrastructure design, not "after the fact" add-ons. IA policies cannot be directly implemented; they are typically too high level. Policy requirements are further defined in standards, guidelines, and procedures. These artifacts are reflected in design decisions and are made real in an operational infrastructure through subsequent detailed design activities, development, and technology selection and implementation. There is a logical progression of actions for administrators to take; a roadmap can assist them in ordering and prioritizing such actions.</para>
@@ -181,6 +184,15 @@
 </section>
 <section>
 <title>Importance of IA Policy</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/alarm_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
 <para>As a case in point, it is essential that those responsible for your enterprise's information assets be adequately prepared to know what constitutes a breach to security and to detect if any such breaches have occurred. Without advance planning, policy deployment, and preparation, it is difficult, if not impossible, to determine</para>
 <itemizedlist>
 <listitem><para>if there has been-or still is-an intruder</para></listitem>
@@ -194,17 +206,25 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/prin7-logo.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
 </para>
-
 <para>Federal, state, and local laws and regulations with which you need to comply are constantly evolving. New and updated technologies are regularly released. Intruder attack methods and the damage they cause are constantly evolving, posing new threats to your information assets. So as part of conducting normal day-to-day business, you need to have processes in place to keep IA policies and their implementation up to date. These changes serve as immediate, updated "marching orders" for the way the enterprise does business [Allen 01].</para>
 <para>Having an effective IA policy in place should be considered a prerequisite for being in business. Buying and installing security solutions such as firewalls and intrusion detection systems while having bad policies or no policies is like having cops, courts, and prisons, but no laws [McBride 02].</para>
 </section>
 <section>
 <title>Policies Defined</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/brokencolumn_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
 <para><emphasis role="bold">Senior Management Statement of Policy</emphasis></para>
 <itemizedlist>
 <listitem><para>Acknowledgement</para></listitem>
@@ -246,17 +266,44 @@
 </section>
 <section>
 <title>Policy Elements</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">Standards</emphasis></para>
-<blockquote><para>Use of specific technologies and configurations</para></blockquote>
+<para>- Use of specific technologies and configurations</para>
 <para><emphasis role="bold">Guidelines</emphasis></para>
-<blockquote><para>Methods for securing systems</para></blockquote>
+<para>- Methods for securing systems</para>
 <para><emphasis role="bold">Procedures</emphasis></para>
-<blockquote><para>Detailed steps to follow</para></blockquote>
+<para>- Detailed steps to follow</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/policyround_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>Policies are considered the first and highest level of documentation and are distinct from standards, guidelines and procedures. Standards, guidelines, and procedures contain the details of the policy, thereby interpreting and implementing policy. Generally, policies should be broad enough so that the underlying standards, guidelines, and procedures can be changed without having to change the overall policy.</para>
 <para>These three elements of a policy are separate yet related. Many companies create one document that addresses all of these. However, each element serves a different function and is intended for different audiences so it is best to treat and package them separately. This modular approach eases the policy review and update process. </para>
 <para>A <emphasis role="bold">standard</emphasis> is typically a collection of system- or procedure-specific requirements that must be met by everyone [SANS 01].  Standards ensure the consistent deployment and uniform use of selected technologies. Using standards reduces unnecessary complexity that can be caused by numerous solutions to the same requirement. Standards often reflect an architectural or configuration baseline that is defined to ensure security is being implemented consistently throughout the enterprise. For example, "All systems shall use a Windows 2000 professional or later operating system and shall be configured to connect to the enterprise domain.," "All Windows 2000 servers shall be configured to only provide the services for which they are intended. All other services shall be disabled or deleted."</para>
 <para><emphasis role="bold">Guidelines</emphasis> are a collection of system or procedural recommendations for best practice [SANS 01]. They are not requirements to be met but are strongly recommended. Guidelines take into account the varying nature of information systems. Guidelines may be used to indicate how standards are developed. Effective security policies make frequent references to standards and guidelines that exist within an enterprise. For example, "To avoid losing data, all users should save their important files to their designated network directory/share at regular intervals (daily, weekly)."</para>
-<para>Some policies, such as password policies, may include both standards and guidelines. Such guidelines are intended to be mandatory and carry consequences for non-compliance. An example policy that contains both standards and guidelines can be found at the following URL: http://www.sans.org/resources/policies/Password_Policy.pdf [SANS 05a]</para>
+<para>Some policies, such as password policies, may include both standards and guidelines. Such guidelines are intended to be mandatory and carry consequences for non-compliance. An example policy that contains both standards and guidelines can be found at the following URL: <ulink url="http://www.sans.org/resources/policies/Password_Policy.pdf">http://www.sans.org/resources/policies/Password_Policy.pdf</ulink> [SANS 05a]</para>
 <para><emphasis role="bold">Procedures</emphasis> contain the detailed steps that are followed to perform a specific task. The purpose of procedures, the lowest level in the policy documentation hierarchy, is to provide direction for implementing policies, standards, and guidelines. For example, procedures may include methods for proper handling of sensitive information and instructions for what to do in the event of an information security incident.</para>
 <para>Well-documented procedures are critical to ensuring the survivability of an enterprise's information assets. Step-by-step instructions for routine tasks like system backups and restores, making changes to firewall access control rules, etc. should be followed, reviewed, and updated as needed. Having and using procedures provides continuity when key staff members depart.</para>
 </section>
@@ -272,7 +319,16 @@
 </section>
 <section>
 <title>IA Policy Stakeholders and Contributors</title>
-<para>The following excerpt from The CERT Guide to System and Network Security Practices discusses the importance of stakeholders and contributors to IA policies [Allen 01]:</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/policycontent_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>The following excerpt from <emphasis>The CERT Guide to System and Network Security Practices</emphasis> discusses the importance of stakeholders and contributors to IA policies [Allen 01]:</para>
 <blockquote><para>As a general rule, policies are more successful if they are developed in cooperation with the people to whom they apply. Users, for example, are in the best position to evaluate how various policy statements might affect how they perform their work. Although <emphasis role="bold">middle or senior managers</emphasis> may be responsible for setting overall information security policies, they need to collaborate with <emphasis role="bold">administrators, IT staff, security staff,</emphasis> and <emphasis role="bold">users</emphasis> in order to define reasonable technological and procedural protection measures for information assets.</para>
 <para>When a new policy is first adopted in an established enterprise, not everyone will want to make the behavioral changes to comply with it. The responsible executive must be sure to explain the motivation for the policy. Peers, including those who participated in the development of the policy, can help accomplish this.</para>
 <para>The single most commonly expressed barrier to an effective information security program's adoption (including security policies) is the absence of visible, active <emphasis role="bold">senior executive</emphasis> sponsorship. The role of senior managers is to actively sponsor and endorse security policies. They make the connection between policies and the enterprise's mission and objectives. They generate awareness through words and actions, thereby reinforcing the importance of security policies. They assign enterprise ownership and responsibility for critical assets.</para></blockquote>
@@ -293,13 +349,11 @@
 <para><emphasis role="bold">Other IT staff</emphasis> (excluding administrators) are often involved in policy formulation and review based on the topic under consideration. If they have responsibility for a critical asset (such as a customer database) or are on the firing line responding to user questions and complaints (such as help desk staff), they need to have a voice in how policies are described and implemented, much the same as affected users.</para>
 <para><emphasis role="bold">Outside parties</emphasis> (such as vendors, contractors, partners, and suppliers) have a role to play in policy formulation in areas that describe third-party access to networks and data. Outside parties that can access your enterprise's networks need to demonstrate their ability to comply with your policies.</para>
 <para><emphasis role="bold">Administrators</emphasis> play the critical role of ensuring that policy language is clear and can be implemented at a reasonable cost. Administrators need to ensure that policies they require to do their jobs exist and are comprehensive, complete, and accurate. One example is administrators' authority to act in the event of security incidents (including different actions for different types of incidents) and where they need to obtain management concurrence before taking these actions [Wood 05b].</para>
-<para>See also <emphasis role="bold">Principle 10: Communication skill is critical to reach all constituencies</emphasis>, for additional guidance on crafting messages for various constituencies.</para>
-<para>
-
+<para>See also <emphasis role="bold">Principle 10: Communication skill is critical to reach all constituencies</emphasis>, for additional guidance on crafting messages for various constituencies.
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/prin10-logo.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -349,6 +403,184 @@
 </section>
 <section>
 <title>Example IA Policy Topics</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/accountability_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/authorization_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/purchasing_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/identification_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/privacy_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/riskreduction_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/acceptableuse_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/resources_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/violationreporting_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>                                                                                                                                                <imageobject>
+<imagedata fileref="images/communications_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>                                                                                                                                                </para>
+</entry>                                                                                                                                                     <entry valign="top">                                                                                                                                         <para>                                                                                                                                                       <screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/redundancy_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/access_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>                                                                                                                                                <imageobject>
+<imagedata fileref="images/auditing_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>                                                                                                                                                </para>
+</entry>                                                                                                                                                     <entry valign="top">                                                                                                                                         <para>                                                                                                                                                       <screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/authentication_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/availabilityi_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>The policy topics that your enterprise chooses to address depend on your mission, objectives, requirements, and needs. The topics indicated above are a candidate set, examples of which can be found in a number of sources.</para>
 <para>Policy topics suggested by the IETF's Site Security Handbook [Fraser 97] include the following:</para>
 <blockquote>
@@ -456,6 +688,17 @@
 </section>
 <section>
 <title>Acceptable Use Policy Topics</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">Compliance with your password policy</emphasis></para>
 <para><emphasis role="bold">Hardware changes a user may or may not make</emphasis></para>
 <itemizedlist>
@@ -477,6 +720,22 @@
 <listitem><para>Disruption of service</para></listitem>
 <listitem><para>Conduct of personal business</para></listitem>
 </itemizedlist>
+</entry>
+<entry valign="bottom">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/acceptablecheck_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>The purpose of an acceptable use policy is to identify and encourage user behavior that can enhance security and discourage or prohibit user behavior that can reduce or breach security. Users need to know the information assets that require protection and their responsibilities with respect to that protection. The security of many computing assets (desktops, laptops, peripherals, personal digital assistants, etc.) and their access to an enterprise's infrastructure are ultimately the responsibility of users. If users don't understand their security responsibilities and the enterprise's expectations, the technological measures used to enforce security policies will likely be ineffective [Allen 01].</para>
 <para>An acceptable use policy describes what a user is authorized to do and not do as a computer professional, and the conditions under which a user can act with authority.</para>
 <para>In addition to the topics listed above, additional acceptable use topics include the following:</para>
@@ -557,6 +816,17 @@
 </section>
 <section>
 <title>What Administrators Need to Know</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">IA goals and tradeoffs</emphasis></para>
 <para><emphasis role="bold">What IA policies exist and what additional topics need to be addressed in policy </emphasis></para>
 <para><emphasis role="bold">Role with respect to policy</emphasis></para>
@@ -566,6 +836,22 @@
 <listitem><para>(Potentially) Trainer </para></listitem>
 <listitem><para>Mentor for new administrators</para></listitem>
 </itemizedlist>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/manyhats_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>An administrator's security goals are largely determined by the following key tradeoffs [Fraser 97]:</para>
 <orderedlist>
 <listitem><para>Services offered versus security provided - Each service offered to users carries its own security risks. For some services, the risk outweighs the benefit of the service and the administrator may choose to eliminate the service rather than try to secure it.</para></listitem>
@@ -614,6 +900,17 @@
 </section>
 <section>
 <title>IA Policy Knowledge</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">Any user (all levels, all privileges) should be able to answer the following questions:</emphasis></para>
 <itemizedlist>
 <listitem><para>Where are your enterprise's IA policies defined?</para></listitem>
@@ -624,16 +921,59 @@
 <listitem><para>To whom do you submit suggested IA policy changes?</para></listitem>
 </itemizedlist>
 <para><emphasis role="bold">Can you answer these for your enterprise?</emphasis></para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/threepeople_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>For security policy to be part of an enterprise's way of doing business, senior managers, middle managers, security trainers, security staff, and administrators must periodically ask all users (and themselves) these questions and receive satisfactory and correct responses. Indications of lack of awareness and knowledge serve as a signal for improvements in the security training program.</para>
 </section>
 <section>
 <title>Summary</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">Understand policy principles and characteristics</emphasis></para>
 <para><emphasis role="bold">Identify and involve stakeholders and contributors</emphasis></para>
 <para><emphasis role="bold">Incorporate important policy characteristics and use relevant examples</emphasis></para>
 <para><emphasis role="bold">Recognize that policies need to managed according to a life cycle</emphasis></para>
 <para><emphasis role="bold">Be informed about what administrators need to know</emphasis></para>
 <para><emphasis role="bold">Make sure users can demonstrate their knowledge of IA policy</emphasis></para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/review_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para><emphasis role="bold">Discussion  20 minutes</emphasis></para>
