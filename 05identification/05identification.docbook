@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 <!ENTITY % instructor "IGNORE">
-<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
-<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
-<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
-<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
 <!ENTITY techBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/tech-begin.jpg'/></imageobject></mediaobject></screenshot>">
 <!ENTITY techEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/tech-end.jpg'/></imageobject></mediaobject></screenshot>">
 ]>

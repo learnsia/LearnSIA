@@ -72,9 +72,9 @@
 <title>Topics</title>
 <para><emphasis role="bold">Everything is data</emphasis></para>
 <para><emphasis role="bold">Information security model</emphasis></para>
-<para><emphasis role="bold">Acheiving Data Confidentiality</emphasis></para>
-<para><emphasis role="bold">Acheiving Data Integrity</emphasis></para>
-<para><emphasis role="bold">Acheiving Data Availability</emphasis></para>
+<para><emphasis role="bold">Achieving Data Confidentiality</emphasis></para>
+<para><emphasis role="bold">Achieving Data Integrity</emphasis></para>
+<para><emphasis role="bold">Achieving Data Availability</emphasis></para>
 <para><emphasis role="bold">Data Review and Summary</emphasis></para>
 <para></para>
 <para>This is the set of topics for this module.</para>
@@ -83,9 +83,9 @@
 <title>Topics</title>
 <para><emphasis role="bold">Everything is data</emphasis></para>
 <para>Information security model</para>
-<para>Acheiving Data Confidentiality</para>
-<para>Acheiving Data Integrity</para>
-<para>Acheiving Data Availability</para>
+<para>Achieving Data Confidentiality</para>
+<para>Achieving Data Integrity</para>
+<para>Achieving Data Availability</para>
 <para>Data Review and Summary</para>
 <![%instructor;[
 <para>&instructBegin;</para>
@@ -163,9 +163,9 @@
 <title>Topics</title>
 <para>Everything is data</para>
 <para><emphasis role="bold">Information security model</emphasis></para>
-<para>Acheiving Data Confidentiality</para>
-<para>Acheiving Data Integrity</para>
-<para>Acheiving Data Availability</para>
+<para>Achieving Data Confidentiality</para>
+<para>Achieving Data Integrity</para>
+<para>Achieving Data Availability</para>
 <para>Data Review and Summary</para>
 </section>
 <section>
@@ -220,7 +220,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="images/info_states.jpg"/>
+<imagedata fileref="images/infosecproperties.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -231,7 +231,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/info_states.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -251,7 +251,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/sec_measures.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -265,7 +265,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/infosec_model2_1.jpg"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -278,9 +278,9 @@
 <title>Topics</title>
 <para>Everything is data</para>
 <para>Information security model</para>
-<para><emphasis role="bold">Acheiving Data Confidentiality</emphasis></para>
-<para>Acheiving Data Integrity</para>
-<para>Acheiving Data Availability</para>
+<para><emphasis role="bold">Achieving Data Confidentiality</emphasis></para>
+<para>Achieving Data Integrity</para>
+<para>Achieving Data Availability</para>
 <para>Data Review and Summary</para>
 <para>In your house, everything is valuable to someone, even your most insignificant property. For example, to a jewel thief, your jewelry is valuable; to a person who has not eaten in a while, the contents of your refrigerator are valuable. The bottom line is that all of your property is important to someone and it all needs to be secured against various threats. The key here is to recognize that everything in your house is property and worthy of your security attention.</para>
 <para>Confidentiality refers to assurance that information can be read and interpreted only by persons and processes explicitly authorized to do so. Protecting confidentiality involves implementing procedures and measures to prevent malicious and accidental disclosure of information to unauthorized readers. Information that could be considered confidential is commonly called sensitive information.</para>
@@ -575,9 +575,9 @@
 <title>Topics</title>
 <para>Everything is data</para>
 <para>Information security model</para>
-<para>Acheiving Data Confidentiality</para>
-<para><emphasis role="bold">Acheiving Data Integrity</emphasis></para>
-<para>Acheiving Data Availability</para>
+<para>Achieving Data Confidentiality</para>
+<para><emphasis role="bold">Achieving Data Integrity</emphasis></para>
+<para>Achieving Data Availability</para>
 <para>Data Review and Summary</para>
 <para>Integrity of information is about assuring information remains intact, correct, and authentic. Protecting the integrity of data involves preventing and detecting unauthorized creation, modification, or destruction of information. (Example: implementing measures to verify that e-mail content was not modified in transit.)</para>
 <para>This module discusses some of the issues and methods involved with ensuring the integrity of data in a computer network.</para>
@@ -683,7 +683,7 @@
 <para>The MD5 algorithm, which can be implemented in as little as 8 lines of PERL code, is a very simple and compact algorithm. Because of the size of the hash, it is very secure and difficult to "crack." In addition, because of the complex nature of the algorithm, and because every bit of hash is dependent on every bit of the message being hashed, it is not susceptible to attacks.</para>
 <para><emphasis role="bold">SHA-1</emphasis></para>
 <para>The following is an excerpt from FIPS 180-1, which is the standard for SHA-1:</para>
-<para>Explanation: This Standard specifies a Secure Hash Algorithm, SHA-1, for computing a condensed representation of a message or a data file. When a message of any length < 264 bits is input, the SHA-1 produces a 160-bit output called a message digest. The message digest can then be input to the Digital Signature Algorithm (DSA) which generates or verifies the signature for the message. Signing the message digest rather than the message often improves the efficiency of the process because the message digest is usually much smaller in size than the message. The same hash algorithm must be used by the verifier of a digital signature as was used by the creator of the digital signature.</para>
+<para>Explanation: This Standard specifies a Secure Hash Algorithm, SHA-1, for computing a condensed representation of a message or a data file. When a message of any length &lt; 264 bits is input, the SHA-1 produces a 160-bit output called a message digest. The message digest can then be input to the Digital Signature Algorithm (DSA) which generates or verifies the signature for the message. Signing the message digest rather than the message often improves the efficiency of the process because the message digest is usually much smaller in size than the message. The same hash algorithm must be used by the verifier of a digital signature as was used by the creator of the digital signature.</para>
 <para>The SHA-1 is called secure because it is computationally infeasible to find a message which corresponds to a given message digest, or to find two different messages which produce the same message digest. Any change to a message in transit will, with very high probability, result in a different message digest, and the signature will fail to verify. SHA-1 is a technical revision of SHA (FIPS 180).</para>
 </section>
 <section>
@@ -741,11 +741,11 @@
 <title>Topics</title>
 <para>Everything is data</para>
 <para>Information security model</para>
-<para>Acheiving Data Confidentiality</para>
-<para>Acheiving Data Integrity</para>
-<para><emphasis role="bold">Acheiving Data Availability</emphasis></para>
+<para>Achieving Data Confidentiality</para>
+<para>Achieving Data Integrity</para>
+<para><emphasis role="bold">Achieving Data Availability</emphasis></para>
 <para>Data Review and Summary</para>
-<para>Availability refers to assurance that authorized users can access and work with information assets, resources, and systems when needed with sufficient response and performance. Protectingavailability involves measures to sustain accessibility to information in spite of possible sources of interference, including system failures and deliberate attempts to obstruct availability. (Example: Access to and throughput of e-mail service.)</para>
+<para>Availability refers to assurance that authorized users can access and work with information assets, resources, and systems when needed with sufficient response and performance. Protecting availability involves measures to sustain accessibility to information in spite of possible sources of interference, including system failures and deliberate attempts to obstruct availability. (Example: Access to and throughput of e-mail service.)</para>
 <informaltable frame="none" pgwide="0">
 <tgroup cols="3" rowsep="1">
 <thead>
@@ -1456,9 +1456,9 @@ power supply, etc.)</para></listitem>
 <title>Topics</title>
 <para>Everything is data</para>
 <para>Information security model</para>
-<para>Acheiving Data Confidentiality</para>
-<para>Acheiving Data Integrity</para>
-<para>Acheiving Data Availability</para>
+<para>Achieving Data Confidentiality</para>
+<para>Achieving Data Integrity</para>
+<para>Achieving Data Availability</para>
 <para><emphasis role="bold">Data Review and Summary</emphasis></para>
 </section>
 <section>
@@ -1501,6 +1501,6 @@ power supply, etc.)</para></listitem>
 </section>
 <section>
 <title>Exam</title>
-<para>Exam on Everythig Is Data</para>
+<para>Exam on Everything Is Data</para>
 </section>
 </article>
