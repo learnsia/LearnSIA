@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+  <holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Not all data is of equal value-risk must be managed.</emphasis></para>
+
+<para>These are the exam questions for Principle 3: Not all data is of equal value-risk must be managed.</para>
+
+<qandaset>
+
+<qandaentry>
+<question><para>What are the components of risk?</para></question>
+<answer><para><emphasis role="bold">Risk is composed of assets (something of value to the organization), threats (threat actors, known and unknown vulnerabilities, potential attacks), outcomes (disclosure, modification, destruction/loss, interruption), and the probable loss or impact (damage done to reputation, confidence, finance, legal, performance, etc.).</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What are actions an organization can take to address risk?</para></question>
+<answer><para><emphasis role="bold">Perform periodic risk evaluations and have an ongoing risk management program that tracks and mitigates high priority risks.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Why do we prioritize one asset over another?</para></question>
+<answer><para><emphasis role="bold">We prioritize assets so that the limited resources (funding, system/security administrator time, technology, support) can be applied efficiently to protect those assets. We must perform this type of activity to gauge what assets could cause an adverse impact to the organization upon failure (e.g., disclosure, modification, destruction, or interruption). An organization needs to determine which assets are most critical and warrant the greatest level of security investment.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What knowledge is required to determine if an asset is critical?</para></question>
+<answer><para><emphasis role="bold">An organization needs to determine whether the enterprise would experience a large adverse impact if the asset were disclosed to unauthorized people (violation of confidentiality), modified without authorization (violation of integrity), lost or destroyed, or access to them was interrupted (violation of availability). In addition, an organization needs to articulate impact evaluation criteria to aid in this determination.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What are a few of the processes in a more comprehensive risk evaluation?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para>Identifying critical information assets as they align with an organization's mission</para></listitem>
+<listitem><para>Identifying threats to the critical assets and areas of concern</para></listitem>
+<listitem><para>Determining security requirements of the critical assets, as defined by the organization</para></listitem>
+<listitem><para>Identifying current protection strategies and mechanisms supporting the assets</para></listitem>
+<listitem><para>Identifying organizational vulnerabilities arising from gaps in the security practices of the</para></listitem>
+<listitem><para>organization</para></listitem>
+<listitem><para>Identifying key infrastructure components (technology assets) that support the processing,</para></listitem>
+<listitem><para>storage, and transmission of the critical assets</para></listitem>
+<listitem><para>Identifying technological vulnerabilities and current deficiencies that exist on key components of</para></listitem>
+<listitem><para>the infrastructure</para></listitem>
+<listitem><para>Analyzing current risks to critical assets due to the above</para></listitem>
+<listitem><para>Recognizing required and necessary protection strategy changes and development</para></listitem>
+<listitem><para>Specifying mitigation plans and action items to protect the critical assets</para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+<qandaentry>
+
+<question><para>What are results of a risk evaluation?</para></question>
+<answer><para><emphasis role="bold">An organizational protection strategy that defines the direction for protecting critical assets, a mitigation plan and actions designed to reduce high priority risks, and near term actions that can be taken immediately.</emphasis></para></answer>
+</qandaentry>
+<qandaentry>
+<question><para>What are two key roles that an administrator has in managing information security risk?</para></question>
+<answer><para><emphasis role="bold">Use risk evaluation results to establish a baseline of the organization's current security state. Act on the results of the evaluation to improve this state. Track and report status and communicate effectively with all affected parties.</emphasis></para></answer>
+</qandaentry>
+</qandaset>
+
+</section>
+</article>

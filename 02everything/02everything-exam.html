@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+></TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"></HEAD
+><BODY
+CLASS="article"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="ARTICLE"
+><DIV
+CLASS="TITLEPAGE"
+><P
+CLASS="copyright"
+>Copyright &copy;  This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</P
+><HR></DIV
+><DIV
+CLASS="TOC"
+><DL
+><DT
+><B
+>Table of Contents</B
+></DT
+><DT
+>1. <A
+HREF="#AEN6"
+>Exam - Introduction</A
+></DT
+></DL
+></DIV
+><DIV
+CLASS="section"
+><H2
+CLASS="section"
+><A
+NAME="AEN6"
+>1. Exam - Introduction</A
+></H2
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Everything is Data</B
+></SPAN
+></P
+><P
+>Overview: These are the exam questions for Principle 2: Everything is Data.</P
+><DIV
+CLASS="qandaset"
+><DL
+><DT
+>1.1. <A
+HREF="#AEN13"
+>According to the Information Security Model, what are the three 'Information States?'</A
+></DT
+><DT
+>1.2. <A
+HREF="#AEN19"
+>What are the three 'Security Practices?'</A
+></DT
+><DT
+>1.3. <A
+HREF="#AEN25"
+>What are the two main ways of ensuring data confidentiality?</A
+></DT
+><DT
+>1.4. <A
+HREF="#AEN31"
+>When using a well-known means of encryption, such as an algorithm like AES, upon what part of the cryptosystem does the confidentiality of the encrypted data hinge?</A
+></DT
+><DT
+>1.5. <A
+HREF="#AEN37"
+>True or false: For similarly sized keys, a symmetric encryption system is faster than an asymmetric system.</A
+></DT
+><DT
+>1.6. <A
+HREF="#AEN43"
+>Describe how a transaction would take place using the hybrid model of encryption (hybrid of symmetric and asymmetric).</A
+></DT
+><DT
+>1.7. <A
+HREF="#AEN49"
+>Describe how the use of a hash function could give an administrator confidence that some files on his system had not changed.</A
+></DT
+></DL
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN13"
+></A
+><B
+>1.1. </B
+>According to the Information Security Model, what are the three 'Information States?'</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Storage, Processing, Transmission</B
+></SPAN
+></P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN19"
+></A
+><B
+>1.2. </B
+>What are the three 'Security Practices?'</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Policies and Procedures, Technology, Education/Awareness/Training</B
+></SPAN
+></P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN25"
+></A
+><B
+>1.3. </B
+>What are the two main ways of ensuring data confidentiality?</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Limiting access (access controls), concealing content (encryption)</B
+></SPAN
+></P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN31"
+></A
+><B
+>1.4. </B
+>When using a well-known means of encryption, such as an algorithm like AES, upon what part of the cryptosystem does the confidentiality of the encrypted data hinge?</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>The Key</B
+></SPAN
+></P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN37"
+></A
+><B
+>1.5. </B
+>True or false: For similarly sized keys, a symmetric encryption system is faster than an asymmetric system.</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>True</B
+></SPAN
+></P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN43"
+></A
+><B
+>1.6. </B
+>Describe how a transaction would take place using the hybrid model of encryption (hybrid of symmetric and asymmetric).</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>The two hosts would exchange public keys (i.e., part of the asymmetric encryption system) and would use the asymmetric system to then create and share a symmetric cryptosystem key; after the key had been shared and agreed upon, the rest of the transaction would be encrypted with the symmetric key and symmetric encryption algorithm.</B
+></SPAN
+></P
+></DIV
+></DIV
+><DIV
+CLASS="qandaentry"
+><DIV
+CLASS="question"
+><P
+><A
+NAME="AEN49"
+></A
+><B
+>1.7. </B
+>Describe how the use of a hash function could give an administrator confidence that some files on his system had not changed.</P
+></DIV
+><DIV
+CLASS="answer"
+><P
+><B
+> </B
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>If the administrator generated hashes of the files in question when they were in a known state and kept that hash for future reference, he could (at any time) generate new hashes and compare those to the hashes on file and would know for certain if the files had changed.</B
+></SPAN
+></P
+></DIV
+></DIV
+></DIV
+></DIV
+></DIV
+></BODY
+></HTML
+>

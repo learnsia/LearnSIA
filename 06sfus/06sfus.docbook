@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % instructor "IGNORE">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY techBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/tech-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY techEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/tech-end.jpg'/></imageobject></mediaobject></screenshot>">
+]>
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+<holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+<section>
+<title></title>
+<para>&syllabusBegin;</para>
+<para>This module introduces Principle 6: Survivable Functional Units (SFUs) are a helpful way to think about an enterprise's networks. This is a core idea used in "Sustaining, Improving, and Building Survivable Functional Units (SFUs)".</para>
+<para>This module should take 3-4 hours.</para>
+<para>&syllabusEnd;</para>
+</section>
+<section>
+<title>Reading Assignments</title>
+<para><emphasis role="bold">Required readings:</emphasis></para>
+<orderedlist>
+<listitem><para>"How does a computer's uninterruptible power supply (UPS) work?" [HowStuffWorks 03a]</para></listitem>
+<listitem><para>"How Domain Name Servers Work" [HowStuffWorks 03b] & [Brain 03]</para></listitem>
+<listitem><para>"Installing and Using a Firewall Program" [Rogers 02]</para></listitem>
+<listitem><para>Recommended readings:</para></listitem>
+<listitem><para>Deploying Firewalls [Fithen 99]</para></listitem>
+<listitem><para>Securing Network Servers [Allen 00a]</para></listitem>
+<listitem><para>Securing Public Web Servers [Kossakowski 00]</para></listitem>
+<listitem><para>Survivability Research & Analysis [CERT a]</para></listitem>
+</orderedlist>
+<para><emphasis role="bold">Recommended readings:</emphasis></para>
+<para><emphasis role="bold">None</emphasis></para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para><emphasis role="bold">Time allocation:</emphasis> 3-4 hour total lecture.</para>
+<para>This is the setup for this part of the course.</para>
+<para>First, a Survivable Functional Unit (SFU) is</para>
+<itemizedlist>
+<listitem><para>a collection of one or more computer systems and network infrastructure components (routers, firewalls, hubs, switches, access points, etc, referred to as infoprocs)</para></listitem>
+<listitem><para>that delivers one or more information assets</para></listitem>
+<listitem><para>through one or more services</para></listitem>
+<listitem><para>to one or more constituencies</para></listitem>
+<listitem><para>authenticated to the Survivable Functional Unit in some fashion</para></listitem>
+<listitem><para>and that can survive attacks, outages, errors, etc.</para></listitem>
+</itemizedlist>
+<para>Thinking about the enterprise's network as a collection of SFUs rather than as computers, routers, hubs, switches, firewalls, etc. helps the SA focus on what these groupings of technology provide to an authenticated set of users. By shifting the focus to a few levels above the individual pieces of technology, the SA will be better able to see how those technology groupings support the mission of the enterprise. And that's where their focus ought to be-on the mission. Their job is to decide how best to support that mission with technology, augmented by practices, policies, and procedures.</para>
+<para>All too often, the SA gets involved in the technology for technology's sake. They miss the bigger picture of how that technology works to let the enterprise achieve its various missions. By thinking more often in terms of SFUs rather than discrete components, SAs are better able to satisfy mission needs through their activities. They are better able to manage technology in a secure and survivable fashion while being able to keep an eye on the mission of the enterprise.</para>
+<para>In the best of all possible worlds, vendors ought to be selling SFUs rather than general purpose computer systems and network infrastructure components that SAs must turn into SFUs. The time has come to for SAs to build the enterprise network from building blocks that are oftentimes bigger than a single computer system or network infrastructure component, have a well-defined and very specific purpose, and a well-defined and very specific authentication scheme. The SAs then build the network from Commercial off the shelf (COTS) SFUs.</para>
+<para>The reality is that you can't buy an SFU today, so the (SA) will have to make them and the educators and trainers will have to show them how. This topic in this course starts them along that path to learning what an SFU is, how to recognize them, and a taste of how to engineer them. It's a beginning.</para>
+<para>In truth, some engineering does exist and that's been the inspiration for whole concept of SFUs. For example, when I was doing some research on the topic of wireless networks, I found that many of the more recent documents contained a picture or two or three showing specific products and how to graft those groups of technology onto an existing network. There were also issues to think about so that the reader could make an informed decision as to how well that topology might fit into a network. </para>
+<para>This part of the course begins with the concept of a Functional Unit and it's pretty straightforward. In essence, you've got a network that folks use to achieve the mission of the enterprise. That network consists of pockets of technology used to gain access to information assets that support that mission. Can you decide which pockets there are and how they interact with other pockets? If you can, and you should be able to do this, then you've identified the Functional Units in the enterprise network. That's a beginning.</para>
+<para>From here, you then need to get a bit more formal and identify the pieces of technology in the groups which we'll call Functional Units, who the constituencies are, and how these constituencies authenticate to the Functional Units. Note that there will always be an authentication scheme even if the constituency served consists of everybody. The key here is to purposefully define who the constituencies are and how they are authenticated to the Functional Units.</para>
+<para>Now, when you begin to look inside of the Functional Unit, you are looking at it critically to see how well it can survive attacks, outages, and other blunders. By applying some principles of survivability engineering to the Functional Unit, you can make it a Survivable Functional Unit. Again, this is a bit of a problem because there's not a lot in the literature on survivability engineering. Some of it is common sense (I hope), and some may be hinted at or even explained in the literature. You'll need to keep up with any advances in survivability engineering by doing some of your own research-there's just not a lot out there yet.</para>
+<para>So that's it-Functional Units help SAs to keep the business mission in view while they do their system administration tasks. By looking at the insides a Functional Unit and applying survivability engineering, they can make Survivable Functional Units that can provide their services to an authenticated constituency in a survivable fashion, all the while staying in tune with the mission of the enterprise.</para>
+<para>&instructEnd;</para>
+]]>
+</section> 
+<section>
+<title>Principle 6: Survivable Functional Units (SFUs) are a helpful way to think about an enterprise's networks.</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/computer.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>This section sets the stage for students to develop the SFU perspective. It describes what an SFU is as well as it's relevance to enterprise mission and where SFUs could go. They should understand why these are important and what the benefits of an SFU are from their perspective.</para>
+<para>&instructEnd;</para>
+]]>
+<para>Successful enterprises fulfill their missions for their constituencies. Computer systems and network infrastructure components are playing an increasing role in those successes, to the point where intrusions or even just attacks against them can adversely affect the enterprise's ability to deliver its products and services to its customers. While SAs often needs to focus on the details of those computer systems and network infrastructure components, they must also be able to stand back from that level to see the role that these technologies play in support of the enterprise's missions. In short, they must be careful not to miss the forest for the trees.</para>
+<para>It's sometimes difficult for SAs to look at their computer systems and network infrastructure components at a more global level due to the pressures of time and the demands of technology. While short-term, technology-centered achievements are satisfying, they may not support the enterprise's mission. Indeed, they may even be in opposition to that mission. The SA needs a way to balance the demands of technology with the enterprise's need to satisfy critical missions.</para>
+<para>This part of "Principles of Survivability and Information Assurance" describes a way to think about an enterprise's networks. It helps SAs more easily see the big picture that shows how their technological charges support the enterprise's missions.</para>
+<para>The cornerstone of this thought process is the notion of a Survivable Functional Unit (SFU) which is</para>
+<itemizedlist>
+<listitem><para>a collection of one or more computer systems and network infrastructure components (routers, firewalls, hubs, switches, access points, etc)</para></listitem>
+<listitem><para>that delivers one or more information assets</para></listitem>
+<listitem><para>through one or more services</para></listitem>
+<listitem><para>to one or more constituencies</para></listitem>
+<listitem><para>authenticated to the Survivable Functional Unit in some fashion</para></listitem>
+<listitem><para>and that can survive attacks, outages, errors, etc.</para></listitem>
+</itemizedlist>
+<para>By thinking about the enterprise's network as a collection of SFUs rather than as computers, routers, hubs, switches, firewalls, etc., SAs focus on what these groupings of technology provide in support of the mission of the enterprise. And that's where their focus ought to be-on the mission. An SA's job is to decide how best to support that mission with technology, augmented by practices, policies, and procedures.</para>
+<para>The concept of SFUs also helps SAs be more efficient because they have fewer things to think about all the time. By grouping technology into functional areas (SFUs), SAs can often think and work at that functional level. They have fewer items to juggle, helping them to focus on what needs really attention.</para>
+</section>
+<section>
+<title>Learning Outcomes</title>
+<para><emphasis role="bold">Define Survivable Functional Unit (SFU)</emphasis></para>
+<para><emphasis role="bold">Describe the benefits of SFUs</emphasis></para>
+<para><emphasis role="bold">Describe the Functional Unit identification process</emphasis></para>
+<para><emphasis role="bold">Describe how to apply survivability engineering using risk management</emphasis></para>
+<para><emphasis role="bold">Describe how to create an SFU dependency diagram</emphasis></para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>Students should be able to perform the listed tasks after completing this section of the course.</para>
+<para>&instructEnd;</para>
+]]>
+<para>At the conclusion of this segment of "Principles of Survivability and Information Assurance", you will be able to do the following:</para>
+<itemizedlist>
+<listitem><para>Define Survivable Functional Units</para></listitem>
+<listitem><para>Describe why they are beneficial to the SA</para></listitem>
+<listitem><para>Describe how to identify Functional Units in an enterprise</para></listitem>
+<listitem><para>Describe how to make a Functional Unit survivable using Survivability Engineering techniques to create options and then apply Risk Management techniques to select one of those options</para></listitem>
+<listitem><para>Describe how to create a dependency diagram that shows the interconnections between SFUs and their level of interdependency</para></listitem>
+</itemizedlist>
+</section> 
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Functional Units</emphasis></para>
+<itemizedlist>
+<listitem><para>What is a Functional Unit?</para></listitem>
+<listitem><para>An example</para></listitem>
+<listitem><para>Authentication issues</para></listitem>
+<listitem><para>Functional Unit building blocks</para></listitem>
+<listitem><para>Functional Unit Identification Process</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Survivability Review</emphasis></para>
+<para><emphasis role="bold">Building a Functional Unit and Making it Survivable</emphasis></para>
+<para><emphasis role="bold">How Much Survivability?</emphasis></para>
+<para><emphasis role="bold">Inter-SFU Issues</emphasis></para>
+<para><emphasis role="bold">Summary</emphasis></para>
+<para>The purpose of the SIA Curriculum is to teach system administrators how to manage an existing network of cooperating computer systems and network infrastructure components according to the ten principles described in "Principles of Survivability and Information Assurance". Most SAs will find themselves in this type of a situation in their professional career, that is, they will inherit an existing enterprise network and be charged with managing it using these principles.</para>
+<para>In this part of the curriculum, we define and explain Functional Units, give an example of a Functional Unit, and then describe how to recognize them in an enterprise. We'll then apply Survivability Engineering to show how example Functional Units can be made more Survivable. Finally, we'll examine how the Survivable Functional Units in our example cooperate with one another to achieve the mission of the enterprise.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Functional Units</emphasis></para>
+<itemizedlist>
+<listitem><para><emphasis role="bold">What is a Functional Unit?</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">An example</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Authentication issues</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Functional Unit building blocks</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Functional Unit Identification Process</emphasis></para></listitem>
+</itemizedlist>
+<para>Survivability Review</para>
+<para>Building a Functional Unit and Making it Survivable</para>
+<para>How Much Survivability?</para>
+<para>Inter-SFU Issues</para>
+<para>Summary</para>
+</section>
+<section>
+<title>Functinal Units</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<itemizedlist>
+<listitem><para>A Functional Unit is</para></listitem>
+<listitem><para>A collection of one or more infoprocs</para></listitem>
+<listitem><para>That delivers one or more information assets</para></listitem>
+<listitem><para>Through one or more services</para></listitem>
+<listitem><para>To one or more constituencies</para></listitem>
+<listitem><para>Authenticated to the Functional Unit in some way</para></listitem>
+</itemizedlist>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>We'll begin with some definitions</para>
+<para>&instructEnd;</para>
+]]>
+<para>A typical enterprise (business, university, or even a home network) has a collection of computer systems and network infrastructure components  that are intended to help the enterprise achieve its mission. In most cases, these computer systems are connected by a network infrastructure made up of routers, firewalls, hubs, switches, wires, wireless access points, and network interface cards (NICs). The way that an enterprise's computer systems are interconnected and the selection of network infrastructure components vary from enterprise to enterprise, sometimes widely. Presently, there are few best practices that guide system administrators through the task of architecting and building these networks.</para>
+<para>Each infoproc in the enterprise's network has one or more roles that are achieved by providing a service to a constituency. For example, one infoproc could provide time synchronization information to other infoprocs in the enterprise's network.</para>
+<para>Consider a randomly selected enterprise's network. It should be possible to group the infoprocs in this network into higher-level, function-oriented entities that we'll call Functional Units. A Functional Unit is a collection of one or more infoprocs that delivers one or more information assets through one or more services to one or more constituencies authenticated to that Functional Unit in some way, and the way in which infoprocs are grouped together into Functional Units is called the Functional Unit Identification Process. As a system administrator, think at the Functional Unit level rather than at the infoproc level as a way to simplify your job and to better understand how technology supports enterprise missions.</para>
+<para>Later in this section, we'll describe the Functional Unit Identification Process and in "Sustaining, Improving, and Building Survivable Functional Units (SFUs)" and you will have the opportunity to apply this process to an enterprise network.</para>
+</section>
+<section>
+<title>Functional Unit Examples</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="1" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para><emphasis role="bold">Each infoproc is only a member of one Functional Unit in theory, but likely not so in practice.</emphasis></para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>There should be a one-to-one mapping between Functional Units and infoprocs, but that's not always the case with network technologies-and that's all right. When an infoproc lives in more than one Functional Unit, more vulnerabilities are introduced and it becomes harder to operate on a Functional Unit as a discrete entity. Since the cost of technology is low and getting lower, it's best to have each infoproc only a member of one and only one Functional Unit.</para>
+<para>&instructEnd;</para>
+]]>
+<para>Ideally, each infoproc should be a member of only one Functional Unit. Pragmatically, this is often not the case, primarily for economic reasons. There is usually some overlap when an infoproc provides more than one service and therefore is a member of more than one Functional Unit. Routers, firewalls, switches, and hubs are typically members of more than one Functional Unit. For firewalls and routers, this is usually achieved through a rule set that supports different access policies based upon constituency needs. For hubs and switches, more often infoproc traffic patterns define access; the hub and switch technology usually does not impose policy.</para>
+<para>This higher level, service oriented functional unit perspective is useful when thinking about infrastructure. Administrators should be able to identify all Functional Units in their organization, the infoprocs that form each Functional Unit, and the way that requests for service are authenticated to the Functional Unit. Similarly, for each infoproc, the administrator should know to which Functional Unit(s) it belongs.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>Let's look at a Functional Unit. The constituent pieces of the Web development and delivery Functional Unit are presented in this slide.</para>
+<para>&instructEnd;</para>
+]]>
+<para>For example, an enterprise that provides Web services to the Internet likely has a Web Development and Delivery Functional Unit. This Functional Unit likely consists of at least the following:</para>
+<itemizedlist>
+<listitem><para>One or more computer systems that provide Web access to the Internet constituency. These are the delivery computer systems.</para></listitem>
+<listitem><para>The networking components that connect these computer systems.</para></listitem>
+<listitem><para>One or more computer systems used to create the content delivered by the delivery computer systems. These are called the development computer systems.</para></listitem>
+<listitem><para>The networking components that connect these computer systems.</para></listitem>
+<listitem><para>The networking components (routers, firewalls, etc.) that separate the delivery computer systems from the development computer systems.</para></listitem>
+<listitem><para>The networking components that separate the delivery computer systems from the constituency (in this case, the Internet).</para></listitem>
+</itemizedlist>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>In this slide, the pieces are all connected and the line around the FU defines its boundaries and the inputs, authentication scheme, and outputs.</para>
+<para>&instructEnd;</para>
+]]>
+<para>In addition, these pieces may be connected together using the best practices for the Web Development and Delivery Function Unit. These may consist of but are not limited to the following:</para>
+<itemizedlist>
+<listitem><para>The delivery computer systems do not contain the authoritative copy of Web site content. That content resides on the development computer systems.</para></listitem>
+<listitem><para>The development and delivery computer systems are separated by a firewall that defines a strict policy that significantly reduces the traffic that can move between these systems.</para></listitem>
+<listitem><para>The delivery computers are attached to a public network section that may have no other computer systems attached to it. These computer systems are "expendable computers" that are presumed to be frequently attacked and perhaps even compromised. This results in minimal damage due to the tight security and vigilance practiced by the system administrators.</para></listitem>
+</itemizedlist>
+<para>When taken together, these infoprocs make up the Web Development and Delivery Functional Unit that serves the Internet constituency. They provide a collection of information assets to some constituency that is authenticated in some fashion. The system administrator can think about this Functional Unit, how it supports the business missions, its importance relative to other Functional Units, and its dependence on other Functional Units.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>This section builds on Principle 5: Identification of users, computer systems, and network infrastructure components is critical. The idea is that all FUs have some authentication scheme and therefore that scheme should be overtly described. SAs should describe that scheme as an attribute of the Functional Unit. There should not be any implicit authentication used.</para>
+<para>&instructEnd;</para>
+]]>
+<para>Every Functional Unit has some concept of authentication whether explicitly stated or not. In this case, authentication to the Web development and delivery Functional Unit could work as follows:</para>
+<itemizedlist>
+<listitem><para>For the delivery computer systems, one of the following could be used:</para></listitem>
+</itemizedlist>
+<para>- Any valid request originating from any computer system on the Internet could be accepted.</para>
+<para>- Any valid request originating from any computer system on the Internet where the mapping IP address to hostname and back to IP address produces the original IP address of the request.</para>
+<para>- Any valid request with some login and password could be accepted.</para>
+<para>- Any valid request with some ancillary authentication-a certificate-could be accepted.</para>
+<itemizedlist>
+<listitem><para>For the delivery and development computer systems, any valid request that uses strongly authenticated and encrypted communication channels could be accepted to provide administrative access.</para></listitem>
+</itemizedlist>
+<para>Recall that in <emphasis role="bold">Principle 5: Identification of users, computer systems, and network infrastructure components is critical</emphasis>, the identification of users and infoprocs is critical. The way in which a constituency authenticates to a Functional Unit builds on the identification schemes described there. For example, some of the authentication could result from the firewall rules that define the set of allowable connections between infoprocs. This could be the result of implementing item "Any valid request originating from any computer system on the Internet where the mapping IP address to hostname and back to IP address produces the original IP address of the request". from the previous list describing delivery computer systems authentications.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>The point is that every functional unit has and therefore must clearly define the authentication requirements for gaining access to the information assets provided to constituencies of that service.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>Further, the individual infoprocs that compose the Functional Unit must also be thought of as discrete components subject to the application of best practices. This means that the computer system(s) delivering content to a constituency must reflect the best practices as outlined in Securing Network Servers [Allen 01] and Securing Public Web Servers [Kossakowski 01], for example. The firewalls that separate computer systems from one another should also follow the best practices outlined in Deploying Firewalls [Fithen 99].</para>
+<para><emphasis role="bold">Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach</emphasis> describes the SKiP Method that should be applied to those individual infoprocs throughout their pre-production and production life cycle.
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</section>
+<section>
+<title>Functional Unit Blocks</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>If students already have work experience, ask what additional Functional Units they may be able to name in their own work environments. Also begin to develop a dependency diagram that shows interrelationships between Functional Units.</para>
+<para>As noted in the Instructor Notes at the beginning of this part of the course, what may be ideal is for vendors to sell COTS SFUs. The following lists name those SFUs that are part of almost every network in some fashion.</para>
+
+<para>&instructEnd;</para>
+]]>
+<para>In general, functional units can be broken into two groups. The first group represents the excavation and the stones of the roadbed. Everything else is built on top of them. These must be firm and well-built lest the weight of the rest cause the roadbed to crumble. These functional units may contain but are not limited to the following:</para>
+<itemizedlist>
+<listitem><para>Domain Name Service</para></listitem>
+<listitem><para>Host Configuration</para></listitem>
+<listitem><para>User Authentication</para></listitem>
+<listitem><para>Logging</para></listitem>
+<listitem><para>Network Intrusion Detection</para></listitem>
+<listitem><para>Network File Service</para></listitem>
+<listitem><para>File Backup and Restore</para></listitem>
+<listitem><para>Administrative</para></listitem>
+</itemizedlist>
+<para>The second group of functional units is the concrete of the road. They are built on top of the roadbed (the previous group of functional units). These functional units may contain but are not limited to the following:</para>
+<itemizedlist>
+<listitem><para>Electronic Mail</para></listitem>
+<listitem><para>Web Development and Delivery</para></listitem>
+<listitem><para>Remote Access</para></listitem>
+<listitem><para>Wireless Access</para></listitem>
+<listitem><para>Internet Proxy</para></listitem>
+</itemizedlist>
+<para>Layered on top of these functional units are any other functional units specific to the business, such as a Database Functional Unit.</para>
+<para>Functional Units are the building blocks of the enterprise network. They provide a service to a constituency. They consist of computer systems and network infrastructure components called infoprocs. They require some type of authentication to receive service.</para>
+</section>
+<section>
+<title>Identifying Functinoal Units</title>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>This section is setup for "Sustaining, Improving, and Building Survivable Functional Units (SFUs)". In that course, students will look at artifacts to figure out what functional units are there and then begin to re-engineer them according to SKiP, Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach, and make then more survivable. The idea here is to get them thinking about how they would even recognize what functional units are scattered about a network.</para>
+<para>It's my belief that doing this type of activity is realistic given the skills they will acquire from this curriculum. They will inherit a network and then need to apply what they have learned. They do that in "Sustaining, Improving, and Building Survivable Functional Units (SFUs)" based upon what they have learned in "Principles of Survivability and Information Assurance" and "Information Assurance Networking Fundamentals".</para>
+
+<para>&instructEnd;</para>
+]]>
+<para>Given this concept of a Functional Unit, how would SAs recognize them in an enterprise? What information would you need to know to determine what Functional Units there are, what services they provide, who are the constituencies to whom these services are being provided, and what type of authentication is being used? Here are some ideas:</para>
+<itemizedlist>
+<listitem><para>A sampling of network traffic that shows which infoprocs talk to other infoprocs</para></listitem>
+</itemizedlist>
+<para>At a minimum this will tell you which infoprocs interact with one another using the network. Through that analysis, one can see who's talking, what they say to each other (protocols and perhaps authentication information), and the results of the attempt (an answer or request denied, which may give more information about who the constituencies truly are). Note that the sampling ought to be long enough to capture even the occasional interactions. For example, some activities may only happen once a month or once a quarter. If sampling only captures one week's worth of data, less frequent activities may not be captured.</para>
+<itemizedlist>
+<listitem><para>Logging information that may only be stored on local media </para></listitem>
+</itemizedlist>
+<para>The network may not contain all of the dialogue. There may be more information, including more details about denied requests, saved in log files on disks on the infoprocs. That information can give more clues about the functional units. There are the same issues regarding the amount of logging information analyzed with respect to occasional activities.</para>
+<itemizedlist>
+<listitem><para>A list of running programs, services available to the network or to an infoproc that perhaps have not been used, etc. </para></listitem>
+</itemizedlist>
+<para>This information gives a more complete picture than the network along. Perhaps there are services that haven't been used during the span of the network capture. Again, this kind of information must be sampled over a longer period of time to capture occasional activities</para>
+<itemizedlist>
+<listitem><para>What the system administrators think</para></listitem>
+</itemizedlist>
+<para>The administrators who manage these infoprocs may have more insight into what they do, although that information could be dated in that it may say what they used to do and not what they presently do. This information should be thoroughly corroborated before being used.</para>
+<itemizedlist>
+<listitem><para>Infoproc inventory</para></listitem>
+</itemizedlist>
+<para>The list of hardware and software that is installed around the enterprise. The list of additional applications that were added to the infoprocs beyond the operating system.</para>
+<itemizedlist>
+<listitem><para>Policies and procedures that are in place</para></listitem>
+</itemizedlist>
+<para>Policies and procedures may define who some of the constituencies are and what the authentication schemes are.</para>
+<para>The process by which the Functional Units are identified is called the Functional Unit Identification Process. It's an ad hoc process that seeks answers to the following:</para>
+<itemizedlist>
+<listitem><para>Which collections of one or more computer systems and network infrastructure components (routers, firewalls, hubs, switches, access points, etc)</para></listitem>
+<listitem><para>Deliver which information assets</para></listitem>
+<listitem><para>Through which services</para></listitem>
+<listitem><para>To what constituencies</para></listitem>
+<listitem><para>With what kind of authentication?</para></listitem>
+</itemizedlist>
+<para>These artifacts can provide most if not all of the information needed to determine the make-up of the Functional Units around the enterprise. In "Sustaining, Improving, and Building Survivable Functional Units (SFUs)", you will have the opportunity to combine the networking skills you gain in Information Assurance Networking Fundamentals with these principles to recognize the Functional Units in an enterprise, manage them with SKiP as defined in <emphasis role="bold">Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach</emphasis>, and improve them by making them more survivable. That topic, which is also <emphasis role="bold">Principle 1: Survivability is an enterprise-wide concern</emphasis>, is described next.</para>
+</section>
+<section>
+<title>Topic Summary</title>
+<para><emphasis role="bold">A Functional Unit is</emphasis></para>
+<itemizedlist>
+<listitem><para>A collection of one or more infoprocs</para></listitem>
+<listitem><para>That delivers one or more information assets</para></listitem>
+<listitem><para>Through one or more services</para></listitem>
+<listitem><para>To one or more constituencies</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Authenticated to the Functional Unit in some way</emphasis></para>
+<para><emphasis role="bold">Functional Units can be identified using the Functional Unit Identification Process along with artifacts from the enterprise</emphasis></para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>Summarize Functional Units before applying <emphasis role="bold">Principle 1: Survivability is an enterprise-wide concern</emphasis> on Survivability.</para>
+<para>&instructEnd;</para>
+]]>
+<para>A Functional Unit is a set of one or more infoprocs that provide a service to a constituency that is authenticated to that Functional Unit in some way. Those Functional Units can be identified using the Functional Unit Identification Process along with artifacts from the enterprise. In "Sustaining, Improving, and Building Survivable Functional Units (SFUs)", you will have the opportunity to identify Functional Units and improve their survivability.</para>
+</section>
+<section>
+<title>Topics</title>
+<para>Functional Units</para>
+<itemizedlist>
+<listitem><para><emphasis>What is a Functional Unit?</emphasis></para></listitem>
+<listitem><para><emphasis>An example</emphasis></para></listitem>
+<listitem><para><emphasis>Authentication issues</emphasis></para></listitem>
+<listitem><para><emphasis>Functional Unit building blocks</emphasis></para></listitem>
+<listitem><para><emphasis>Functional Unit Identification Process</emphasis></para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Survivability Review</emphasis></para>
+<para>Building a Functional Unit and Making it Survivable</para>
+<para>How Much Survivability?</para>
+<para>Inter-SFU Issues</para>
+<para>Summary</para>
+</section>
+<section>
+<title>Survivability</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>So you've got a Functional Unit-what does it take to make it survivable? Recall that survivability engineering is not a well-defined and mature discipline, so common sense and a little research is needed to figure out how to apply survivability to Functional Units.</para>
+<para>&instructEnd;</para>
+]]>
+<para>Functional Units need to provide service to an authenticated constituency in a survivable manner [CERT a]. Recall from Principle 1: Survivability is an enterprise-wide concern that survivability is "the ability of a network computing system to provide essential services in the presence of attacks, failures, or accidents and recover full services in a timely manner." It is critical to architect services to be survivable because of networks increased dependence upon the Internet and the increasing sophistication of attacks. Functional Units, therefore, must be survivable and survivability must become a design criteria.</para>
+<para>Unfortunately, applying survivability in an operational setting is not yet well defined. There are few practices that can be used when architecting and building a Survivable Functional Unit. Nonetheless, we can make some improvements to our Web Delivery and Development Functional Unit to make it more survivable. Those improvements may be but are not limited to the following:</para>
+<itemizedlist>
+<listitem><para>A distributed delivery architecture can be made that uses several computer systems. These computer systems are connected to different networks and each is connected to the Internet through a different Internet service provider (ISP). This redundancy attempts to mitigate the risks of an attack on any one of the computer systems or ISPs.</para></listitem>
+<listitem><para>The Domain Name Service Functional Unit balances the load from the constituency across all of these computer systems through round-robin or some other scheduling approach. This scheme attempts to make the number and placement of the delivery computer systems transparent to the constituency.</para></listitem>
+<listitem><para>The infoprocs are kept up-to-date with respect to patches. Timely patch applications is one of the most significant actions that a system administrator can take to defend against intrusion attempts.</para></listitem>
+<listitem><para>The infoprocs are instrumented for host-based anomaly intrusion detection as described in the next set of lectures on the SKiP Method. This early warning technology helps the system administrator recognize when computer systems are under attack. This is Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach.</para></listitem>
+<listitem><para>The selected authentication scheme is very strong, perhaps using some combination of one-time passwords and biometric identification. This attempts to reduce unauthorized access to a computer system and its services. This is Principle 5: Identification of users, computer systems, and network infrastructure components is critical.</para></listitem>
+<listitem><para>All network-based administrative activity uses strongly authenticated and encrypted connections. This attempts to reduce the unauthorized access and defends against inadvertent disclosure of the administrative session. This is also Principle 5: Identification of users, computer systems, and network infrastructure components is critical.</para></listitem>
+<listitem><para>Physical survivability issues also need to be considered, such as uninterruptible power supplies and heating, ventilation, and air conditioning (HVAC) requirements. These need not be addressed in detail but need to be mentioned.</para></listitem>
+</itemizedlist>
+<para>This Functional Unit architecture increases the likelihood that our example Web servers are able to deliver their content to the Internet constituency in the face of attacks and failures. These include attacks affecting one or more of the infoprocs that separate the Web servers from those seeking service.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="../course-images/survive-define_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<![%instructor;[
+<para>&instructBegin;</para>
+<para>At this point, we are just noting options that we believe will enhance the survivability of the Functional Unit. Soon, we will have to select which option makes sense given the importance of the asset(s) to the enterprise, the likelihood of an attack, and the cost of the mitigation strategy.</para>
+<para>&instructEnd;</para>
+<para>In most cases, survivability has a cost associated with it whether it is additional equipment, redundant services such as multiple Internet service provider (ISP) connections, or the time and effort needed to rearrange functionality on existing infoprocs. At this point in the process of making a Functional Unit survivable, the goal is to enumerate options that improve survivability. Later, we will combine those options with the likelihood of an attack, cost, and importance of the assets to the enterprise to guide the selection of the technologies available to make that SFU.</para>
+]]>
+
+</section>
+
+
+</article>

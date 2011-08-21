@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Functional Unit Examples</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Functinal Units"
+HREF="x146.html"><LINK
+REL="NEXT"
+TITLE="Functional Unit Blocks"
+HREF="x274.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+></TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x146.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x274.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN183"
+>7. Functional Unit Examples</A
+></H1
+><DIV
+CLASS="informaltable"
+><P
+></P
+><A
+NAME="AEN185"
+></A
+><TABLE
+BORDER="0"
+FRAME="void"
+CLASS="CALSTABLE"
+><COL><THEAD
+><TR
+><TH
+><P
+></P
+></TH
+></TR
+></THEAD
+><TBODY
+><TR
+><TD
+VALIGN="top"
+>&#13;<P
+>&#13;<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+>
+</TD
+><TD
+VALIGN="top"
+>&#13;<P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Each infoproc is only a member of one Functional Unit in theory, but likely not so in practice.</B
+></SPAN
+></P
+>
+</TD
+></TR
+></TBODY
+></TABLE
+><P
+></P
+></DIV
+><P
+>Ideally, each infoproc should be a member of only one Functional Unit. Pragmatically, this is often not the case, primarily for economic reasons. There is usually some overlap when an infoproc provides more than one service and therefore is a member of more than one Functional Unit. Routers, firewalls, switches, and hubs are typically members of more than one Functional Unit. For firewalls and routers, this is usually achieved through a rule set that supports different access policies based upon constituency needs. For hubs and switches, more often infoproc traffic patterns define access; the hub and switch technology usually does not impose policy.</P
+><P
+>This higher level, service oriented functional unit perspective is useful when thinking about infrastructure. Administrators should be able to identify all Functional Units in their organization, the infoprocs that form each Functional Unit, and the way that requests for service are authenticated to the Functional Unit. Similarly, for each infoproc, the administrator should know to which Functional Unit(s) it belongs.</P
+><P
+>&#13;<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+><P
+>For example, an enterprise that provides Web services to the Internet likely has a Web Development and Delivery Functional Unit. This Functional Unit likely consists of at least the following:</P
+><P
+></P
+><UL
+><LI
+><P
+>One or more computer systems that provide Web access to the Internet constituency. These are the delivery computer systems.</P
+></LI
+><LI
+><P
+>The networking components that connect these computer systems.</P
+></LI
+><LI
+><P
+>One or more computer systems used to create the content delivered by the delivery computer systems. These are called the development computer systems.</P
+></LI
+><LI
+><P
+>The networking components that connect these computer systems.</P
+></LI
+><LI
+><P
+>The networking components (routers, firewalls, etc.) that separate the delivery computer systems from the development computer systems.</P
+></LI
+><LI
+><P
+>The networking components that separate the delivery computer systems from the constituency (in this case, the Internet).</P
+></LI
+></UL
+><P
+>&#13;<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+><P
+>In addition, these pieces may be connected together using the best practices for the Web Development and Delivery Function Unit. These may consist of but are not limited to the following:</P
+><P
+></P
+><UL
+><LI
+><P
+>The delivery computer systems do not contain the authoritative copy of Web site content. That content resides on the development computer systems.</P
+></LI
+><LI
+><P
+>The development and delivery computer systems are separated by a firewall that defines a strict policy that significantly reduces the traffic that can move between these systems.</P
+></LI
+><LI
+><P
+>The delivery computers are attached to a public network section that may have no other computer systems attached to it. These computer systems are “expendable computers" that are presumed to be frequently attacked and perhaps even compromised. This results in minimal damage due to the tight security and vigilance practiced by the system administrators.</P
+></LI
+></UL
+><P
+>When taken together, these infoprocs make up the Web Development and Delivery Functional Unit that serves the Internet constituency. They provide a collection of information assets to some constituency that is authenticated in some fashion. The system administrator can think about this Functional Unit, how it supports the business missions, its importance relative to other Functional Units, and its dependence on other Functional Units.</P
+><P
+>&#13;<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+><P
+>Every Functional Unit has some concept of authentication whether explicitly stated or not. In this case, authentication to the Web development and delivery Functional Unit could work as follows:</P
+><P
+></P
+><UL
+><LI
+><P
+>For the delivery computer systems, one of the following could be used:</P
+></LI
+></UL
+><P
+>- Any valid request originating from any computer system on the Internet could be accepted.</P
+><P
+>- Any valid request originating from any computer system on the Internet where the mapping IP address to hostname and back to IP address produces the original IP address of the request.</P
+><P
+>- Any valid request with some login and password could be accepted.</P
+><P
+>- Any valid request with some ancillary authentication-a certificate-could be accepted.</P
+><P
+></P
+><UL
+><LI
+><P
+>For the delivery and development computer systems, any valid request that uses strongly authenticated and encrypted communication channels could be accepted to provide administrative access.</P
+></LI
+></UL
+><P
+>Recall that in <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Principle 5: Identification of users, computer systems, and network infrastructure components is critical<SPAN
+CLASS="emphasis"
+><I
+CLASS="emphasis"
+>, the identification of users and infoprocs is critical. The way in which a constituency authenticates to a Functional Unit builds on the identification schemes described there. For example, some of the authentication could result from the firewall rules that define the set of allowable connections between infoprocs. This could be the result of implementing item “Any valid request originating from any computer system on the Internet where the mapping IP address to hostname and back to IP address produces the original IP address of the request". from the previous list describing delivery computer systems authentications.</I
+></SPAN
+></B
+></SPAN
+></P
+><P
+>&#13;<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+><P
+>The point is that every functional unit has and therefore must clearly define the authentication requirements for gaining access to the information assets provided to constituencies of that service.</P
+><P
+>&#13;<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+><P
+>Further, the individual infoprocs that compose the Functional Unit must also be thought of as discrete components subject to the application of best practices. This means that the computer system(s) delivering content to a constituency must reflect the best practices as outlined in Securing Network Servers [Allen 01] and Securing Public Web Servers [Kossakowski 01], for example. The firewalls that separate computer systems from one another should also follow the best practices outlined in Deploying Firewalls [Fithen 99].</P
+><P
+><SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach</B
+></SPAN
+> describes the SKiP Method that should be applied to those individual infoprocs throughout their pre-production and production life cycle.
+<DIV
+CLASS="mediaobject"
+><P
+><IMG
+SRC="../course-images/survive-define_1.jpg"></P
+></DIV
+>
+</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x146.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x274.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Functinal Units</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Functional Unit Blocks</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

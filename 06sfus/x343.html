@@ -1,0 +1,238 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<HTML
+><HEAD
+><TITLE
+>Identifying Functinoal Units</TITLE
+><META
+NAME="GENERATOR"
+CONTENT="Modular DocBook HTML Stylesheet Version 1.79"><LINK
+REL="HOME"
+HREF="index.html"><LINK
+REL="PREVIOUS"
+TITLE="Functional Unit Blocks"
+HREF="x275.html"><LINK
+REL="NEXT"
+TITLE="Topic Summary"
+HREF="x385.html"></HEAD
+><BODY
+CLASS="section"
+BGCOLOR="#FFFFFF"
+TEXT="#000000"
+LINK="#0000FF"
+VLINK="#840084"
+ALINK="#0000FF"
+><DIV
+CLASS="NAVHEADER"
+><TABLE
+SUMMARY="Header navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TH
+COLSPAN="3"
+ALIGN="center"
+></TH
+></TR
+><TR
+><TD
+WIDTH="10%"
+ALIGN="left"
+VALIGN="bottom"
+><A
+HREF="x275.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="80%"
+ALIGN="center"
+VALIGN="bottom"
+></TD
+><TD
+WIDTH="10%"
+ALIGN="right"
+VALIGN="bottom"
+><A
+HREF="x385.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+></TABLE
+><HR
+ALIGN="LEFT"
+WIDTH="100%"></DIV
+><DIV
+CLASS="section"
+><H1
+CLASS="section"
+><A
+NAME="AEN343"
+>10. Identifying Functinoal Units</A
+></H1
+><P
+>Given this concept of a Functional Unit, how would SAs recognize them in an enterprise? What information would you need to know to determine what Functional Units there are, what services they provide, who are the constituencies to whom these services are being provided, and what type of authentication is being used? Here are some ideas:</P
+><P
+></P
+><UL
+><LI
+><P
+>A sampling of network traffic that shows which infoprocs talk to other infoprocs</P
+></LI
+></UL
+><P
+>At a minimum this will tell you which infoprocs interact with one another using the network. Through that analysis, one can see who's talking, what they say to each other (protocols and perhaps authentication information), and the results of the attempt (an answer or request denied, which may give more information about who the constituencies truly are). Note that the sampling ought to be long enough to capture even the occasional interactions. For example, some activities may only happen once a month or once a quarter. If sampling only captures one week's worth of data, less frequent activities may not be captured.</P
+><P
+></P
+><UL
+><LI
+><P
+>Logging information that may only be stored on local media </P
+></LI
+></UL
+><P
+>The network may not contain all of the dialogue. There may be more information, including more details about denied requests, saved in log files on disks on the infoprocs. That information can give more clues about the functional units. There are the same issues regarding the amount of logging information analyzed with respect to occasional activities.</P
+><P
+></P
+><UL
+><LI
+><P
+>A list of running programs, services available to the network or to an infoproc that perhaps have not been used, etc. </P
+></LI
+></UL
+><P
+>This information gives a more complete picture than the network along. Perhaps there are services that haven't been used during the span of the network capture. Again, this kind of information must be sampled over a longer period of time to capture occasional activities</P
+><P
+></P
+><UL
+><LI
+><P
+>What the system administrators think</P
+></LI
+></UL
+><P
+>The administrators who manage these infoprocs may have more insight into what they do, although that information could be dated in that it may say what they used to do and not what they presently do. This information should be thoroughly corroborated before being used.</P
+><P
+></P
+><UL
+><LI
+><P
+>Infoproc inventory</P
+></LI
+></UL
+><P
+>The list of hardware and software that is installed around the enterprise. The list of additional applications that were added to the infoprocs beyond the operating system.</P
+><P
+></P
+><UL
+><LI
+><P
+>Policies and procedures that are in place</P
+></LI
+></UL
+><P
+>Policies and procedures may define who some of the constituencies are and what the authentication schemes are.</P
+><P
+>The process by which the Functional Units are identified is called the Functional Unit Identification Process. It's an ad hoc process that seeks answers to the following:</P
+><P
+></P
+><UL
+><LI
+><P
+>Which collections of one or more computer systems and network infrastructure components (routers, firewalls, hubs, switches, access points, etc)</P
+></LI
+><LI
+><P
+>Deliver which information assets</P
+></LI
+><LI
+><P
+>Through which services</P
+></LI
+><LI
+><P
+>To what constituencies</P
+></LI
+><LI
+><P
+>With what kind of authentication?</P
+></LI
+></UL
+><P
+>These artifacts can provide most if not all of the information needed to determine the make-up of the Functional Units around the enterprise. In "Sustaining, Improving, and Building Survivable Functional Units (SFUs)", you will have the opportunity to combine the networking skills you gain in Information Assurance Networking Fundamentals with these principles to recognize the Functional Units in an enterprise, manage them with SKiP as defined in <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach</B
+></SPAN
+>, and improve them by making them more survivable. That topic, which is also <SPAN
+CLASS="bold"
+><B
+CLASS="emphasis"
+>Principle 1: Survivability is an enterprise-wide concern</B
+></SPAN
+>, is described next.</P
+></DIV
+><DIV
+CLASS="NAVFOOTER"
+><HR
+ALIGN="LEFT"
+WIDTH="100%"><TABLE
+SUMMARY="Footer navigation table"
+WIDTH="100%"
+BORDER="0"
+CELLPADDING="0"
+CELLSPACING="0"
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+><A
+HREF="x275.html"
+ACCESSKEY="P"
+>Prev</A
+></TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+><A
+HREF="index.html"
+ACCESSKEY="H"
+>Home</A
+></TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+><A
+HREF="x385.html"
+ACCESSKEY="N"
+>Next</A
+></TD
+></TR
+><TR
+><TD
+WIDTH="33%"
+ALIGN="left"
+VALIGN="top"
+>Functional Unit Blocks</TD
+><TD
+WIDTH="34%"
+ALIGN="center"
+VALIGN="top"
+>&nbsp;</TD
+><TD
+WIDTH="33%"
+ALIGN="right"
+VALIGN="top"
+>Topic Summary</TD
+></TR
+></TABLE
+></DIV
+></BODY
+></HTML
+>

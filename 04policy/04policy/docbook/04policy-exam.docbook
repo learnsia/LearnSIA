@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+  <holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Information assurance policy governs actions.</emphasis></para>
+
+<para>These are the exam questions for Principle 4: Information assurance policy governs actions.</para>
+
+<qandaset>
+
+<qandaentry>
+<question><para>What is the role of risk management in the formulation of IA policy?</para></question>
+<answer><para><emphasis role="bold">Performing risk management adds clarity and detailed guidance for information asset protection. Risk assessment is used to identify critical assets, identify threats to those assets, and formulate asset protection strategies based on identified risks. Protecting critical information assets is one of the primary purposes of IA policy. This is addressed in Principle 3: Not all data is of equal value - risk must be managed.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Who needs to participate in policy formulation and enforcement?</para></question>
+<answer><para><emphasis role="bold">Participants include senior managers (CEO, CIO), middle managers including the IT manager, legal counsel, human resources, security staff, administrators and other IT staff, affected users, and affected third parties (contractors, vendors, suppliers, partners).</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What are three characteristics of an effective IA policy?</para></question>
+<answer>
+<para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Realistic-balances protection with productivity</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Visible and actively enforced with demonstrated senior management sponsorship</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Accompanied by regular awareness and training sessions</emphasis></para></listitem>
+</orderedlist>
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What topics might you expect to see covered in a general security policy?</para></question>
+<answer>
+<para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Staff roles and responsibilities including system administrators</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Password policy and protection</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Network connectivity and access (internal, external, Internet), and monitoring</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">System access control privileges including special administrator privileges</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Information backup</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Contingency planning and disaster recovery</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Physical security</emphasis></para></listitem>
+</orderedlist>
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What topics might you expect to see covered in an acceptable use policy?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Compliance with the enterprise's password policy</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Hardware changes a user may or may not make including modem restrictions and use</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Software a user may or may not install or remove</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Information a user may or may not transmit across the network</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">User responsibilities to operate a computer securely including virus scanning and eradication</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Prohibitions against sharing accounts and conducting personal business</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+<qandaentry>
+
+<question><para>What questions should users be able to answer about their enterprise's IA policy?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Where are your enterprise's IA policies defined?</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Who is involved in establishing IA policy?</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Who is responsible for monitoring IA policy compliance?</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">How do you acknowledge you have received and read your IA policies and all applicable updates?</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+<qandaentry>
+<question><para>What three examples of policy topics that are required to protect administrators?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Authority and conditions for monitoring user activities (e.g., reading user e-mail)</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Disrupting or terminating service under specific conditions</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Adding and changing users, user groups, user privileges, and authentication mechanisms</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Authority and conditions for using vulnerability testing, penetration testing, and password cracking tools</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Enforcing acceptable use policy provisions and prohibitions</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+<qandaentry>
+<question><para>What is an administrator's role in IA policy formulation and enforcement?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Content contributor for procedures, processes, and tools</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Enforcer in areas of responsibility</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Trainer</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+</qandaset>
+
+</section>
+</article>

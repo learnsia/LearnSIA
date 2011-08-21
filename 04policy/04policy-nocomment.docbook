@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % instructor "IGNORE">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+<holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+<section>
+<title>Principle 4: Information Assurance Policy Governs Action</title>
+<para>&syllabusBegin;</para>
+<para>This module introduces Principle 4: Information assurance policy governs actions.</para>
+<para>The following discussion of security practices is an excerpt from The CERT Guide to System and Network Security Practices [Allen 01]:</para>
+<blockquote><para>Security policies define the rules that regulate how an enterprise manages and protects its information and computing assets to achieve security objectives. Security policies that are documented, well known, and visibly enforced establish expected user behavior and serve to inform users of their obligations for protecting computing assets. Users include all those who access, administer, and manage your systems and have authorized accounts on an enterprise's systems. They play a vital role in implementing security policies.</para>
+<para>A policy must be enforceable to achieve its objectives. In most enterprises, the administrators responsible for the technological aspects of information security do not have the authority to enforce security policies. It is therefore necessary to educate management about security issues, the need for policies in specific topic areas such as acceptable use, and then to obtain a commitment to support the development, deployment, maintenance, and enforcement of those policies.</para></blockquote>
+<para>This module should take 2 hours.</para>
+<para>The required readings must be done in advance of this class.</para>
+<para>&syllabusEnd;</para>
+</section>
+<section>
+<title>Reading Assignments</title>
+<para><emphasis role="bold">Required readings:</emphasis></para>
+<orderedlist>
+<listitem><para>"Introduction to Security Policies" [van der Walt 01]</para></listitem>
+</orderedlist>
+<para>- Part 1: An Overview of Policies <ulink url="http://www.securityfocus.com/infocus/1193">http://www.securityfocus.com/infocus/1193</ulink></para>
+<para>- Part 2: Creating a Supportive Environment <ulink url="http://www.securityfocus.com/infocus/1473">http://www.securityfocus.com/infocus/1473</ulink></para>
+<para>- Part 3: Structuring Security Policies <ulink url="http://www.securityfocus.com/infocus/1487">http://www.securityfocus.com/infocus/1487</ulink></para>
+<para>- Part 4: A Sample Policy <ulink url="http://www.securityfocus.com/infocus/1497">http://www.securityfocus.com/infocus/1497</ulink></para>
+<orderedlist>
+<listitem><para>Your Educational or Organization's Institution's Computing Policy and Acceptable Use Policy (if a different policy)</para></listitem>
+</orderedlist>
+<para><emphasis role="bold">Recommended readings:</emphasis></para>
+<orderedlist>
+<listitem><para>RFC 2196 Site Security Handbook [Fraser 97]  </para></listitem>
+<listitem><para>Selected readings from the SANS Security Policy Project Web site <ulink url="http://www.sans.org/security-resources/policies/">http://www.sans.org/security-resources/policies/</ulink> [SANS 01] </para></listitem>
+<listitem><para>"Data Security Policy - Structure and Guidelines" [Weise 01] </para></listitem>
+</orderedlist>
+</section>
+<section>
+<title>Information Assurance Policy Governs Actions</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/takeaction_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</section>
+<section>
+<title>Learning Outcomes</title>
+<para><emphasis role="bold">Describe principles and elements of policy</emphasis></para>
+<para><emphasis role="bold">Describe the policy lifecycle process</emphasis></para>
+<para><emphasis role="bold">Enumerate characteristics of an effective policy</emphasis></para>
+<para><emphasis role="bold">Describe an administrator's role in policy formulation and implementation</emphasis></para>
+<para><emphasis role="bold">Describe what general questions a user should be able to answer with respect to IA policy</emphasis></para>
+<para>An administrator's job, in large part, is to keep the enterprise's computing infrastructure up and running in a secure manner. But what does this mean? Security policy guides both this process and an administrator's decisions and actions by defining requirements that must be fulfilled. Some occasions when a security policy could help guide actions include the following:</para>
+<itemizedlist>
+<listitem><para>adding new users to the system or removing users no longer employed by the enterprise</para></listitem>
+<listitem><para>adding, updating, or migrating to a new asset or to a new asset configuration (e.g., a new operating system)</para></listitem>
+<listitem><para>configuring a firewall or intrusion detection system including what traffic should be blocked and what alerts are high priority</para></listitem>
+<listitem><para>monitoring system, network, file and directory, and user activities including determining what constitutes suspicious behavior</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Principle 6: Survivable Functional Units are a helpful way to think about an enterprise's networks</emphasis> describes a method by which systems and networks can be constructed to provide reliable service that reflects enterprise policy.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin6-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>Policies, when written properly, clearly articulate roles, responsibilities, and authority to act, and, as a result, protect and guide administrators.</para>
+<para>This lecture will assist an administrator in answering the following questions:</para>
+<itemizedlist>
+<listitem><para>How should I think about security policies and their implementation?</para></listitem>
+<listitem><para>What is a useful framework for making security policies real in my enterprise's infrastructure?</para></listitem>
+<listitem><para>How can the presence of policies protect me?</para></listitem>
+<listitem><para>How can the absence of policies hurt me?</para></listitem>
+<listitem><para>How do I go about making changes in policies based on my operational experience?</para></listitem>
+<listitem><para>What are the consequences for not complying with policies? </para></listitem>
+<listitem><para>What is my role in ensuring policy compliance and taking action in the event of non-compliance?</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Principles and Elements</emphasis></para>
+<para><emphasis role="bold">Stakeholders and Contributors</emphasis></para>
+<para><emphasis role="bold">Characteristics and Examples</emphasis></para>
+<para><emphasis role="bold">Policy Life Cycle Process</emphasis></para>
+<para><emphasis role="bold">What Administrators Need to Know</emphasis></para>
+<para><emphasis role="bold">Policy Knowledge</emphasis></para>
+<para>This lecture describes aspects of IA policy including the following:</para>
+<itemizedlist>
+<listitem><para>key principles and characteristics to keep in mind when creating, reviewing, and using IA policies, standards, guidelines, and procedures</para></listitem>
+<listitem><para>the identification and involvement of stakeholders (those who have a vested interest in a policy's specification and enforcement) and contributors (those who participate in policy development, deployment, and maintenance). While including these parties may extend the time required to create draft policy, it greatly accelerates policy implementation and adoption</para></listitem>
+<listitem><para>examples of some of the more common policy topics, including ones that guide administrator actions and are essential to protect administrators</para></listitem>
+<listitem><para>the role of administrators in creating, reviewing, implementing, and enforcing IA policies</para></listitem>
+<listitem><para>the questions an enterprise should ask to determine if employees understand its security policies and if their behavior is consistent with these policies</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Principles and Elements</emphasis></para>
+<para>Stakeholders and Contributors</para>
+<para>Characteristics and Examples</para>
+<para>Policy Life Cycle Process</para>
+<para>What Administrators Need to Know</para>
+<para>Policy Knowledge</para>
+<para>This lecture describes aspects of IA policy including the following:</para>
+</section>
+<section>
+<title>Policy Principles</title>
+<para><emphasis role="bold">All employee actions and behavior are governed by enterprise policy.</emphasis></para>
+<para><emphasis role="bold">Policies are explicit and documented or implicit. If implicit,</emphasis></para>
+<itemizedlist>
+<listitem><para>"Use your best professional judgment"</para></listitem>
+<listitem><para>Word of mouth</para></listitem>
+<listitem><para>Observing how people behave</para></listitem>
+</itemizedlist>
+<para>Many enterprises do not make appropriate use of policies. "Two-thirds of survey respondents (600 IT professionals) said their company did not have a well-defined company-wide security policy or plan in place, and the majority of those surveyed lack data-handling guidelines and policies" [Briney 01]. Lorraine Ware found that policies are implemented ineffectively in many enterprises [Ware 01]:</para>
+<blockquote><para>In close to half of the companies, employees are provided with information about security policy. However, familiarity with the company's security policies is required of employees in less than one-third of the companies surveyed.</para>
+<para>In close to one-third of the companies surveyed, the enterprise's critical information is accessible directly via the Internet. Servers that store critical information communicate directly with other systems that are accessible via the Internet in more than half of the companies.</para>
+<para>Employees have access to critical data when they don't necessarily need access. Results of our survey showed that overall, a greater percentage of employees were allowed to access the company's critical information than needed.</para>
+<para>Half of the companies in our survey have no system in place to determine if the company's infrastructure is under attack. More than half of the respondents said their company has no automatic procedure or alert in place for escalating security-related events (breach, unauthorized access, or suspicious activity). The majority of companies we surveyed wouldn't know they were attacked or hacked for 24 hours.</para></blockquote>
+<para>Explicit and documented policies are used to guide enterprise decisions and behavior. Users (including administrators) view effective IA policies as useful to their daily work, not as barriers to getting the job done.</para>
+
+<para><emphasis role="bold">Policy is one means for identifying and mitigating IA and security risk.</emphasis></para>
+<para><emphasis role="bold">Policy and technology are complementary; one or both are used to implement an enterprise objective.</emphasis></para>
+
+<para>Security requirements are satisfied by</para>
+
+<itemizedlist>
+<listitem><para>performing asset and risk evaluation as described in <emphasis role="bold">Principle 3: Not all data is of equal value - risk must be managed</emphasis>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin3-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></listitem>
+<listitem><para>establishing, deploying, maintaining, and enforcing information assurance policies</para></listitem>
+<listitem><para>defining, deploying, and maintaining a technology roadmap for policy implementation that is reflected in infrastructure design and operations as outlined in <emphasis role="bold">Principle 8: The road map guides implementation choices (all technology is not equal)</emphasis>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin8-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para></listitem>
+<listitem><para>ensuring that roles and responsibilities are clearly defined including those of administrators</para></listitem>
+</itemizedlist>
+<para>Security requirements derive from an enterprise's mission and business objectives. These objectives provide a strategic understanding of what information assets need to be protected from compromise, damage, and loss. Performing risk management adds clarity and detailed guidance for information asset protection. Risk assessment (as part of risk management) is used to identify critical assets, identify threats to those assets, and formulate asset protection strategies based on identified risks. The presence of security policies demonstrates due diligence in the protection of information assets, which is critical for mitigating legal liability.</para>
+<para>Using explicit and implicit security requirements and the enhanced understanding resulting from risk management processes, responsible parties can develop and maintain security policies and responsive infrastructure designs that satisfy these requirements.</para>
+<para>Information assurance and security are requirements of infrastructure design, not "after the fact" add-ons. IA policies cannot be directly implemented; they are typically too high level. Policy requirements are further defined in standards, guidelines, and procedures. These artifacts are reflected in design decisions and are made real in an operational infrastructure through subsequent detailed design activities, development, and technology selection and implementation. There is a logical progression of actions for administrators to take; a roadmap can assist them in ordering and prioritizing such actions.</para>
+<para>If an enterprise can make difficult strategic decisions about information assurance, it makes the subsequent implementation much easier. Sponsored, comprehensive, and up-to-date policies are critical in meeting an enterprise's IA requirements. There must be a clear, implementable, traceable path from policy specification to policy implementation. These artifacts enhance communication between administrators, security staff, executive management, and key stakeholders, and they provide a common understanding of the foundations required for more effective information assurance [Palmer 01].</para>
+</section>
+<section>
+<title>Importance of IA Policy</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/alarm_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>As a case in point, it is essential that those responsible for your enterprise's information assets be adequately prepared to know what constitutes a breach to security and to detect if any such breaches have occurred. Without advance planning, policy deployment, and preparation, it is difficult, if not impossible, to determine</para>
+<itemizedlist>
+<listitem><para>if there has been-or still is-an intruder</para></listitem>
+<listitem><para>the extent of the damage caused by the intrusion</para></listitem>
+<listitem><para>how to return affected systems to a known, trusted state</para></listitem>
+<listitem><para>roles, responsibilities, and the authority to act</para></listitem>
+</itemizedlist>
+<para>Most enterprises have to experience a significant security event or observe this happening to a major competitor or peer enterprise before those responsible recognize the need for comprehensive planning and preparation.  If, for example, you depend on your public Web site to conduct a high volume of business transactions or communication, simple Web site defacement or a more serious denial-of-service attack can cause customers such a loss of confidence that they permanently take their business elsewhere.</para>
+<para>See also <emphasis role="bold">Principle 7: Security Knowledge in Practice (SKiP) provides a structured approach</emphasis>, particularly the Respond step.</para>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin7-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>Federal, state, and local laws and regulations with which you need to comply are constantly evolving. New and updated technologies are regularly released. Intruder attack methods and the damage they cause are constantly evolving, posing new threats to your information assets. So as part of conducting normal day-to-day business, you need to have processes in place to keep IA policies and their implementation up to date. These changes serve as immediate, updated "marching orders" for the way the enterprise does business [Allen 01].</para>
+<para>Having an effective IA policy in place should be considered a prerequisite for being in business. Buying and installing security solutions such as firewalls and intrusion detection systems while having bad policies or no policies is like having cops, courts, and prisons, but no laws [McBride 02].</para>
+</section>
+<section>
+<title>Policies Defined</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/brokencolumn_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para><emphasis role="bold">Senior Management Statement of Policy</emphasis></para>
+<itemizedlist>
+<listitem><para>Acknowledgement</para></listitem>
+<listitem><para>Support</para></listitem>
+<listitem><para>Commitment</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Regulatory</emphasis></para>
+<para><emphasis role="bold">Advisory</emphasis></para>
+<para><emphasis role="bold">Informative</emphasis></para>
+<para>Policies define the rules that regulate how an enterprise manages and protects its information and computing assets in order to achieve their survivability objectives. Policies that are documented, well known, and visibly enforced establish expected user behavior and serve to inform them of their obligations for protecting the enterprise's information assets. Users include all those who access, administer and manage, or have authorized accounts on an enterprise's system. A policy must be enforceable to achieve its objectives.</para>
+<para>Survivability polices are less defined and deployed than traditional security policies. As a result, we will concentrate on security policies, with the understanding that most of the practices are the same when developing and deploying policies that deal with overall mission survivability.</para>
+<para>Information security policies define the enterprise's rules and expectations regarding access, protection, and accountability of information assets and resources. Security policies are imperative for a sound security implementation. Ideally, policies should be written first, followed by the implementation of technology to enforce them; however, this is often not the case. Federal, state, and local laws may require having policies in place on particular topics. Enacting key policies may be essential to survive a disaster. They may also provide protection from liability or negligence, and form a basis for establishing security controls.</para>
+<para>Policies are considered the highest level of documentation from which standards, guidelines, and procedures derive. Ideally, higher-level policies are created first, ensuring alignment with business strategies and objectives. Effective policies are short, concise, and stated in such a manner that they do not need to change frequently.</para>
+<para>Policy creation begins with a Senior Management Statement of Policy. This general, high-level statement contains the following:</para>
+<itemizedlist>
+<listitem><para>An <emphasis role="bold">acknowledgement</emphasis> of the importance of computing assets and infrastructure to achieving the business mission</para></listitem>
+<listitem><para>A statement of <emphasis role="bold">support</emphasis> for achieving and sustaining information survivability throughout the enterprise</para></listitem>
+<listitem><para>A <emphasis role="bold">commitment</emphasis> to authorize and manage the definition of the lower level standards, guidelines, and procedures</para></listitem>
+</itemizedlist>
+<para>The Senior Management Statement of Policy is critical to the success of any survivability initiative. Management must understand the importance of planning, controls and protections to the organization's survival. Senior management must publicly support implementation throughout the enterprise. It is inadvisable to go forward without this demonstrated, visible, sustained support.</para>
+<para>An enterprise is often required to address regulatory statutes (federal, state, local) due to compliance or other legal requirements. Publicly held organizations develop and implement <emphasis role="bold">regulatory policies</emphasis> that are detailed and specific to the industry in which they operate to ensure they can pass a compliance audit.</para>
+<para><emphasis role="bold">Advisory policies</emphasis> are security policies that are strongly recommended but not mandatory. However, failing to follow them may result in defined consequences. Most organizations will want their personnel to consider these policies as mandatory. This is a broad category applicable to most policies.</para>
+<para><emphasis role="bold">Informative policies</emphasis> exist to inform the reader. These policies contain no specified requirements and are general enough to be distributed to external customers or vendors without compromising confidentiality.</para>
+<para><emphasis role="bold">Supporting notes for lecture on regulatory policies</emphasis></para>
+<para>Here are several examples of federal and state legislation that may cause the development and deployment of regulatory policies:</para>
+<blockquote>
+<itemizedlist>
+<listitem><para>1974: Family Educational Rights Privacy Amendment (FERPA) also known as the Buckley Amendment; designed to safeguard student information such as SSN. Non-compliance may result in loss of federal funding</para></listitem>
+<listitem><para>1996: Information Technology Management Reform Act (ITMRA), also known as the Clinger Cohen Act, primarily for federal government agencies</para></listitem>
+<listitem><para>1997: Health Insurance Portability and Accountability Act (HIPAA), for handling of patient information. Many academic institutions have associated medical facilities and student health centers so are subject to HIPAA. </para></listitem>
+<listitem><para>1998: Child Online Privacy Protection Act (COPPA); Certain commercial Web sites must obtain parental consent before collecting, using, or disclosing personal information from children under 13. </para></listitem>
+<listitem><para>1999: Gramm-Leach-Bliley Act, for protecting unauthorized disclosure of customer information in financial institutions. </para></listitem>
+<listitem><para>2002: Sarbanes-Oxley act after Enron and other accounting improprieties. CEOs and CFOs are required to inform their directors of significant internal control deficiencies that could adversely affect their ability to report financial data. "Major accounting firms now recommend that clients disclose their security plans in much the same way they disclose financial performance" [Leibs 03].</para></listitem>
+<listitem><para>2003: A new law in California (effective July 1, 2003) requires businesses that own databases to disclose security breaches if certain personal information was or may have been compromised.</para></listitem>
+<listitem><para>2004: "Expected to come into force in 20041, the Basel II Capital Accords require financial services firms to explicitly set aside cash reserves to cover operational and market risk. This is in addition to reserves required for credit risk. Digital security comprises a significant portion of operational risk. Firms that can demonstrate effective management of their e-business portfolio risk will be allowed to reduce the amount of operational set-aside. Therefore, better application security will-literally-be like money in the bank." [Jacquith 02].</para></listitem>
+</itemizedlist>
+<para>Having to meet emerging IA regulations and standards will affect your enterprise and its ability to conduct ongoing operations if it isn't already. Your security standard of due care/due diligence will affect your insurance rates.</para>
+</blockquote>
+</section>
+<section>
+<title>Policy Elements</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Standards</emphasis></para>
+<para>- Use of specific technologies and configurations</para>
+<para><emphasis role="bold">Guidelines</emphasis></para>
+<para>- Methods for securing systems</para>
+<para><emphasis role="bold">Procedures</emphasis></para>
+<para>- Detailed steps to follow</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/policyround_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>Policies are considered the first and highest level of documentation and are distinct from standards, guidelines and procedures. Standards, guidelines, and procedures contain the details of the policy, thereby interpreting and implementing policy. Generally, policies should be broad enough so that the underlying standards, guidelines, and procedures can be changed without having to change the overall policy.</para>
+<para>These three elements of a policy are separate yet related. Many companies create one document that addresses all of these. However, each element serves a different function and is intended for different audiences so it is best to treat and package them separately. This modular approach eases the policy review and update process. </para>
+<para>A <emphasis role="bold">standard</emphasis> is typically a collection of system- or procedure-specific requirements that must be met by everyone [SANS 01].  Standards ensure the consistent deployment and uniform use of selected technologies. Using standards reduces unnecessary complexity that can be caused by numerous solutions to the same requirement. Standards often reflect an architectural or configuration baseline that is defined to ensure security is being implemented consistently throughout the enterprise. For example, "All systems shall use a Windows 2000 professional or later operating system and shall be configured to connect to the enterprise domain.," "All Windows 2000 servers shall be configured to only provide the services for which they are intended. All other services shall be disabled or deleted."</para>
+<para><emphasis role="bold">Guidelines</emphasis> are a collection of system or procedural recommendations for best practice [SANS 01]. They are not requirements to be met but are strongly recommended. Guidelines take into account the varying nature of information systems. Guidelines may be used to indicate how standards are developed. Effective security policies make frequent references to standards and guidelines that exist within an enterprise. For example, "To avoid losing data, all users should save their important files to their designated network directory/share at regular intervals (daily, weekly)."</para>
+<para>Some policies, such as password policies, may include both standards and guidelines. Such guidelines are intended to be mandatory and carry consequences for non-compliance. An example policy that contains both standards and guidelines can be found at the following URL: <ulink url="http://www.sans.org/resources/policies/Password_Policy.pdf">http://www.sans.org/resources/policies/Password_Policy.pdf</ulink> [SANS 05a]</para>
+<para><emphasis role="bold">Procedures</emphasis> contain the detailed steps that are followed to perform a specific task. The purpose of procedures, the lowest level in the policy documentation hierarchy, is to provide direction for implementing policies, standards, and guidelines. For example, procedures may include methods for proper handling of sensitive information and instructions for what to do in the event of an information security incident.</para>
+<para>Well-documented procedures are critical to ensuring the survivability of an enterprise's information assets. Step-by-step instructions for routine tasks like system backups and restores, making changes to firewall access control rules, etc. should be followed, reviewed, and updated as needed. Having and using procedures provides continuity when key staff members depart.</para>
+</section>
+<section>
+<title>Topics</title>
+<para>Principles and Elements</para>
+<para><emphasis role="bold">Stakeholders and Contributors</emphasis></para>
+<para>Characteristics and Examples</para>
+<para>Policy Life Cycle Process</para>
+<para>What Administrators Need to Know</para>
+<para>Policy Knowledge</para>
+<para>This lecture describes aspects of IA policy including the following:</para>
+</section>
+<section>
+<title>IA Policy Stakeholders and Contributors</title>
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/policycontent_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+<para>The following excerpt from <emphasis>The CERT Guide to System and Network Security Practices</emphasis> discusses the importance of stakeholders and contributors to IA policies [Allen 01]:</para>
+<blockquote><para>As a general rule, policies are more successful if they are developed in cooperation with the people to whom they apply. Users, for example, are in the best position to evaluate how various policy statements might affect how they perform their work. Although <emphasis role="bold">middle or senior managers</emphasis> may be responsible for setting overall information security policies, they need to collaborate with <emphasis role="bold">administrators, IT staff, security staff,</emphasis> and <emphasis role="bold">users</emphasis> in order to define reasonable technological and procedural protection measures for information assets.</para>
+<para>When a new policy is first adopted in an established enterprise, not everyone will want to make the behavioral changes to comply with it. The responsible executive must be sure to explain the motivation for the policy. Peers, including those who participated in the development of the policy, can help accomplish this.</para>
+<para>The single most commonly expressed barrier to an effective information security program's adoption (including security policies) is the absence of visible, active <emphasis role="bold">senior executive</emphasis> sponsorship. The role of senior managers is to actively sponsor and endorse security policies. They make the connection between policies and the enterprise's mission and objectives. They generate awareness through words and actions, thereby reinforcing the importance of security policies. They assign enterprise ownership and responsibility for critical assets.</para></blockquote>
+<para><emphasis role="bold">Legal counsel</emphasis> are responsible for ensuring that security policies </para>
+<blockquote>
+<para>- are legally defensible and enforceable</para>
+<para>- comply with enterprise-wide policies and procedures</para>
+<para>- reflect known, generally-accepted business practices demonstrating the exercise of due care</para>
+<para>- conform to federal, state, and local laws and regulations</para>
+<para>- protect the enterprise from being held legally responsible in the event of compromise</para>
+<para>- require the preservation of critical evidence including a defensible, documented, chain of custody for all artifacts that may be used in legal proceedings" [Allen 01]</para>
+</blockquote>
+<para>Other stakeholders and contributors in an enterprise include the following:</para>
+<para>The <emphasis role="bold">human resources</emphasis> department is responsible for ensuring that user/employee rights are properly represented and reflected in security policies as well as ensuring HR's ability to legally enforce and act upon the consequences for policy non-compliance.</para>
+<para><emphasis role="bold">Middle managers</emphasis> have much the same role as senior managers but often at a more operational level. They need to ensure that their staff members understand and are acting in a manner consistent with security policies. An <emphasis role="bold">IT middle manager</emphasis> has a much larger role in policy formulation, ensuring that policy statements can be reasonably and effectively implemented. </para>
+<para>Typically the security department has ongoing responsibility for creating and maintaining the enterprise's security policy including standards, guidelines, and procedures. <emphasis role="bold">Security staff</emphasis> is responsible for ensuring that security requirements expressed in the policy can be carried out and are being carried out (through, for example, reviews and audits). For the purposes of this lecture, security staff also includes one or more CSIRTs (Computer Security Incident Response Teams), responsible for ensuring that actions required to detect and respond to a security incident are properly reflected in security policies.</para>
+<para><emphasis role="bold">Affected users</emphasis> advise on how security policies may affect their ability to do their work, helping to ensure the proper balance between required infrastructure operational capabilities and the need to operate securely.</para>
+<para><emphasis role="bold">Other IT staff</emphasis> (excluding administrators) are often involved in policy formulation and review based on the topic under consideration. If they have responsibility for a critical asset (such as a customer database) or are on the firing line responding to user questions and complaints (such as help desk staff), they need to have a voice in how policies are described and implemented, much the same as affected users.</para>
+<para><emphasis role="bold">Outside parties</emphasis> (such as vendors, contractors, partners, and suppliers) have a role to play in policy formulation in areas that describe third-party access to networks and data. Outside parties that can access your enterprise's networks need to demonstrate their ability to comply with your policies.</para>
+<para><emphasis role="bold">Administrators</emphasis> play the critical role of ensuring that policy language is clear and can be implemented at a reasonable cost. Administrators need to ensure that policies they require to do their jobs exist and are comprehensive, complete, and accurate. One example is administrators' authority to act in the event of security incidents (including different actions for different types of incidents) and where they need to obtain management concurrence before taking these actions [Wood 05b].</para>
+<para>See also <emphasis role="bold">Principle 10: Communication skill is critical to reach all constituencies</emphasis>, for additional guidance on crafting messages for various constituencies.
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/prin10-logo.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</section>
+<section>
+<title>Topics</title>
+<para>Principles and Elements</para>
+<para>Stakeholders and Contributors</para>
+<para><emphasis role="bold">Characteristics and Examples</emphasis></para>
+<para>Policy Life Cycle Process</para>
+<para>What Administrators Need to Know</para>
+<para>Policy Knowledge</para>
+<para>This lecture describes aspects of IA policy including the following:</para>
+</section>
+<section>
+<title>Characteristics of An Effective IA Policy</title>
+<para><emphasis role="bold">Traceable to the organization's mission and objectives; long-term focus</emphasis></para>
+<para><emphasis role="bold">Clearly defined scope and language; concise</emphasis></para>
+<para><emphasis role="bold">Involves stakeholders and affected parties</emphasis></para>
+<para><emphasis role="bold">Addresses what, not how</emphasis></para>
+<para><emphasis role="bold">Realistic - balances protection with productivity; enforceable</emphasis></para>
+<para><emphasis role="bold">Role-based</emphasis></para>
+<para><emphasis role="bold">Documented, up to date</emphasis></para>
+<para><emphasis role="bold">Visible and actively enforced; demonstrated senior management sponsorship</emphasis></para>
+<para><emphasis role="bold">Accompanied by awareness and training sessions</emphasis></para>
+<para>It is important to recognize that very few organizations in today's business world have IA policies that demonstrate all of these characteristics. So this material describes the goal state.</para>
+<para><emphasis role="bold">Traceable, long-term focus</emphasis></para>
+<para>The relationship between an enterprise's mission and objectives and security policy should be clearly articulated and communicated. Policies should remain relevant and applicable for a substantial period of time, until objectives or requirements change.</para>
+<para><emphasis role="bold">Clearly defined scope</emphasis></para>
+<para>If this has not been done elsewhere, security policies should identify what critical information assets are to be protected and at what level. This includes what assets the policy affects and to whom and what parts of the enterprise it applies. Site-specific policies or tailored versions of enterprise-wide security policies may be required to meet the needs of a specific site. Policies need to be stated simply and in plain English.</para>
+<para><emphasis role="bold">Involves stakeholders, affected parties</emphasis></para>
+<para>The parties described in the previous slide are actively involved when and where they need to be.</para>
+<para><emphasis role="bold">Addresses what, not how</emphasis></para>
+<para>Policies should be stated at the level of principles, objectives, priorities, and strategies. Each policy statement should allow for a range of interpretations and implementations.</para>
+<para><emphasis role="bold">Realistic</emphasis></para>
+<para>Policies support accomplishing the enterprise's objectives. By the same token, they must be realistic, balancing the need for protection with the need for users to be productive without undue barriers, and able to be implemented, maintained, and enforced for a reasonable cost.</para>
+<para><emphasis role="bold">Role based</emphasis></para>
+<para>Security policies should clearly define roles, responsibilities, accountabilities, and authorities to act. Authority needs to be commensurate with responsibility and accountability. Roles to be covered may include members of boards of directors or other oversight committees, executive and senior managers, middle managers, legal counsel, security officers, human resources, IT managers, and representatives of administrator and key user groups. Policies articulate the role and companion responsibilities that each of these positions has in ensuring that the policy is followed. They describe the enforcement mechanisms that are used to ensure that these roles and responsibilities are carried out. Policies should describe key decisions and scenarios in which authority to act is granted to specific roles.</para>
+<para><emphasis role="bold">Documented, up-to-date</emphasis></para>
+<para>Security policies are written down, communicated, and disseminated. All employees understand that these are living documents to which they are held to account. There is a known, visible enterprise process and point of contact for sending policy updates, improvements, and suggestions. Policies are periodically reissued and redistributed. New policy information is included in ongoing awareness and training sessions. Policy implementations are regularly tested and evaluated where appropriate.</para>
+<para><emphasis role="bold">Visible and actively enforced</emphasis></para>
+<para>As stated earlier, senior managers actively sponsor and endorse security policies. They regularly make the connection between policies and the enterprise's mission and objectives. They generate awareness through words and actions, thereby reinforcing the importance of security policies. An example would be the inclusion of security policies as a regular topic at senior staff meetings and in program/project reviews.</para>
+<para><emphasis role="bold">Awareness and training</emphasis></para>
+<para>All users understand the part they are required to play in ensuring policy compliance. They understand and respect the consequences for non-compliance. To ensure user acceptance of any policies that require their compliance, you may consider requiring each user to sign a statement acknowledging that he or she understands the policy and agrees to follow it. The human resources department often administers this process. Users (including administrators) view effective IA policies as useful to their daily work, not as barriers to getting the job done.</para>
+<para>Policies should include provisions for handling exceptions or waivers to the policy under well-described, well-bounded conditions.</para>
+</section>
+<section>
+<title>Example IA Policy Topics</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/accountability_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/authorization_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/purchasing_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/identification_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/privacy_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/riskreduction_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/acceptableuse_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/resources_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/violationreporting_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>                                                                                                                                                <imageobject>
+<imagedata fileref="images/communications_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>                                                                                                                                                </para>
+</entry>                                                                                                                                                     <entry valign="top">                                                                                                                                         <para>                                                                                                                                                       <screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/redundancy_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/access_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+<row>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>                                                                                                                                                <imageobject>
+<imagedata fileref="images/auditing_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>                                                                                                                                                </para>
+</entry>                                                                                                                                                     <entry valign="top">                                                                                                                                         <para>                                                                                                                                                       <screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/authentication_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/availability_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>The policy topics that your enterprise chooses to address depend on your mission, objectives, requirements, and needs. The topics indicated above are a candidate set, examples of which can be found in a number of sources.</para>
+<para>Policy topics suggested by the IETF's Site Security Handbook [Fraser 97] include the following:</para>
+<blockquote>
+<itemizedlist>
+<listitem><para><emphasis role="bold">Privacy</emphasis> - defines reasonable expectations of privacy regarding such issues as monitoring of electronic mail, logging of keystrokes, and access to users' files.</para></listitem>
+<listitem><para><emphasis role="bold">Access</emphasis> - defines access rights and privileges to protect assets from loss or disclosure by specifying acceptable use guidelines for users, operations staff, and management. It should provide guidelines for external connections, data communications, connecting devices to a network, and adding new software to systems. It should also specify any required notification messages (e.g., connect messages should provide warnings about authorized usage and line monitoring, and not simply say "Welcome").</para></listitem>
+<listitem><para><emphasis role="bold">Accountability</emphasis> - defines the responsibilities of users, operations staff, and management. It should specify an audit capability, and provide incident handling guidelines (i.e., what to do and who to contact if a possible intrusion is detected).</para></listitem>
+<listitem><para><emphasis role="bold">Authentication</emphasis> - establishes trust through an effective password policy, and by setting guidelines for remote location authentication and the use of authentication devices (e.g., one-time passwords and the devices that generate them).</para></listitem>
+<listitem><para><emphasis role="bold">System and network maintenance</emphasis> - describes how both internal and external maintenance people are allowed to handle and access technology. One important topic to be addressed here is whether remote maintenance is allowed and how such access is controlled. Another area for consideration here is outsourcing and how it is managed.</para></listitem>
+<listitem><para><emphasis role="bold">Violations reporting</emphasis> - indicates which types of violations (e.g., privacy and security, internal and external) must be reported and to whom the reports are made. A non-threatening atmosphere and the possibility of anonymous reporting will result in a greater probability that a violation will be reported if it is detected.</para></listitem>
+<listitem><para><emphasis role="bold">Availability Statement</emphasis> - sets users' expectations for the availability of resources. It should address redundancy and recovery issues, as well as specify operating hours and maintenance downtime periods. It should also include contact information for reporting system and network failures.</para></listitem>
+<listitem><para><emphasis role="bold">Supporting Information</emphasis> - provides users, staff, and management with contact information for each type of policy violation; guidelines on how to handle outside queries about a security incident, or information which may be considered confidential or proprietary; and cross-references to security procedures and related information, such as company policies and governmental laws and regulations.</para></listitem>
+</itemizedlist>
+</blockquote>
+<para>Barman suggests the following topics and aspects to consider [Barman 02]:</para>
+<itemizedlist>
+<listitem><para>Physical Security</para></listitem>
+</itemizedlist>
+<para> - Computer location and facility construction</para>
+<para> - Facilities access controls</para>
+<para> - Contingency planning</para>
+<para> - General computer systems security</para>
+<para> - Periodic system and network configuration audits</para>
+<para> - Staffing considerations</para>
+<itemizedlist>
+<listitem><para>Authentication and Network Security</para></listitem>
+</itemizedlist>
+<para> - Network addressing and architecture</para>
+<para> - Network access control</para>
+<para> - Login security</para>
+<para> - Passwords</para>
+<para> - User interface</para>
+<para> - Access controls</para>
+<para> - Telecommuting and remote access</para>
+<itemizedlist>
+<listitem><para>Internet Security</para></listitem>
+</itemizedlist>
+<para> - Administrative responsibilities</para>
+<para> - User responsibilities</para>
+<para> - World Wide Web policies</para>
+<para> - Application responsibilities</para>
+<para> - VPNs, Extranets, Intranets, and other tunnels</para>
+<para> - Modems and other backdoors</para>
+<para> - Employing PKI and other controls</para>
+<para> - Electronic commerce</para>
+<itemizedlist>
+<listitem><para>E-mail Security</para></listitem>
+</itemizedlist>
+<para> - Acceptable use</para>
+<para> - Administration</para>
+<para> - Confidential communication</para>
+<itemizedlist>
+<listitem><para>Viruses, Worms, and Trojan Horses</para></listitem>
+</itemizedlist>
+<para> - Type of virus protection</para>
+<para> - Rules for handling third-party software</para>
+<para> - User involvement with viruses</para>
+<itemizedlist>
+<listitem><para>Encryption</para></listitem>
+</itemizedlist>
+<para> - Legal issues</para>
+<para> - Managing encryption</para>
+<para> - Handling encryption and encrypted data</para>
+<para> - Key generation considerations</para>
+<para> - Key management</para>
+<itemizedlist>
+<listitem><para>Software Development</para></listitem>
+</itemizedlist>
+<para> - Processes</para>
+<para> - Testing and documentation</para>
+<para> - Revision control and configuration management</para>
+<para> - Third-party development</para>
+<para> - Intellectual property</para>
+<itemizedlist>
+<listitem><para>Acceptable Use (reflects some language from the policy topics above)</para></listitem>
+</itemizedlist>
+<para> - User login responsibilities</para>
+<para> - Use of the systems and network</para>
+<para> - User responsibilities</para>
+<para> - Organizational responsibilities and disclosures</para>
+<para>Another set of topics suggested by van der Walt [van der Walt 01] include:</para>
+<itemizedlist>
+<listitem><para>Physical security</para></listitem>
+<listitem><para>Network security</para></listitem>
+<listitem><para>Access control</para></listitem>
+<listitem><para>Authentication</para></listitem>
+<listitem><para>encryption</para></listitem>
+<listitem><para>Key management</para></listitem>
+<listitem><para>Compliance</para></listitem>
+<listitem><para>Auditing and review</para></listitem>
+<listitem><para>Security awareness</para></listitem>
+<listitem><para>Incident response</para></listitem>
+<listitem><para>Disaster recovery/business continuity</para></listitem>
+<listitem><para>Acceptable use</para></listitem>
+<listitem><para>Software security</para></listitem>
+</itemizedlist>
+<para>As another example, communications policy describes guidelines for establishing communication contacts, channels, and mechanisms, particularly when dealing with a security incident. This includes communication up and down the chain of command, and when, if ever, it is appropriate to bypass levels in the chain (vertical communication); notification of managers and peers at the same level (horizontal communication); the involvement of public relations for interfacing with the press and public; and communication with Internet service providers, help desk personnel, legal counsel, investigations groups, law enforcement agencies, and users. Mechanisms may include verbal conversations (phone, face-to-face), e-mail, pagers, and other forms of written correspondence such as fax, meetings, whether these occur onsite or offsite, and whether they require secure means of communication using various forms of encryption, scrambling, or jamming. This description may need to include communication scenarios to help better describe how channels and mechanisms may be used.</para>
+<para>Numerous examples of useful policy language for all types of organizations can be obtained by searching the Web.</para>
+<para>Acceptable use policy topics and language are discussed next.</para>
+</section>
+<section>
+<title>Acceptable Use Policy Topics</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Compliance with your password policy</emphasis></para>
+<para><emphasis role="bold">Hardware changes a user may or may not make</emphasis></para>
+<itemizedlist>
+<listitem><para>Modem restrictions and use</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Software a user may or may not install or remove</emphasis></para>
+<para><emphasis role="bold">Information a user may or may not transmit across the network</emphasis></para>
+<para><emphasis role="bold">User responsibilities to operate a computer securely</emphasis></para>
+<itemizedlist>
+<listitem><para>Virus scanning and eradication</para></listitem>
+<listitem><para>Restrictions on opening email attachments</para></listitem>
+<listitem><para>Shutting down or locking an unattended computer</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Prohibitions against</emphasis></para>
+<itemizedlist>
+<listitem><para>Sharing of accounts</para></listitem>
+<listitem><para>Breaking into accounts and systems</para></listitem>
+<listitem><para>Cracking passwords</para></listitem>
+<listitem><para>Disruption of service</para></listitem>
+<listitem><para>Conduct of personal business</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="bottom">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/acceptablecheck_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>The purpose of an acceptable use policy is to identify and encourage user behavior that can enhance security and discourage or prohibit user behavior that can reduce or breach security. Users need to know the information assets that require protection and their responsibilities with respect to that protection. The security of many computing assets (desktops, laptops, peripherals, personal digital assistants, etc.) and their access to an enterprise's infrastructure are ultimately the responsibility of users. If users don't understand their security responsibilities and the enterprise's expectations, the technological measures used to enforce security policies will likely be ineffective [Allen 01].</para>
+<para>An acceptable use policy describes what a user is authorized to do and not do as a computer professional, and the conditions under which a user can act with authority.</para>
+<para>In addition to the topics listed above, additional acceptable use topics include the following:</para>
+<itemizedlist>
+<listitem><para>special considerations for laptop and home computer use including mechanisms for remote access</para></listitem>
+<listitem><para>physical theft, sabotage, or intentional destruction of computing equipment</para></listitem>
+<listitem><para>enabling and use of active program scripting/mobile code (ActiveX, Java, JavaScript, VBS)</para></listitem>
+<listitem><para>prohibiting the use of company computing resources for illegal or illicit communications or activities (downloading pornography, e-mail harassment) [Briney 01]</para></listitem>
+</itemizedlist>
+</section>
+<section>
+<title>Topics</title>
+<para>Principles and Elements</para>
+<para>Stakeholders and Contributors</para>
+<para>Characteristics and Examples</para>
+<para><emphasis role="bold">Policy Life Cycle Process</emphasis></para>
+<para>What Administrators Need to Know</para>
+<para>Policy Knowledge</para>
+<para>This lecture describes aspects of IA policy including the following:</para>
+</section>
+<section>
+<title>Policy Life Cycle Process</title>
+<para><emphasis role="bold">Specifies</emphasis></para>
+<itemizedlist>
+<listitem><para>Developer roles in drafting initial policy, and development process</para></listitem>
+<listitem><para>Reviewer roles, and review process</para></listitem>
+<listitem><para>Approver roles, and approval process</para></listitem>
+<listitem><para>Implementer roles, and implementation process</para></listitem>
+<listitem><para>Enforcer roles, and enforcement process</para></listitem>
+</itemizedlist>
+
+<para>Developers and development process includes items such as the following:</para>
+<itemizedlist>
+<listitem><para>Key roles to include by broad policy topics and the designated development leader</para></listitem>
+<listitem><para>Acceptable timeframes for development of the first draft and availability of the final draft</para></listitem>
+<listitem><para>Policy template</para></listitem>
+<listitem><para>The lifecycle process described on the next slide</para></listitem>
+</itemizedlist>
+<para>Reviewers and review process includes key reviewer roles by broad policy topic, review timeframes, and how comments are to be submitted and addressed.</para>
+<para>Approvers and approval process includes key approver roles by broad policy topic, approval timeframes, and how comments are to be submitted and addressed. This process also designates what role has final sign off authority.</para>
+<para>Implementers and implementation process addresses the following:</para>
+<itemizedlist>
+<listitem><para>Key roles by broad policy topic</para></listitem>
+<listitem><para>The creation and/or use of appropriate standards, guidelines, and procedures to implement the new or updated policy</para></listitem>
+<listitem><para>The creation of an implementation plan including tasks, milestones, and resources</para></listitem>
+<listitem><para>Identification of awareness and training updates for both implementation and enforcement</para></listitem>
+</itemizedlist>
+<para>Enforcers and enforcement process includes key enforcement roles by broad policy topic, enforcement actions, and any new or updated consequences for noncompliance.</para>
+<para><emphasis role="bold">Develop draft policy with key stakeholders</emphasis></para>
+<para><emphasis role="bold">Present to stakeholder groups; address comments</emphasis></para>
+<para><emphasis role="bold">Gain senior management approval and commitment</emphasis></para>
+<para><emphasis role="bold">Disseminate to all users</emphasis></para>
+<para><emphasis role="bold">Incorporate in new and refresher awareness and training programs</emphasis></para>
+<para><emphasis role="bold">Review and update periodically</emphasis></para>
+<para><emphasis role="bold">To meet policy requirements, security must be considered from the beginning.</emphasis></para>
+<para><emphasis role="bold">However, policy statements cannot be directly implemented.</emphasis></para>
+<itemizedlist>
+<listitem><para>A more detailed description is required </para></listitem>
+<listitem><para>Implementations are likely derived from standards, guidelines, procedures, best practices, and administrator experience</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">What happens without a policy implementation plan that is reflected in infrastructure design and operations?</emphasis></para>
+<itemizedlist>
+<listitem><para>The organization and its information assets are vulnerable</para></listitem>
+<listitem><para>Only inadequate, point solutions are available</para></listitem>
+<listitem><para>Administrators continually make ad hoc decisions, play catch-up</para></listitem>
+</itemizedlist>
+<para>Security is a requirement of infrastructure design, not an "after the fact" add-on. Security policies cannot be directly implemented; they are typically too high level. Policy requirements, reflected in design decisions, are made real in an operational infrastructure through subsequent detailed design activities, development, and technology selection and implementation. There is a logical progression of action for administrators to take. A plan can assist an administrator in ordering and prioritizing such actions.</para>
+<para>Without a plan, policy implementers run the risk of deploying a piecemeal solution that only addresses specific needs, not the overall security architecture required to effectively meet policy requirements. Keep in mind the adage, "security is only as strong as its weakest link." Relying only on comprehensive perimeter protection in the form of firewalls and intrusion detection systems is an incomplete protection strategy with a historical precedent in the Maginot Line in World War II. Localized security technologies are a short-sighted, "fingers in the dike" solution and often result in crisis management and a high degree of vulnerability. The absence of a plan perpetuates erroneous thinking (the latest, hot security technology will protect our infrastructure from today's threats), wastes precious resources, and undermines an administrator's ability to make the case for improvement when the latest technology fails to protect in the face of a new attack.</para>
+</section>
+<section>
+<title>Topics</title>
+<para>Principles and Elements</para>
+<para>Stakeholders and Contributors</para>
+<para>Characteristics and Examples</para>
+<para>Policy Life Cycle Process</para>
+<para><emphasis role="bold">What Administrators Need to Know</emphasis></para>
+<para>Policy Knowledge</para>
+</section>
+<section>
+<title>What Administrators Need to Know</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">IA goals and tradeoffs</emphasis></para>
+<para><emphasis role="bold">What IA policies exist and what additional topics need to be addressed in policy </emphasis></para>
+<para><emphasis role="bold">Role with respect to policy</emphasis></para>
+<itemizedlist>
+<listitem><para>Content contributor</para></listitem>
+<listitem><para>Enforcer in areas of responsibility</para></listitem>
+<listitem><para>(Potentially) Trainer </para></listitem>
+<listitem><para>Mentor for new administrators</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/manyhats_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>An administrator's security goals are largely determined by the following key tradeoffs [Fraser 97]:</para>
+<orderedlist>
+<listitem><para>Services offered versus security provided - Each service offered to users carries its own security risks. For some services, the risk outweighs the benefit of the service and the administrator may choose to eliminate the service rather than try to secure it.</para></listitem>
+<listitem><para>Ease of use versus security - The easiest system to use allows access to any user and require no passwords; that is, there is no security. Requiring passwords makes the system a little less convenient but more secure. Requiring device-generated one-time passwords makes the system even more difficult to use, but much more secure.</para></listitem>
+<listitem><para>Cost of security versus risk of loss - There are many different costs to security: monetary (i.e., the cost of purchasing security hardware and software like firewalls and one-time password generators), performance (i.e., encryption and decryption take time), and ease of use (as mentioned above). There are also many levels of risk: loss of privacy (i.e., the reading of information by unauthorized individuals), loss of data (i.e., the corruption or erasure of information), and the loss of service (e.g., the filling of data storage space, usage of computational resources, and denial of network access). Each type of cost must be weighed against each type of loss.</para></listitem>
+</orderedlist>
+<para>An administrator needs to be fully cognizant of all security policies, standards, guidelines, and procedures and keep abreast of changes to these documents. In particular, administrators need to understand their role in ensuring policy compliance and identifying actions that violate policy. An administrator needs to take the initiative to raise questions of policy interpretation and ensure that policies exist to cover all actions for which an administrator is held responsible.</para>
+<para>An administrator generally plays the role of technology expert and is likely the key implementer. As a result, an administrator needs to ensure that policy language is implementable and enforceable during the review process. An administrator will be increasingly involved as the policy language is interpreted and specified in more detail.</para>
+<para>In <emphasis>Real World Linux Security: Intrusion Prevention, Detection, and Recovery</emphasis> [Toxen 01], Toxen says, "The degree of authority that an administrator should have to detect and correct policy noncompliance should depend on the criticality of the noncompliance. For example, a computer that provides an unauthorized and insecure bridge to the Internet around the firewall should be disconnected immediately, possibly impounded pending resolution and scanning for intrusions, and the user severely reprimanded or worse. An account used improperly or which contains software that has not been approved or unacceptable images should be disabled immediately by the administrator and then, when the system is secure, the administrator can follow up with the user and management as appropriate. If policy forbids personal e-mail, a gentle verbal warning following a violation is probably called for." [Toxen 01]</para>
+<para>Often an administrator will be asked to participate in training users on how to comply with new policy actions and helping new administrators better understand their role and any constraints with respect to policy implementation and enforcement.</para>
+</section>
+<section>
+<title>Policy Topics for Administrators</title>
+<para><emphasis role="bold">Authority and conditions for monitoring user activities (e.g., reading user e-mail)</emphasis></para>
+<para><emphasis role="bold">Accessing protected programs or files</emphasis></para>
+<para><emphasis role="bold">Disrupting or terminating service under specific conditions</emphasis></para>
+<para><emphasis role="bold">Adding and changing users, user groups, user privileges, and authentication mechanisms</emphasis></para>
+<para><emphasis role="bold">Authority and conditions for using vulnerability testing, penetration testing, and password cracking tools</emphasis></para>
+<para><emphasis role="bold">Enforcing acceptable use policy provisions and prohibitions</emphasis></para>
+<para>As stated above under IA Policy Stakeholders and Contributors, administrators play the critical role of ensuring that policy language is clear and can be implemented at a reasonable cost. Administrators need to ensure that policy topics they require to do their jobs are included, and that they are comprehensive, complete, and accurate. One example is an administrator's authority to act in the event of a security incident (including different actions for different types of incidents) and where they need to obtain management concurrence before taking action (such as taking a system or network off line) [Wood 05b].</para>
+<para>Administrators typically have an increased level of privilege (access, enforcement) over normal users. With this increased level of access comes greater responsibility, accountability, and authority. These rights and privileges need to be articulated in security policy language specifically directed to administrators. This policy should be carefully drafted and reviewed by administrators to ensure that it fully describes the rights and protections they require to perform their job responsibilities.</para>
+<para>In addition to the above, here are three policy topics that administrators need to consider [Barman 02]:</para>
+<itemizedlist>
+<listitem><para>Maintenance - Policies should require that administrators regularly maintain public data areas such as Web server content, ftp repositories, etc. Public data areas can serve as upload areas for hacker tools.</para></listitem>
+<listitem><para>Outsourcing - Example language: Administrators shall be responsible for ensuring that servers providing information or services to Internet users are properly maintained. Servers operated by other providers (co-located or off-site) shall be maintained as specified in service level agreements.</para></listitem>
+<listitem><para>Enforcement - Example language: Administrators shall enforce all policies in accordance with established procedures. Such procedures address monitoring and preserving information in a manner that allows appropriate action to be taken in the event of a policy violation. Such procedures include preserving evidence for disciplinary actions for employees and legal actions for external violators.</para></listitem>
+</itemizedlist>
+<para>Other considerations for administrators that can result in policy non-compliance by administrators [Lancaster 03]:</para>
+<itemizedlist>
+<listitem><para>Like the cobbler's children who have no shoes, system administrators often have no awareness of security requirements that apply to them. Well, more correctly, they often ignore such requirements. In fact, I can't tell you how many times I've seen security audits detect some outlawed application on the network, and then traced it back to an administrator's machine. As recently as two weeks ago, I was at a large company, where the head of their standards setting "Security Counsel" was running a Kazaa server on his workstation.</para></listitem>
+<listitem><para>One of the reasons this is true is that network administrators spend half their time building and tweaking and testing equipment, whether it's firewalls, PCs or routers and switches. And the other half of their time, they spend maintaining their networks with all sorts of specialized tools. These activities are very "high risk" and there are a lot of steps administrators should take to minimize their risk.</para></listitem>
+<listitem><para>First, build a lab or "build" a network, separate from your production network, in which you can build and test equipment, without worrying about what level of patches or service packs you have. Usually, you'll want to 'dual-home' a file server so that you can download necessary files, or better yet, burn the files you need to CDs. Using a Windows server to do "Port Address Translation" is also an option, as it can help prevent access into this private lab and only takes a few clicks to set up. This will help alleviate the problem of unauthorized programs running on administrators' workstations.</para></listitem>
+<listitem><para>Next, get an accurate inventory of all your network management stations. Lots of administrators re-deploy old PCs to run network management tools like MRTG (multi-router traffic grapher) or to act as route servers or boxes to collect syslogs, etc. Unfortunately, these systems are highly susceptible to worms, as they are often overlooked when new patches are released; having a valid, up-to-date list will help with this problem.</para></listitem>
+<listitem><para>Distributed or dedicated protocol analyzers, running on Windows OS are also vulnerable. Keep them updated, or shut them off when they're not in use. Finally, don't allow these boxes to belong to the same Windows Domain as your production servers.</para></listitem>
+</itemizedlist>
+<para>See also Chapter 7, Establishing Security Policies, in Real World Linux Security: Intrusion Prevention, Detection, and Recovery [Toxen 01] and Appendix A-1, Information Security Policy, in Information Security Architecture: An Integrated Approach to Security in the Organization [Tudor 00, specifically].</para>
+</section>
+<section>
+<title>Topics</title>
+<para>Principles and Elements</para>
+<para>Stakeholders and Contributors</para>
+<para>Characteristics and Examples</para>
+<para>Policy Life Cycle Process</para>
+<para>What Administrators Need to Know</para>
+<para><emphasis role="bold">Policy Knowledge</emphasis></para>
+</section>
+<section>
+<title>IA Policy Knowledge</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Any user (all levels, all privileges) should be able to answer the following questions:</emphasis></para>
+<itemizedlist>
+<listitem><para>Where are your enterprise's IA policies defined?</para></listitem>
+<listitem><para>Who is involved in establishing IA policy?</para></listitem>
+<listitem><para>Who is responsible for monitoring IA policy compliance?</para></listitem>
+<listitem><para>To whom is the IA policy disseminated? How? How is receipt acknowledged?</para></listitem>
+<listitem><para>How often is the IA policy updated? How are updates disseminated and acknowledged?</para></listitem>
+<listitem><para>To whom do you submit suggested IA policy changes?</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">Can you answer these for your enterprise?</emphasis></para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/threepeople_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+<para>For security policy to be part of an enterprise's way of doing business, senior managers, middle managers, security trainers, security staff, and administrators must periodically ask all users (and themselves) these questions and receive satisfactory and correct responses. Indications of lack of awareness and knowledge serve as a signal for improvements in the security training program.</para>
+</section>
+<section>
+<title>Summary</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="2" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Understand policy principles and characteristics</emphasis></para>
+<para><emphasis role="bold">Identify and involve stakeholders and contributors</emphasis></para>
+<para><emphasis role="bold">Incorporate important policy characteristics and use relevant examples</emphasis></para>
+<para><emphasis role="bold">Recognize that policies need to managed according to a life cycle</emphasis></para>
+<para><emphasis role="bold">Be informed about what administrators need to know</emphasis></para>
+<para><emphasis role="bold">Make sure users can demonstrate their knowledge of IA policy</emphasis></para>
+</entry>
+<entry valign="top">
+<para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/review_1.jpg"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</para>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</section>
+<section>
+<title>Exam</title>
+<para>Principle 4: Exam on Information assurance policy governs actions</para>
+</section>
+</article>

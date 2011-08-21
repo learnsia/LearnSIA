@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+  <holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Everything is Data</emphasis></para>
+
+<para>Overview: These are the exam questions for Principle 2: Everything is Data.</para>
+
+<qandaset>
+
+<qandaentry>
+<question><para>According to the Information Security Model, what are the three 'Information States?'</para></question>
+<answer><para><emphasis role="bold">Storage, Processing, Transmission</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What are the three 'Security Practices?'</para></question>
+<answer><para><emphasis role="bold">Policies and Procedures, Technology, Education/Awareness/Training</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What are the two main ways of ensuring data confidentiality?</para></question>
+<answer><para><emphasis role="bold">Limiting access (access controls), concealing content (encryption)</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>When using a well-known means of encryption, such as an algorithm like AES, upon what part of the cryptosystem does the confidentiality of the encrypted data hinge?</para></question>
+<answer><para><emphasis role="bold">The Key</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>True or false: For similarly sized keys, a symmetric encryption system is faster than an asymmetric system.</para></question>
+<answer><para><emphasis role="bold">True</emphasis></para></answer>
+</qandaentry>
+<qandaentry>
+
+<question><para>Describe how a transaction would take place using the hybrid model of encryption (hybrid of symmetric and asymmetric).</para></question>
+<answer><para><emphasis role="bold">The two hosts would exchange public keys (i.e., part of the asymmetric encryption system) and would use the asymmetric system to then create and share a symmetric cryptosystem key; after the key had been shared and agreed upon, the rest of the transaction would be encrypted with the symmetric key and symmetric encryption algorithm.</emphasis></para></answer>
+</qandaentry>
+<qandaentry>
+<question><para>Describe how the use of a hash function could give an administrator confidence that some files on his system had not changed.</para></question>
+<answer><para><emphasis role="bold">If the administrator generated hashes of the files in question when they were in a known state and kept that hash for future reference, he could (at any time) generate new hashes and compare those to the hashes on file and would know for certain if the files had changed.</emphasis></para></answer>
+</qandaentry>
+</qandaset>
+
+</section>
+</article>
