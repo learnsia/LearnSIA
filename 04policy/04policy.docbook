@@ -36,23 +36,20 @@
 <para>- Part 3: Structuring Security Policies <ulink url="http://www.securityfocus.com/infocus/1487">http://www.securityfocus.com/infocus/1487</ulink></para>
 <para>- Part 4: A Sample Policy <ulink url="http://www.securityfocus.com/infocus/1497">http://www.securityfocus.com/infocus/1497</ulink></para>
 <orderedlist>
-<listitem><para>Georgetown University Information Security Policy. [GU] </para></listitem>
-<listitem><para>Carnegie Mellon University Computing Policy. [Carnegie Mellon] </para></listitem>
-<listitem><para>Your Educational Institution's Computing Policy and Acceptable Use Policy (if a different policy)</para></listitem>
+<listitem><para>Your Educational or Organization's Institution's Computing Policy and Acceptable Use Policy (if a different policy)</para></listitem>
 </orderedlist>
 <para><emphasis role="bold">Recommended readings:</emphasis></para>
 <orderedlist>
-<listitem><para>Writing Information Security Policies [Barman 02]</para></listitem>
 <listitem><para>RFC 2196 Site Security Handbook [Fraser 97]  </para></listitem>
-<listitem><para>Selected readings from the SANS Security Policy Project Web site [SANS 01] </para></listitem>
+<listitem><para>Selected readings from the SANS Security Policy Project Web site <ulink url="http://www.sans.org/security-resources/policies/">http://www.sans.org/security-resources/policies/</ulink> [SANS 01] </para></listitem>
 <listitem><para>"Data Security Policy - Structure and Guidelines" [Weise 01] </para></listitem>
 </orderedlist>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>Required reading - potential substitution</para>
-<para>Rather than having the students read the Carnegie Mellon University Computing Policy, have them 1) locate and 2) read your college/university computing policy and acceptable use policy (if not included as part of the computing policy).</para>
+<para>The students should 1) locate and 2) read their college/university or organization's computing policy and acceptable use policy (if not included as part of the computing policy).</para>
 <para><emphasis role="bold">Handout</emphasis></para>
-<para>Example policies to be used throughout the lecture. See Principle 4 'Sample Enterprise Security Policy Template' file for a sanitized policy template and example with instructions. Consult the Principle 4 reading list for additional policy examples.</para>
+<para>Download some of the policies located on the SANS website.</para>
 <para><emphasis role="bold">Check Understanding</emphasis></para>
 <para>Ask students for examples of security policies where they work and how well they are communicated and enforced. Capture some of these for use as examples to illustrate points below.</para>
 <para>Remind the students to consider whether or not their employer allows them to disclose the types of these workplace security policies.</para>
@@ -681,7 +678,7 @@
 <para>Numerous examples of useful policy language for all types of organizations can be obtained by searching the Web.</para>
 <![%instructor;[
 <para>&instructBegin;</para>
-<para>Hand out example policies to be used throughout the lecture. See Principle 4 'Sample Enterprise Security Policy Template' file for a sanitized policy template and example with instructions. Consult the Principle 4 reading list for additional policy examples and make appropriate selections.</para>
+<para>Hand out example policies to be used throughout the lecture from the SANS website.</para>
 <para>&instructEnd;</para>
 ]]>
 <para>Acceptable use policy topics and language are discussed next.</para>
@@ -1004,7 +1001,6 @@
 <listitem><para>Lack of Vulnerability Analysis Policy: There are a number of anecdotal cases of an administrator using password cracking tools (to test whether or not users are following the password policy) or network mapping software (to check for open ports and update network topologies) and then getting fired or suspended for inappropriate access or system disruption when using these tools</para></listitem>
 <listitem><para>Lack of Network Traffic Policy: It is extremely difficult, if not impossible, to configure a firewall properly if security policies have not been created. A firewall is, by definition, an enforcer of security policies.</para></listitem>
 </orderedlist>
-<para>Although not used until the last course, "Sustaining, Improving and Building Survivable Functional Units," there exists an XYZ Company Information Security Policy_Manual-INSTRUCTOR.pdf and a corresponding XYZ Company Information Security Policy_Manual-STUDENT.pdf, which could be used in this "Principles of Survivability and Information Assurance" course in this policy module.  PDF versions of these two manuals are provided in the Supplemental Materials section for this module.  Note carefully that these policy manuals do have known deliberate errors (omission and commission) in them (as they are used in exercises in the "Sustaining, Improving and Building Survivable Functional Units" course).  Naturally there are unknown errors too.</para>
 <para>&instructEnd;</para>
 ]]>
 </section>

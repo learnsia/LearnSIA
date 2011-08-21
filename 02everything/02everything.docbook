@@ -26,15 +26,13 @@
 <title>Reading Assignments</title>
 <para><emphasis role="bold">Required readings:</emphasis></para>
 <itemizedlist>
-<listitem><para>File Cabinets and Pig Latin: Guards for Information Assets [Rogers 01b]</para></listitem>
-<listitem><para>Can You Prove It? [Rogers 03a]</para></listitem>
-<listitem><para>Think Outside the Box: A High Availability Primer [Leroux 02] </para></listitem>
-<listitem><para>Introduction to Cryptography - Chapter 1: The Basics of Cryptography  [PGPI]</para></listitem>
+<listitem><para><ulink url="http://www.sei.cmu.edu/library/abstracts/news-at-sei/securitymatters3q02.cfm">File Cabinets and Pig Latin: Guards for Information Assets</ulink> [Rogers 01b]</para></listitem>
+<listitem><para><ulink url="http://www.sei.cmu.edu/library/abstracts/news-at-sei/securitymatters1q03.cfm">Can You Prove It?</ulink> [Rogers 03a]</para></listitem>
+<listitem><para><ulink url="http://www.pgpi.org/doc/pgpintro/#p1">Introduction to Cryptography - Chapter 1: The Basics of Cryptography</ulink>  [PGPI]</para></listitem>
 </itemizedlist>
 <para><emphasis role="bold">Recommended readings:</emphasis></para>
 <itemizedlist>
-<listitem><para>E-mail - A Postcard Written in Pencil [Rogers 01]</para></listitem>
-<listitem><para>National Training Standard for Information Security Professionals, No. 4011 [NST 94]</para></listitem>
+<listitem><para><ulink url="http://www.cnss.gov/Assets/pdf/nstissi_4011.pdf">National Training Standard for Information Security Professionals, No. 4011</ulink> [NST 94]</para></listitem>
 </itemizedlist>
 <![%instructor;[
 <para>&instructBegin;</para>
@@ -92,7 +90,7 @@
 <para><emphasis role="bold">Time Allocation:</emphasis>  The lecture, discussion, and in-class activities should take 1 hour.</para>
 <para><emphasis role="bold">Required reading:</emphasis></para>
 <orderedlist>
-<listitem><para>File Cabinets and Pig Latin: Guards for Information Assets [Rogers 02b]</para></listitem>
+<listitem><para><ulink url="http://www.sei.cmu.edu/library/abstracts/news-at-sei/securitymatters3q02.cfm">File Cabinets and Pig Latin: Guards for Information Assets</ulink> [Rogers 02b]</para></listitem>
 </orderedlist>
 <para><emphasis role="bold">Check Understanding</emphasis></para>
 <para>Ask students for some non-computer examples of data as a transition to the topic that "Everything is data," assuming the students have done the required reading on this topic.</para>
@@ -182,7 +180,7 @@
 <![%instructor;[
 <para>&instructBegin;</para>
 <para><emphasis role="bold">Optional Reading Assignment</emphasis></para>
-<para><emphasis>National Training Standard for Information Security Professionals, No. 4011 [NST 94].</emphasis></para>
+<para><emphasis><ulink url="http://www.cnss.gov/Assets/pdf/nstissi_4011.pdf">National Training Standard for Information Security Professionals, No. 4011</ulink> [NST 94].</emphasis></para>
 <blockquote><para>This document establishes the minimum standard for training of information systems security (INFOSEC) professionals in the disciplines of telecommunications and automated information systems (AIS) security. An INFOSEC professional is an individual who is responsible for the security oversight or management of national security systems during phases of the life cycle.</para></blockquote>
 <para>Everything is data, but not all data is of equal importance. Whether it involves performance impacts in the processing of data or reduced productivity on the part of personnel, keeping data secure comes at a price. When a system administrator makes a risk analysis to determine what, if any, security measures should be in place, it helps to have a model from which to examine the issues involved. The information security properties of confidentiality, integrity, and availability do not exist in a vacuum and intersect with issues involving the different states of data (processing, storage, transmission) and the various security measures that can be employed.</para>
 <para><emphasis role="bold">Check Understanding</emphasis></para>
@@ -468,7 +466,7 @@
 </section>
 <section>
 <title>Symmetric Encryption</title>
-<para>Symmetric encryption algorithms work on one simple principle-the same key that is used to encrypt the plaintext is used to decrypt the ciphertext. For example, in a DES implementation, the same key must be used on the sender side to encrypt the message as will be used on the receiver's side to decrypt the message. Because this type of encryption scheme requires that the key be kept completely secret, this type of key is often referred to as a "secret key."</para>
+<para>Symmetric encryption algorithms work on one simple principle-the same key that is used to encrypt the plaintext is used to decrypt the ciphertext. For example, in an AES implementation, the same key must be used on the sender side to encrypt the message as will be used on the receiver's side to decrypt the message. Because this type of encryption scheme requires that the key be kept completely secret, this type of key is often referred to as a "secret key."</para>
 
 <para>
 <screenshot>
@@ -533,11 +531,11 @@
 </itemizedlist>
 <para><emphasis role="bold">Symmetric</emphasis></para>
 <itemizedlist>
-<listitem><para>Fastest implementation of DES (symmetric) can encrypt megabits/sec</para>
-<para>- 56-bit key</para></listitem>
+<listitem><para>Fastest implementation of AES (symmetric) can encrypt megabits/sec</para>
+<para>- 256-bit key</para></listitem>
 </itemizedlist>
 <para>Naturally, there are some tradeoffs when comparing symmetric and asymmetric cryptosystems. The only major advantage of symmetric over asymmetric cryptosystems is in the speed of processing.</para>
-<para>Why is this so? The primary reason is the size of the key for the average symmetric implementation versus the size of the average asymmetric key. Symmetric keys are significantly smaller. For example, a DES key is 56 bits, while most public and private keys are 1024 bits or more.  Today, it is possible to get a 4096-bit public key. Remember, the entire key is used in the operation of the cipher on the plaintext. Therefore, large (asymmetric) key systems simply must take more time and processing power to encipher and decipher than smaller (symmetric) ones.</para>
+<para>Why is this so? The primary reason is the size of the key for the average symmetric implementation versus the size of the average asymmetric key. Symmetric keys are significantly smaller. For example, an AES key is 256 bits, while most public and private keys are 1024 bits or more.  Today, it is possible to get a 4096-bit public key. Remember, the entire key is used in the operation of the cipher on the plaintext. Therefore, large (asymmetric) key systems simply must take more time and processing power to encipher and decipher than smaller (symmetric) ones.</para>
 </section>
 <section>
 <title>The Hybrid Model</title>
@@ -659,10 +657,12 @@
 <para><emphasis role="bold">Cons</emphasis></para>
 <itemizedlist>
 <listitem><para>No confidentiality</para></listitem>
+<listitem><para>Hash functions can be broken</para></listitem>
 <listitem><para>Can be altered by attackers to match altered message</para></listitem>
 </itemizedlist>
 <para>A one-way hash function has many names such as message digest, fingerprint, and compression function. A hash function is an algorithm that takes a variable-length string as the input and produces a fixed-length binary value (hash) as the output. The tricky part is to make this process irreversible. A good analogy would be a blender. It works well one way (blending), but it is not possible to turn the blender in reverse and recreate what was just blended. That is, knowing a hash and searching for a string that produces that hash should be very, very hard (hence the word "one-way"). It should also be very, very hard to find two arbitrary strings that produce the same hash value.</para>
-<para>Many hash algorithms have been produced, but few have met these cryptographic requirements.  Among them are MD4, MD5 and SHA-1. Ron Rivest invented MD4 and MD5 for RSA Security, Inc., which produce 128-bit hash values. SHA-1 (also known as simply SHA) was designed by NIST and NSA and produces 160-bit hash values. SHA-1 is generally considered more secure than MD4 and MD5 due to its longer hash value. To crack a 160-bit hash, you would need to try about 2<superscript>160</superscript> (or 1.5 x 1048 in decimal) various strings  -  an enormous number by any method.</para>
+<para>Many hash algorithms have been produced, but few have met these cryptographic requirements.  Among them are SHA-2, MD5, and SHA-1.  The NSA developed several SHA implementations (224, 256, 384 or 512 bit hash functions) collectiviely known as SHA-2.  Ron Rivest invented MD5 for RSA Security, Inc., which produce 128-bit hash values. SHA-1 (also known as simply SHA) was designed by NIST and NSA and produces 160-bit hash values. SHA-1 was once considered more secure than MD4 and MD5 due to its longer hash value. To crack a 160-bit hash, you would need to try about 2<superscript>160</superscript> (or 1.5 x 1048 in decimal) various strings  -  an enormous number by any method.  However, this is not always necessary.</para>
+<para>The SHA-1 algorithm has been <ulink url="http://www.schneier.com/blog/archives/2005/02/sha1_broken.html">broken</ulink> and is no longer considered to be the best hash method to implement in products as of 2005. Breaking SHA-1 in practice is still relatively difficult.  It is best to use other implementation such as SHA-2, Tiger, or some other hashing function.  <ulink url="http://www.cs.technion.ac.il/~biham/Reports/Tiger/tiger/tiger.html">Tiger</ulink> was developed by Ross Anderson and Eli Biham and designed primarily for 64-bit processors.</para>
 <para>However, no matter how difficult it is to "crack" a hash, it is relatively easy by comparison to alter an unencrypted hash to match an altered message. For example, if a message containing "Hello, How are you?" was sent with a corresponding (unencrypted) hash, it would be easy for an attacker to change the message to "Hi, How're ya?", take a hash of the new message, and attach that hash to the new altered message. Therefore, while hashes are useful, they do not guarantee authenticity of transmitted message by themselves.</para>
 </section>
 <section>
@@ -671,9 +671,9 @@
 <itemizedlist>
 <listitem><para>Variable length input creates 128 bit message digest</para></listitem>
 </itemizedlist>
-<para><emphasis role="bold">Secure Hash Algorithm (SHA)</emphasis></para>
+<para><emphasis role="bold">Secure Hash Algorithm 2 (SHA)</emphasis></para>
 <itemizedlist>
-<listitem><para>Maximum length input of 264 bits produces a 160 bit message digest</para></listitem>
+<listitem><para>Maximum length input of 224, 256, 384 or 512 bit bit message digests</para></listitem>
 </itemizedlist>
 <para><emphasis role="bold">MD5</emphasis></para>
 <para>The following is an excerpt from RFC 1321 (which identified MD5 to the Internet community):</para>
@@ -681,10 +681,11 @@
 <para>The MD5 algorithm is an extension of the MD4 message-digest algorithm. MD5 is slightly slower than MD4, but is more "conservative" in design. MD5 was designed because it was felt that MD4 was perhaps being adopted for use more quickly than justified by the existing critical review; because MD4 was designed to be exceptionally fast, it is "at the edge" in terms of risking successful cryptanalytic attack. MD5 backs off a bit, giving up a little in speed for a much greater likelihood of ultimate security.</para>
 <para>Running an MD5 hash on the word "data" will result in a unique 128 bit message digest. Surprising as it may be, performing an MD5 hash on a book such as the entire Bible will also produce a 128-bit fingerprint.</para>
 <para>The MD5 algorithm, which can be implemented in as little as 8 lines of PERL code, is a very simple and compact algorithm. Because of the size of the hash, it is very secure and difficult to "crack." In addition, because of the complex nature of the algorithm, and because every bit of hash is dependent on every bit of the message being hashed, it is not susceptible to attacks.</para>
-<para><emphasis role="bold">SHA-1</emphasis></para>
-<para>The following is an excerpt from FIPS 180-1, which is the standard for SHA-1:</para>
-<para>Explanation: This Standard specifies a Secure Hash Algorithm, SHA-1, for computing a condensed representation of a message or a data file. When a message of any length &lt; 264 bits is input, the SHA-1 produces a 160-bit output called a message digest. The message digest can then be input to the Digital Signature Algorithm (DSA) which generates or verifies the signature for the message. Signing the message digest rather than the message often improves the efficiency of the process because the message digest is usually much smaller in size than the message. The same hash algorithm must be used by the verifier of a digital signature as was used by the creator of the digital signature.</para>
-<para>The SHA-1 is called secure because it is computationally infeasible to find a message which corresponds to a given message digest, or to find two different messages which produce the same message digest. Any change to a message in transit will, with very high probability, result in a different message digest, and the signature will fail to verify. SHA-1 is a technical revision of SHA (FIPS 180).</para>
+<para><emphasis role="bold">SHA-2</emphasis></para>
+<para>The following is an exercept from the draft FIPS 180-4 on the SHA hash functions:</para>
+<para>"The hash algorithms specified in this Standard are called secure because, for a given algorithm, it is computationally infeasible 1) to find a message that corresponds to a given message digest, or 2) to find two different messages that produce the same message digest. Any change to a message will, with a very high probability, result in a different message digest. This will result in a verification failure when the secure hash algorithm is used with a digital signature algorithm or a keyed-hash message authentication algorithm" (NIST, 2005).</para>
+<para>The following is an update to the draft FIPS 180-4, which is the standard for SHA, as a result of the weakness of SHA-1:</para>
+<para>Explanation: The SHA-2 family of hash functions (i.e., SHA-224, SHA-256, SHA-384 and SHA-512) may be used by Federal agencies for all applications using secure hash algorithms. Federal agencies should stop using SHA-1 for digital signatures, digital time stamping and other applications that require collision resistance as soon as practical, and must use the SHA-2 family of hash functions for these applications after 2010. After 2010, Federal agencies may use SHA-1 only for the following applications: hash-based message authentication codes (HMACs); key derivation functions (KDFs); and random number generators (RNGs). Regardless of use, NIST encourages application and protocol designers to use the SHA-2 family of hash functions for all new applications and protocols.</para>
 </section>
 <section>
 <title>Where to Use Hash Functions</title>
@@ -708,12 +709,10 @@
 </section>
 <section>
 <title>Hash Example</title>
-<para><emphasis role="bold">Hashes computed on a string of [Hello.]</emphasis></para>
-
-<para><emphasis role="bold">SHA-1:</emphasis> 9B56D519CCD9E1E5B2A725E186184CDC68DE0731</para>
-<para><emphasis role="bold">MD5:</emphasis> F9776F93AC975CD47B598E34D9242D18</para>
-<para>Here is an example of hashing the string "Hello." using both SHA-1 and MD5. The output is represented in hexadecimal here. The SHA-1 is longer (160 bits) than the MD5 (128 bits).</para>
-<para>The tool used to calculate this is available at <ulink url="http://www.fourmilab.ch/md5/">http://www.fourmilab.ch/md5/</ulink> [FOURMILAB].</para>
+<para>Here is an example of hashing the string "<emphasis role="bold">Hello</emphasis>" after being written to a text file (no newlines or special formatting and no quotes) using both SHA-256 and MD5. The SHA-256 is longer (256 bits) than the MD5 (128 bits).</para>
+<para><emphasis role="bold">SHA-256:</emphasis> 185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969</para>
+<para><emphasis role="bold">MD5:</emphasis> 09f7e02f1290be211da707a266f153b3</para>
+<para>The tool used to calculate this was done via the commandline on a Windows workstation using "sha256sum.exe" and "md5Sum.exe." You can download these tools at: <ulink url="http://md5deep.sourceforge.net/">md5deep</ulink> website (http://md5deep.sourceforge.net/). If you are using Linux, you probably have these tools already installed (sha256sum, md5sum, sha224sum, etc.). For other usages of md5deep visit their site - http://md5deep.sourceforge.net/start-hashdeep.html.</para>
 <informaltable frame="all" pgwide="0">
 <tgroup cols="1" rowsep="1">
 <thead>
@@ -724,7 +723,7 @@
 <tbody>
 <row>
 <entry align="center">
-<para><emphasis role="bold">Demonstration - P-02-02 - 5 minutes</emphasis></para>
+<para><emphasis role="bold">Demonstration - P-02-02 - 20 minutes</emphasis></para>
 <para><emphasis role="bold">Calculating Hashes</emphasis></para>
 </entry>
 </row>
@@ -735,7 +734,7 @@
 <section>
 <title>Summary: Data Integrity</title>
 <para><emphasis role="bold">Addresses the question: how do I know your digital data has not been changed?</emphasis></para>
-<para><emphasis role="bold">Checked by using message digests such as MD5 and SHA-1</emphasis></para>
+<para><emphasis role="bold">Checked by using message digests such as MD5, SHA-2 or other hash functions.</emphasis></para>
 </section>
 <section>
 <title>Topics</title>
@@ -1309,12 +1308,12 @@ power supply, etc.)</para></listitem>
 </screenshot>
 </para>
 <para>The crux of survivability is effective risk management as indicated in Principle 3: Not all data is of equal value to the enterprise - risk must be managed. By following the risk management guidelines discussed in this course, IT managers should be able to determine the relative importance/criticality of their key host and networked systems based on their impact on the mission of the organization. We've introduced terms like disaster/fault tolerance, redundancy, and failover and it should be clear that they equate to levels of availability. So, what are some specific technical implementations that can provide these levels of availability? Let's use the following example to help answer this question.</para>
-<para>Clyde's Military Surplus, Inc. has grown in 10 years from 3 area stores to 15 stores across the region. What's more, an e-commerce initiative was adopted early on and Web sales now total more than 10 percent of all revenue. Clyde's manages its Web infrastructure internally and recently had a system failure on its lone Web server (IIS 5 on Windows 2000) that caused 1.5 days of downtime. The CEO (Clyde Clemons) has told Tim, the IT manager, to "fix the problem-but these are hard times, so be prudent with expenditures."</para>
+<para>Clyde's Military Surplus, Inc. has grown in 10 years from 3 area stores to 15 stores across the region. What's more, an e-commerce initiative was adopted early on and Web sales now total more than 10 percent of all revenue. Clyde's manages its Web infrastructure internally and recently had a system failure on its lone Web server (IIS 7 on Windows 2008) that caused 1.5 days of downtime. The CEO (Clyde Clemons) has told Tim, the IT manager, to "fix the problem-but these are hard times, so be prudent with expenditures."</para>
 <para>With this as his guideline, Tim evaluates his options.</para>
 <para>He defines the Web server as a SPOF and after conducting risk analysis and availability calculations, determines that the server must have five 9s of availability. However, he doesn't have the resources in personnel and budget to re-architect the software portion of the e-commerce solution at this time. He investigates disaster tolerant solutions, but decides that the level of exposure to the risk of a building-level disaster does not currently warrant the expense of ensuring this level of availability. However, Tim foresees a time in the future where this capability would provide enough return on investment to justify the expense. He would like to consider a fault tolerant solution that could be scaled to provide disaster tolerance without having to re-engineer the entire system.</para>
-<para>Tim investigates various Windows 2000 cluster solutions. Clusters are redundant servers that generally provide fault-resilient (failover) availability services and therefore don't meet his availability requirements. Despite hardware failures partially causing the 1.5 day outage, he quickly dismisses the idea of merely increasing the redundancy of the hardware components of his server because a solution engineered to be fault tolerant by design couldn't have any SPOF. As stated, Tim cannot currently afford to change his Web server solution and the underlying Windows 2000 platform. If possible, he wants to avoid proprietary hardware server platforms because they tend to have higher total costs of ownership. He does market research, and determines that a solution is available that meets his requirements.</para>
-<para>Tim selects a fault tolerant solution from Marathon Technologies called the Marathon Assured Availability server [MARATHON]. It provides Clyde's Military Surplus with the required five 9s of availability without having to reengineer its Windows 2000/IIS e-commerce solution. It has the ability to be scaled into a fully disaster tolerant system called SplitSite that can isolate each half of the redundant server up to 55 kilometers apart. This solution will not incur the reengineering expenses and runs on standard vendor provided Intel-based servers (i.e., Dell, Compaq, IBM, and Hewlett Packard). Because it's designed to be fault tolerant, there are no SPOF within the system and no failover downtime to be concerned with. Additionally, since this solution uses standard industry servers and shrink-wrapped Windows operating systems and applications, the time and expense of implementing this solution into Tim's infrastructure is minimal.</para>
-<para>This is only one example and attempts to provide system administrators with steps and considerations involved in attempting to increase the availability of host systems. There are other solutions available for Linux and other Unix-based platforms as well as proprietary systems (like IBM AS400 series servers) that provide similar levels of availability.</para>
+<para>Tim investigates various Windows 2008 cluster solutions. Clusters are redundant servers that generally provide fault-resilient (failover) availability services and therefore don't meet his availability requirements. Despite hardware failures partially causing the 1.5 day outage, he quickly dismisses the idea of merely increasing the redundancy of the hardware components of his server because a solution engineered to be fault tolerant by design couldn't have any SPOF. As stated, Tim cannot currently afford to change his Web server solution and the underlying Windows 2008 platform. If possible, he wants to avoid proprietary hardware server platforms because they tend to have higher total costs of ownership. He does market research, and determines that a solution is available that meets his requirements.</para>
+<para>Tim selects a fault tolerant solution from Marathon Technologies called the Marathon Assured Availability server [MARATHON]. It provides Clyde's Military Surplus with the required five 9s of availability without having to reengineer its Windows 2008/IIS e-commerce solution. It has the ability to be scaled into a fully disaster tolerant system called SplitSite that can isolate each half of the redundant server up to 55 kilometers apart. This solution will not incur the reengineering expenses and runs on standard vendor provided Intel-based servers (i.e., Dell, Compaq, IBM, and Hewlett Packard). Because it's designed to be fault tolerant, there are no SPOF within the system and no failover downtime to be concerned with. Additionally, since this solution uses standard industry servers and shrink-wrapped Windows operating systems and applications, the time and expense of implementing this solution into Tim's infrastructure is minimal.</para>
+<para>This is only one example and attempts to provide system administrators with steps and considerations involved in attempting to increase the availability of host systems. There are other solutions available for Linux and other Unix-based platforms as well as proprietary systems that provide similar levels of availability.</para>
 </section>
 <section>
 <title>Network Availability Strategies</title>
@@ -1365,7 +1364,7 @@ power supply, etc.)</para></listitem>
 <para>Full mesh topology (see diagram) occurs when every node has a circuit connecting it to every other node in a network. Full mesh is very expensive to implement but yields the greatest redundancy, so that if one of those nodes should fail, network traffic can be directed to any of the other nodes. Full mesh is usually reserved for backbone networks. Partial mesh topology is less expensive to implement and yields less redundancy than full mesh topology. With partial mesh, some nodes are organized in a full mesh scheme but others are only connected to one or two in the network. Partial mesh topology is commonly found in peripheral networks connected to a full meshed backbone [Webopedia].</para>
 <para>Other topologies like Ethernet rings and Fiber Distributed Data Interface (FDDI) provide redundancy in network connectivity while utilizing the same physical media. In some cases, it's wise to build network redundancy by utilizing multiple mediums. For example, having both a wired and wireless capability within the same network can potentially increase availability if partial network failures occur.</para>
 <para><emphasis role="bold">Hot standby Routing and Switching</emphasis></para>
-<para>Hot standby routing and switching technologies are available that allow for automatic failover and recovery in the event that an individual router or switch were to fail on the network. Some modular switches and routers (i.e., a Cisco Catalyst 5500 multi-layer switch) have the capability to have redundant switch or router modules (blades that are inserted into the slots in the switches' chassis) that implement hot standby protocols, thereby providing redundant routing and switching all within one black box [CISCO].</para>
+<para>Hot standby routing and switching technologies are available that allow for automatic failover and recovery in the event that an individual router or switch were to fail on the network. Some modular switches and routers (i.e., a Cisco Catalyst 6500 multi-layer switch) have the capability to have redundant switch or router modules (blades that are inserted into the slots in the switches' chassis) that implement hot standby protocols, thereby providing redundant routing and switching all within one black box [CISCO].</para>
 <para><emphasis role="bold">Entirely Redundant Infrastructure</emphasis></para>
 <para>As mentioned previously, some networks are so critical to the mission of an organization that a completely separate and redundant standby network infrastructure is required. There is a real world example of this exact scenario involving Beth Israel Hospital in Boston. The hospital experienced a multi-day network outage that severely impacted hospital operations and even put patients' lives at risk. They have since invested in a completely separate infrastructure and fault-resilient solution in the event of another major network outage [Bednarz 02].</para>
 

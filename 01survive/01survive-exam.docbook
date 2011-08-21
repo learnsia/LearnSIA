@@ -20,24 +20,35 @@
 <para>Answer the following questions based on this scenario:</para>
 <para><emphasis>You are the IT manager at XYZ Corporation. Your staff is responsible for maintaining the corporate network infrastructure (routers, switches, external network connectivity, etc.). You have started an initiative to increase survivability of the IT infrastructure. Your boss, the CIO, says "I thought we had a firewall and intrusion detection system. Why do we need any other security stuff?"</emphasis></para>
 
-<orderedlist>
-<listitem><para>How would you describe the difference between survivability and security to the CIO?</para></listitem>
+<qandaset>
 
-<listitem><para>The CIO says that security is an overhead expense that he cannot afford.  Therefore, your initiative for survivability will effectively go nowhere since there will be no funding for it. What would you tell the CIO about the costs of survivability verses security?</para></listitem>
+<qandaentry>
+<question><para>How would you describe the difference between survivability and security to the CIO?</para></question>
+<answer><para><emphasis role="bold">Security is the defense of the CIA traits of information and systems where the end goal is simply that defense of the information, while survivability focuses on the ability of information to be available and protected within the context of the mission of the organization. Security is a component of survivability, but survivability is more focused on mission accomplishment.</emphasis></para></answer>
+</qandaentry>
 
-<listitem><para>What does the "layered approach" to survivability mean?</para></listitem>
+<qandaentry>
+<question><para>The CIO says that security is an overhead expense that he cannot afford.  Therefore, your initiative for survivability will effectively go nowhere since there will be no funding for it. What would you tell the CIO about the costs of survivability verses security?</para></question>
+<answer><para><emphasis role="bold">The costs of security are often considered overhead expenses. Survivability, however, has the end goal of successful mission accomplishment, and therefore is seen as an investment in the organization that brings tangible returns. The costs of survivability are all operationally sound since they involve the operations organizations of the enterprise and require input from those business units.</emphasis></para></answer>
+</qandaentry>
 
-<listitem><para>Give a non-IT example of a layered approach to survivability and describe the layers and how they work together.</para></listitem>
+<qandaentry>
+<question><para>What does the "layered approach" to survivability mean?</para></question>
+<answer><para><emphasis role="bold">Survivability defenses should be applied in layers such that they provide redundancy and fault tolerance to the enterprise.</emphasis></para></answer>
+</qandaentry>
 
-</orderedlist>
+<qandaentry>
+<question><para>Give a non-IT example of a layered approach to survivability and describe the layers and how they work together.</para></question>
+<answer><para><emphasis role="bold">United States Postal Service, Military base.</emphasis></para></answer>
+</qandaentry>
+</qandaset>
 
 <para><emphasis role="bold">Multiple Choices:</emphasis>  Circle the best choice(s) to answer each of the following questions according to the information given in Principles:</para>
 
-<orderedlist>
-
-<listitem>
-<para>Which of the following groups should be concerned with system survivability?</para>
-<para>
+<qandaset>
+<qandaentry>
+<question><para>Which of the following groups should be concerned with system survivability?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Security experts</para></listitem>
 <listitem><para>Top level management</para></listitem>
@@ -45,12 +56,12 @@
 <listitem><para>System Administrators</para></listitem>
 <listitem><para>End users</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Which of the following are characteristics of traditional computer security?</para>
-<para>
+<qandaentry>
+<question><para>Which of the following are characteristics of traditional computer security?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Focus on continuity of operations</para></listitem>
 <listitem><para>Systems are under central administrative control</para></listitem>
@@ -58,24 +69,24 @@
 <listitem><para>View security as part of enterprise risk management</para></listitem>
 <listitem><para>Protect system components as the primary mission</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>A fundamental assumption to the concept of survivability is that</para>
-<para>
+<qandaentry>
+<question><para>A fundamental assumption to the concept of survivability is that</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Technology based solutions are necessary for handling attacks, accidents, or failures.</para></listitem>
 <listitem><para>Secured systems are always capable of surviving attacks, accidents, or failures.</para></listitem>
 <listitem><para>No system is totally immune to attacks, accidents, or failures.</para></listitem>
 <listitem><para>Firewall is the best way to help a system survive attacks, accidents, or failures.</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Compared with "bounded" network systems, "unbounded" network systems have</para>
-<para>
+<qandaentry>
+<question><para>Compared with "bounded" network systems, "unbounded" network systems have</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>more central organizational control</para></listitem>
 <listitem><para>less visibility to systems and users</para></listitem>
@@ -83,24 +94,24 @@
 <listitem><para>well-defined geographic, legal, and technological boundaries</para></listitem>
 <listitem><para>more shared and uncertain tasks for system administrators</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Which of the following are key properties for a survivable system to maintain its capability to deliver essential services?</para>
-<para>
+<qandaentry>
+<question><para>Which of the following are key properties for a survivable system to maintain its capability to deliver essential services?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Recover of essential services in the wake of an attack</para></listitem>
 <listitem><para>Detect and evaluate attacks and intrusions</para></listitem>
 <listitem><para>Repel and resist attacks</para></listitem>
 <listitem><para>Prevent any future attacks from happening</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Which of the following are example items of information asset?</para>
-<para>
+<qandaentry>
+<question><para>Which of the following are example items of information asset?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Hard copy documents</para></listitem>
 <listitem><para>Banking transactions stored on tapes</para></listitem>
@@ -108,24 +119,24 @@
 <listitem><para>Flat panel LCD monitor</para></listitem>
 <listitem><para>Wireless email traveling in the air</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Employment of user access controls in a network system belongs to what type of information asset protection strategy?</para>
-<para>
+<qandaentry>
+<question><para>Employment of user access controls in a network system belongs to what type of information asset protection strategy?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Avoidance</para></listitem>
 <listitem><para>Prevention</para></listitem>
 <listitem><para>Detection</para></listitem>
 <listitem><para>Recovery</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Which of the following are threats or risks to critical information assets?</para>
-<para>
+<qandaentry>
+<question><para>Which of the following are threats or risks to critical information assets?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Disclosure of the information</para></listitem>
 <listitem><para>Transmission of the information</para></listitem>
@@ -133,12 +144,12 @@
 <listitem><para>Theft or interruption of the information</para></listitem>
 <listitem><para>Encryption of the information</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Which of the following are examples of system vulnerabilities?</para>
-<para>
+<qandaentry>
+<question><para>Which of the following are examples of system vulnerabilities?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Viruses and worms</para></listitem>
 <listitem><para>Buffer overflows</para></listitem>
@@ -146,12 +157,12 @@
 <listitem><para>Lack of documentation</para></listitem>
 <listitem><para>Network sniffing</para></listitem>
 </orderedlist>
-</para>
-</listitem>
+</para></answer>
+</qandaentry>
 
-<listitem>
-<para>Which of following are possible means that can be exploited by intruders?</para>
-<para>
+<qandaentry>
+<question><para>Which of following are possible means that can be exploited by intruders?</para></question>
+<answer><para>
 <orderedlist numeration="loweralpha">
 <listitem><para>Software tools</para></listitem>
 <listitem><para>Internet chat rooms</para></listitem>
@@ -159,9 +170,10 @@
 <listitem><para>System information</para></listitem>
 <listitem><para>Social engineering</para></listitem>
 </orderedlist>
-</para>
-</listitem>
-</orderedlist>
+</para></answer>
+</qandaentry>
+
+</qandaset>
 
 <para><emphasis role="bold">Fill in Blanks:</emphasis>  Fill in the blank(s) in each of the following statements with key words using the information given in Principle 1.</para>
 <orderedlist>
@@ -185,6 +197,35 @@
 
 <listitem><para>Script kiddies are ________________ who use sophisticated tools available to break into computer systems although they lack the knowledge to craft the tools themselves.</para></listitem>
 
+</orderedlist>
+
+<para><emphasis role="bold">Suggested answers:</emphasis></para>
+<para><emphasis role="bold">Multiple Choice: </emphasis></para>
+<orderedlist>
+<listitem><para>a, b, c, d, e</para></listitem>
+<listitem><para>b, c, e</para></listitem>
+<listitem><para>c</para></listitem>
+<listitem><para>b, e</para></listitem>
+<listitem><para>a, b, c</para></listitem>
+<listitem><para>a, b, c, e</para></listitem>
+<listitem><para>b</para></listitem>
+<listitem><para>a, c, d</para></listitem>
+<listitem><para>b, d</para></listitem>
+<listitem><para>a, b, c, d, e</para></listitem>
+</orderedlist>
+
+<para><emphasis role="bold">Fill in blanks:</emphasis></para>
+<orderedlist>
+<listitem><para>fulfill its mission, in a timely manner</para></listitem>
+<listitem><para>open, unbounded, distributed</para></listitem>
+<listitem><para>threats and attacks/intrusions</para></listitem>
+<listitem><para>integrity, confidentiality, performance</para></listitem>
+<listitem><para>information, hardware, software, people</para></listitem>
+<listitem><para>avoidance, prevention, detection, containment and response, recovery, improvement</para></listitem>
+<listitem><para>the absence or weakness</para></listitem>
+<listitem><para>maliciously alter systems for their benefit</para></listitem>
+<listitem><para>enjoyment and curiosity</para></listitem>
+<listitem><para>intruders</para></listitem>
 </orderedlist>
 
 </section>
