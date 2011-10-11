@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % instructor "IGNORE">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../02everything/images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+  <holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Survivable Functional Units.</emphasis></para>
+
+<para>Overview: These are the exam questions for Principle 6: Survivable Functional Units (SFUs) are a helpful way to think about an enterprise's networks.</para>
+<para>The items that are important in this module are the following:</para>
+<itemizedlist>
+<listitem><para>Define Survivable Functional Unit (SFU).</para></listitem>
+<listitem><para>Given an SFU, identify the following:</para>
+<para>The information asset(s) it delivers</para>
+<para>The service(s) used to delivery those asset(s)</para>
+<para>The constituency or constituencies it serves</para>
+<para>The authentication scheme it uses</para>
+<para>The attributes that improve its survivability</para>
+</listitem>
+<listitem><para>Define how the role of the SFU supports the mission of the enterprise.</para></listitem>
+<listitem><para>SAs have to know how to think about improving the survivability of a Functional Unit. That is, they need to at least be able to identify the areas of a Functional Unit that are critical and perhaps single points of failure that need to be addressed through Survivability Engineering. This may be a little more art/common sense than science at this point, although the lecture includes there is the beginning of a process for doing that.</para></listitem>
+<listitem><para>How to enumerate options for those areas that have been identified as candidates for survivability improvement.</para></listitem>
+<listitem><para>How to assess those options according to some scale, for example financial, implementation effort, on-going maintenance effort. Total cost of ownership is a more inclusive term.</para></listitem>
+<listitem><para>How to take the risk methods from Principle 3, Not all data is of equal value to the enterprise ? risk must be managed, and apply them to the enumerated options so that they can select one of them as a candidate for implementation.</para></listitem>
+<listitem><para>Know the beginnings of how to create a dependency tree of SFUs in the enterprise. At this point, it is sufficient to indicate what the example SFU depends on, what depends on it, and whether these other SFUs can operate without the example SFU.</para></listitem>
+<listitem><para>Be aware of the need to communicate those implementation options and their costs to others in the enterprise.</para></listitem>
+</itemizedlist>
+<qandaset>
+
+<qandaentry>
+<question><para>Define ?Survivable Functional Unit?</para></question>
+<answer><para><emphasis role="bold">A Survivable Functional Unit is:</emphasis></para>
+<itemizedlist>
+<listitem><para>a collection of one or more computer systems and network infrastructure components (routers, firewalls, hubs, switches, access points, etc)</para></listitem>
+<listitem><para>that delivers one or more information assets</para></listitem>
+<listitem><para>through one or more services</para></listitem>
+<listitem><para>to one or more constituencies</para></listitem>
+<listitem><para>authenticated to the Survivable Functional Unit in some fashion</para></listitem>
+<listitem><para>and that can survive attacks, outages, errors, etc.</para></listitem>
+</itemizedlist>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Explain how the role of the SFU supports the mission of the enterprise.</para></question>
+<answer><para><emphasis role="bold">The key here is being able to define the enterprise network in terms of SFUs and how and what they contribute capabilities to the mission of the enterprise. SFUs provide a clearer understanding of how computer systems and network infrastructure components support that mission.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+
+<question><para>Explain the Functional Unit Identification process.</para></question>
+<answer><para><emphasis role="bold">The key here is to be able to use the network captures and other artifacts to decide what computer systems and network infrastructure components there are and then to group them together into Functional Units.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Describe some ways in which a Functional Unit can be made into a Survivable Functional Unit.</para></question>
+<answer>
+<para><emphasis role="bold">Redundancy, applying patches, using SKiP, using intrusion detection, basically anything that makes the FU survive a level of attacks, outages, and errors better than it could before.</emphasis></para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Name 4 of the attributes that should be evaluated when identifying the options that are available to transform a Functional Unit into a Survivable Functional Unit.</para></question>
+<answer><para><emphasis role="bold">Examples are: capital costs, training costs, maintenance costs, installation costs, support costs.</emphasis></para></answer>
+</qandaentry>
+<qandaentry>
+
+<question><para>Name 4 of the excavation and stones of the roadbed functional unit building blocks.</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para>Domain Name Service</para></listitem>
+<listitem><para>Host Configuration</para></listitem>
+<listitem><para>User Authentication</para></listitem>
+<listitem><para>Logging</para></listitem>
+<listitem><para>Network Intrusion Detection</para></listitem>
+<listitem><para>Network File Service</para></listitem>
+<listitem><para>File Backup and Restore</para></listitem>
+<listitem><para>Administrative</para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Give 3 examples of the concrete of the road functional unit building blocks.</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para>Electronic Mail</para></listitem>
+<listitem><para>Web Development and Delivery</para></listitem>
+<listitem><para>Remote Access</para></listitem>
+<listitem><para>Wireless Access</para></listitem>
+<listitem><para>Internet Proxy</para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Name 3 of the enterprise artifacts used in the Functional Unit Identification Process.</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para>Network traffic</para></listitem>
+<listitem><para>Logging information</para></listitem>
+<listitem><para>Running processes</para></listitem>
+<listitem><para>Services available to the network</para></listitem>
+<listitem><para>What system administrators think</para></listitem>
+<listitem><para>Infoproc inventory</para></listitem>
+<listitem><para>Policies and procedures that are in place</para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Once a set of options for transforming a Functional Unit into a Survivable Functional Unit have been tabulated, what happens next and who is typically involved?</para></question>
+<answer><para><emphasis role="bold">Select from the available options in partnership with SA?s immediate managers. Communicate selection to others in the enterprise based upon the importance of the SFU to the enterprise?s mission using the appropriate communication style.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What is the goal of the Survivable Functional Unit Dependency Diagram?</para></question>
+<answer><para><emphasis role="bold">To determine which Survivable Functional Units depend on other Survivable Functional Units to better understand how well they can survive.</emphasis></para></answer>
+</qandaentry>
+
+</qandaset>
+
+</section>
+</article>
