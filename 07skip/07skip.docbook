@@ -27,25 +27,22 @@
 <title>Reading Assignments</title>
 <para><emphasis role="bold">Required readings:</emphasis></para>
 <orderedlist>
-<listitem><para>Securing Networks Systematically - the SKiP Method [SKiP 02].</para></listitem>
-<listitem><para>"Securing Information Assets: Security Knowledge in Practice" [Rogers 02].</para></listitem>
+<listitem><para><ulink url="http://csrc.nist.gov/publications/nistpubs/800-41-Rev1/sp800-41-rev1.pdf">Guidelines on Firewalls and Firewall Policy</ulink> - (http://csrc.nist.gov/publications/nistpubs/800-41-Rev1/sp800-41-rev1.pdf)</para></listitem>
+<listitem><para><ulink url="http://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf">Securing Network Servers</ulink> - (http://csrc.nist.gov/publications/nistpubs/800-123/SP800-123.pdf)</para></listitem>
+<listitem><para><ulink url="http://csrc.nist.gov/publications/nistpubs/800-44-ver2/SP800-44v2.pdf">Guidelines on Securing Public Web Servers</ulink> - (http://csrc.nist.gov/publications/nistpubs/800-44-ver2/SP800-44v2.pdf)</para></listitem>
 </orderedlist>
 <para><emphasis role="bold">Recommended readings:</emphasis></para>
 <orderedlist>
-<listitem><para>The CERT Guide to System and Network Security Practices [Allen 01]</para></listitem>
-<listitem><para>Securing Public Web Servers [Kossakowski 00]</para></listitem>
-<listitem><para>"Information Technology-Essential But Vulnerable: How Prepared Are We for Attacks?" [Pethia 01]</para></listitem>
-<listitem><para>"Lesson Six: File Permissions" [CTSSN 01]</para></listitem>
-<listitem><para>UNIX Security Checklist v2.0. [AUSCERT 01]</para></listitem>
-<listitem><para>"Encrypting your Disks with Linux." [Tzeck 101]</para></listitem>
-<listitem><para>"Cryptographic File System under Linux HOW-TO." [Yuriev 96]</para></listitem>
-<listitem><para>"Bestcrypt," [Jetico 01]</para></listitem>
-<listitem><para>"Is There an Intruder in my Computer?" [Rogers 02d]</para></listitem>
-<listitem><para>Detecting Signs of Intrusions [Allen 00]</para></listitem>
-<listitem><para>"An Introduction to Computer Forensics: Gathering Evidence in a Computing Environment" [Wolfe 01]</para></listitem>
-<listitem><para>Responding to Intrusions [Kossakowski 99]</para></listitem>
-<listitem><para>Guidelines for Evidence Collection and Archiving [Brezinski 02]</para></listitem>
-<listitem><para>"Bypassing Integrity Checking Systems" [Halflife 97]</para></listitem>
+<listitem><para><ulink url="http://www.gpo.gov/fdsys/pkg/CHRG-107hhrg80481/pdf/CHRG-107hhrg80481.pdf">"Information Technology-Essential But Vulnerable: How Prepared Are We for Attacks?"</ulink> - http://www.gpo.gov/fdsys/pkg/CHRG-107hhrg80481/pdf/CHRG-107hhrg80481.pdf [Pethia 01]</para></listitem>
+<listitem><para><ulink url="http://www.cyberciti.biz/faq/how-linux-file-permissions-work/">See Cyberciti "How Linux File Permissions Work"</ulink> - (http://www.cyberciti.biz/faq/how-linux-file-permissions-work/)</para></listitem>
+<listitem><para><ulink url="http://www.auscert.org.au/render.html?it=1935&amp;cid=1920">"UNIX Security Checklist, v3.0"</ulink> - (http://www.auscert.org.au/render.html?it=1935&amp;cid=1920)</para></listitem>
+<listitem><para><ulink url="http://www.truecrypt.org">Truecrypt</ulink> - (http://www.truecrypt.org)</para></listitem>
+<listitem><para><ulink url="http://www.arg0.net/encfs">Encfs</ulink> (http://www.arg0.net/encfs)</para></listitem>
+<listitem><para><ulink url="http://windows.microsoft.com/en-US/windows-vista/BitLocker-Drive-Encryption-Overview">Bitlocker</ulink> for Windows (http://windows.microsoft.com/en-US/windows-vista/BitLocker-Drive-Encryption-Overview).</para></listitem>
+<listitem><para><ulink url="http://www.sei.cmu.edu/library/abstracts/reports/98sim001.cfm">Detecting Signs of Intrusions</ulink> [Allen 00a] - (http://www.sei.cmu.edu/library/abstracts/reports/98sim001.cfm)</para></listitem>
+<listitem><para><ulink url="http://www.porcupine.org/forensics/forensic-discovery/">Forensic Discovery</ulink> - (http://www.porcupine.org/forensics/forensic-discovery/)</para></listitem>
+<listitem><para><ulink url="http://csrc.nist.gov/publications/nistpubs/800-61-rev1/SP800-61rev1.pdf">Computer Security Incident Handling Guide</ulink> - (http://csrc.nist.gov/publications/nistpubs/800-61-rev1/SP800-61rev1.pdf)</para></listitem>
+<listitem><para><ulink url="http://www.phrack.org/issues.html?issue=51&amp;id=9">"Bypassing Integrity Checking Systems"</ulink> - (http://www.phrack.org/issues.html?issue=51&amp;id=9)</para></listitem>
 </orderedlist>
 <![%instructor;[
 <para>&instructBegin;</para>
@@ -226,12 +223,10 @@
 <tbody>
 <row>
 <entry valign="top">
-<para>
-<para>Raw Materials</para>
-<para>Some tools for crafting</para>
-<para>"One size fits all" mentality</para>
-<para>Responsibility likes with SAs</para>
-</para>
+<para><emphasis role="bold">Raw Materials</emphasis></para>
+<para><emphasis role="bold">Some tools for crafting</emphasis></para>
+<para><emphasis role="bold">"One size fits all" mentality</emphasis></para>
+<para><emphasis role="bold">Responsibility likes with SAs</emphasis></para>
 </entry>
 <entry valign="top">
 
@@ -269,10 +264,9 @@
 <tbody>
 <row>
 <entry valign="top">
-<para>Delivered - time to install!</para>
+<para><emphasis role="bold">Delivered - time to install!</emphasis></para>
 </entry>
 <entry valign="top">
-<para>
 <screenshot>
 <mediaobject>
 <imageobject>
@@ -280,7 +274,6 @@
 </imageobject>
 </mediaobject>
 </screenshot>
-</para>
 </entry>
 <entry valign="top">
 </entry>
@@ -349,6 +342,33 @@
 </section>
 <section>
 <title>Installing the System</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/100000000000030D0000020A7F9112B5.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>Given that the installation takes place in an AGTE, the SA does not need to pay as much attention to what is installed as they might otherwise. This means that insecure installations and vulnerable applications can be installed because it is believed that an intruder cannot access this system which is presently vulnerable to attack. The next step, Harden and Secure, will remove unnecessary applications and add additional ones so that the resulting computer system meets the needs of its parent SFU.</para>
 </section>
 <section>
@@ -373,7 +393,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000285000000F14556BF74.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -385,13 +405,41 @@
 <para>The first step in the SKiP Method is hardening and securing that system against known threats and vulnerabilities. This section describes a set of tasks that SAs perform as well as the philosophies behind those tasks. The philosophies are important because the current list of threats and vulnerabilities continues to grow, unfortunately almost daily. This means that SAs must supplement the information presented here to address the latest tasks when hardening a system.</para>
 <para>The hardening and securing tasks described here must not be considered complete. Successful SAs will continuously research what hardening and securing means for the operating system and applications they support as more vulnerabilities and mitigation strategies are publicized. Keeping up to date is very important.</para>
 <para>When installing an operating system or applications, there is likely an amount of hardening and securing of that OS or application that goes on simply by the nature of that installation process. It is difficult to split the two cleanly. The point is to realize that even the installation process contains some hardening and securing efforts. One example would be installing only the software deemed necessary was installed during the build phase as opposed to installing all software and then removing what is not needed.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Solves today's known problems</emphasis></para>
+<itemizedlist>
+<listitem><para>Remove unnecessary functionality</para></listitem>
+<listitem><para>Configure remaining parts correctly</para></listitem>
+<listitem><para>Add needed additional software</para></listitem>
+<listitem><para>Support enterprise policy and</para></listitem>
+<listitem><para>procedures</para></listitem>
+<listitem><para>Support enterprise risk management</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000001890000018A378F4269.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>Assignment: the students should use the Internet to look for two documents that discuss hardening and securing Red Hat Linux, Windows, or which ever Operating System the students are using for this course. They should report on three of the tasks that they've encountered. Their report should describe the procedure that SAs follow to harden and secure using the tasks they've researched. The procedures they write should reference the numbered list for "An overview of the hardening and securing practices."</para>
@@ -452,9 +500,35 @@
 <para>New vulnerabilities are discovered and exploited every day. For the systems, network components, and software used in your organization, it is important to stay abreast of reports regarding vulnerabilities and their solutions. Applicable security patches and workarounds should be applied and deployed as soon as possible and practical.</para>
 <para>The list of patches to install also evolves over time. New vulnerabilities requiring new patches appear seemingly daily. Older versions of patches become obsolete. Superimposed on this set of patches are incompatibilities with applications that support the mission of the enterprise. All of these factors impact how patches are applied to the computer systems and network infrastructure components that make up SFUs that support the enterprise.</para>
 ]]>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">***********************************************************</emphasis></para>
 <para><emphasis role="bold">*** INSTALL CURRENT VERSION OF APPLICATIONS ***</emphasis></para>
 <para><emphasis role="bold">***********************************************************</emphasis></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/10000000000003630000034C7E62EFB6.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>The current or latest versions of applications are often believed to have many of the bugs from previous versions repaired. Newer versions are also believed to be the beneficiaries of the "lessons learned" from earlier versions and other software development activities. Finally, it is also believed that newer versions of applications receive the most attention when bugs are found. Therefore, the harden/secure suggestion is to install the latest version of applications that support the mission of the SFU of which a computer system is a member.</para>
 <para>Unfortunately, this is not always true. The challenge for the SA then is to select a recent version of an application that is a balance between doing what it is supposed to do, being less buggy than other versions (newer or older), and benefiting from other software development experiences.</para>
 <para>How do you do this? When searching for applications, look for the following to help guide the selection process:</para>
@@ -469,9 +543,35 @@
 <para>In the Red Hat Linux environment, there is a discrepancy between the version of the Apache web server available from Apache's web site (http://httpd.apache.org/) and that provided by Red Hat (http://www.redhat.com). The one provided by Red Hat has been compiled and digitally signed as a Red Hat package whereas on Apache's web site, only the source code is available. Policy and procedures should dictate which version is allowed to be installed and if the disparity is too great, the SA should work to change the policy to better match the needs of the enterprise with the availability of applications.</para>
 <para>&techEnd;</para>
 <para>This task ends when the latest versions of applications have been installed and made operational. However, these applications must also be consistent with enterprise policy and procedures and allow the SFUs to provide the services needed to support the mission of the enterprise.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">*****************************************************************</emphasis></para>
 <para><emphasis role="bold">**** Replace Applications that contain known vulnerabilities ****</emphasis></para>
 <para><emphasis role="bold">*****************************************************************</emphasis></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/1000000000000401000003CFD26C9ED7.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>Some applications are vulnerable to attack by intruders or their use puts an enterprise's employees at risk in some way. For example, the standard telnet program exchanges information in the clear between two computer systems across a network. That information can contain a user's login, password, and perhaps other enterprise sensitive information that may be inadvertently disclosed. Using telnet puts its users and the enterprise at risk for having that login, password, and other information exchanged across a network overheard by an intruder.</para>
 <para>&techBegin;</para>
 <para>Similarly, the Berkeley r-commands found on some Linux systems, these have been removed from most default Linux installations, though the packages are available in the vendors repository , namely rsh, rlogin, and rcp, use a weak authentication scheme that is easy to exploit, giving unwanted access to unauthorized parties. The standard r-commands also exchange information in the clear across the network. These are examples of <emphasis role="bold">Principle 2: Everything is data</emphasis>, and <emphasis role="bold">Principle 5: Identification of users, computer systems, and network infrastructure components is critical</emphasis>.</para>
@@ -486,9 +586,35 @@
 <para><emphasis role="bold">Principle 8: The road map guides implementation choices (all technology is not equal)</emphasis> applies here. For example, when the SA recognizes that telnet is vulnerable to attack and places its users at risk, what are the choices and what are the criteria by which an alternative is selected? By building a roadmap of implementation choices, a suitable replacement for telnet can be identified and chosen.</para>
 <para>This part of the SKiP Method requires regular attention. Just like the doctor, electrician, or plumber who keeps up with advances in their field by reading journals and other trade publications, SAs need to be on the lookout for new applications and products that can help do the job more easily and produce a better quality-in this case, more secure and survivable-product.</para>
 <para>At the completion of this task, known vulnerable or otherwise risky applications have been replaced with comparable versions that reduce the risk to the enterprise in a manner that is consistent with enterprise policy and procedures.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">*******************************************************************************************************</emphasis></para>
 <para><emphasis role="bold">*** INSTALL, REPLACE, AND CONFIGURE APPLICATIONS THAT SUPPORT OTHER SFUs IN THE ENTERPRISE ***</emphasis></para>
 <para><emphasis role="bold">*******************************************************************************************************</emphasis></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/1000000000000313000002D2B898AAF2.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>The enterprise's computer network is built from many SFUs working together to achieve the enterprise's mission. When applied to a computer system, part of the harden/secure step of the SKiP Method involved installing and replacing applications that support other SFUs in that enterprise network.</para>
 <para>&techBegin;</para>
 <para>For example, if the enterprise's authentication SFU uses Kerberos7 as the network authentication protocol, then various applications as installed from the operating system and application vendors may need to be replaced by Kerberos-aware versions. Similarly, if the enterprise has a logging SFU, all other SFUs need to be configured to use the logging SFU as the repository for logging information.</para>
@@ -497,9 +623,35 @@
 <para>Recall from the example given in <emphasis role="bold">Principle 6: Survivable Functional Units (SFUs)</emphasis> are a helpful way to think about an enterprise's networks computer systems and network infrastructure components in the Domain Name Service SFU need to interact with logging, backup and restore, authentication, and administration SFUs.</para>
 <para>The requirements placed on these cooperating SFUs gives rise to installing applications and configuring computer systems and network infrastructure components to properly interact with those SFUs. Those activities are carried out by the SA during the Harden/Secure step of the SKiP Method.</para>
 <para>At the completion of this task, all applications that support other SFUs in the enterprise have been either installed or replaced, and configured appropriately to work with those SFUs.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">*******************************************************************************************************</emphasis></para>
 <para><emphasis role="bold">*** INSTALL, REPLACE, AND CONFIGURE APPLICATIONS USED IN OTHER PARTS OF THE SKiP METHOD ***</emphasis></para>
 <para><emphasis role="bold">*******************************************************************************************************</emphasis></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/1000000000000313000002D2B898AAF2.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>This goal of this part of the Harden/Secure process is to install applications that are not traditionally part of the standard offerings from the operating system vendor and may not be related to applications running on the computer system in support of the functions of the SFU. Below are classes of applications that need to be installed by a specific freeware or commercial applications. The key is to recognize the class and then find the appropriate applications for those requirements.</para>
 <para>Remote access - If this computer system or network infrastructure component is to be administered remotely, such as over a network connection, then applications that support those activities need to be installed. Recall <emphasis role="bold">Principle 2: Everything is data</emphasis> and <emphasis role="bold">Principle 5: Identification of users, computer systems, and network infrastructure components is critical describing data and authentication</emphasis>.</para>
 <para>Characterization and intrusion detection - The next step in the SKiP Method characterizes the operation of the system, a process called base lining. The applications used in that step are installed at this point. The same applications are also used to determine if the system's operation departs from what is expected in the Detect step in the SKiP Method.</para>
@@ -585,6 +737,45 @@
 <para>This is a continuation of item from the harden/secure practices. In this case access to critical information assets is restricted by disabling services and limiting access at the application level.</para>
 <para>&instructEnd;</para>
 ]]>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<itemizedlist>
+<listitem><para>Data on the network - Services</para></listitem>
+</itemizedlist>
+<para> - A house has</para>
+<para> - More than one door</para>
+<para> - Many windows</para>
+<para> - Perhaps a garage</para>
+<para> - Perhaps a chimney</para>
+<itemizedlist>
+<listitem><para>A computer has many services on by default</para></listitem>
+</itemizedlist>
+<para> - Itemize</para>
+<para> - Disable or configure</para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/10000000000001DA0000013B81A4103F.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>A house has windows, doors, a garage, and perhaps a chimney. Each represents a way for a burglar to gain access to the sensitive information we've locked in our file cabinet. We need to recognize that entranceways exist and then think about them in the same way that we think about the front door. That means that we must be sure that these other entrances are appropriately secured, security is reviewed regularly, and there are family policies and procedures that define who can use any of these alternative entrances.</para>
 <para>A computer system attached to a network may also have more doors, windows and other points of access beside the front door of the standard terminal login and password. Each of these entrances-called services in networking parlance-needs to be identified and appropriately secured.</para>
 <para>Under the best of circumstances, the applications that provide services that are unneeded should be removed wherever possible. However, this is not always possible. When a service cannot be removed by removing its corresponding application, that service should be turned off and disabled. In addition, access to all services should be restricted to only those constituencies served by the SFU of which the computer system or network infrastructure component is a member.</para>
@@ -592,6 +783,18 @@
 <para>&techBegin;</para>
 <para>For a Linux system, the applications to use are: nmap8, lsof 9, xinetd10, chkconfig, and the TCP Wrappers.</para>
 <para>&techEnd;</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
 <para><emphasis role="bold">Data on the network: host-based firewalls</emphasis></para>
 <itemizedlist>
 <listitem><para>Another connection constraining defense</para></listitem>
@@ -603,6 +806,20 @@
 <listitem><para>Free and commercial</para></listitem>
 <listitem><para>Some have IDS too</para></listitem>
 </itemizedlist>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/1000000000000216000001949EF333AA.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 
 <para>Our house may have a security system that extends beyond locks, latches, garage door openers, etc. In fact, the system provides another layer of security which to us means that if one of the locks, latches or other devices fails or can be bypassed; the security system is still there to alert its listeners about an intrusion. In some cases, where no lock, latch or other device could be installed, the security system is the only means of defense.</para>
 <para>On a computer system, the host-based firewall is analogous to the home security system. It is another defense beyond the specific connection constraints installed at the host level as just discussed. Firewalls can also add constraints at the operating system level when none can be added at the application level. Finally, with host-based firewalls, the administrator can eliminate connections to services that have been disabled and subsequently removed as another way to insure that the service remains disabled, even if the supporting files are reinstalled and the service restarted.</para>
@@ -616,13 +833,45 @@
 <para>No matter the disposition of the service, the way in which it is started must be clearly identified. If the service is to be disabled, the instantiation method must be changed to disable the service. If it is to be constrained, the instantiation method may be changed depending on the service. In some cases, those changes will suffice, whereas in other cases, the application that provides the service may need to be configured directly. Finally, some services have no capability to constrain the set of hosts to which they provide a service.</para>
 <para>Independent of whether services are disabled or constrained, use host-specific firewalls as a defense-in-depth measure to guard against services being re-enabled and to supplement other constraining mechanisms. Finally, when no other mechanisms are available, host-specific firewalls provide the only means to constrain the computer systems seeking service. This section provided a method for configuring such a firewall.</para>
 <para>The house has many doors, windows, and other access points. So does a computer system-through its offered services-and attention must be given to restrict access to only that set of networked computer systems that are allowed to receive service.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Physical Security</emphasis></para>
+<itemizedlist>
+<listitem><para>Interpret security information in a different context</para></listitem>
+<listitem><para>Different OS</para></listitem>
+</itemizedlist>
+<para> - Boot hardware differently</para>
+<para> - Move assets to different computing system</para>
+<itemizedlist>
+<listitem><para>Use mitigation strategies</para></listitem>
+<listitem><para>Denial of servce - steal information asset!</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000140000000F4EAAC9A54.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+<entry valign="top">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>Within the domain of a computer system, physical security must also be a concern to the administrator. For example, if you've followed the advice given in this module about ACLs but an intruder can boot a different operating system on your computer-one that disregards the ACLs-then they are useless. ACLs are most relevant when they are interpreted by the operating system for which they are designed.</para>
 <para>&techBegin;</para>
 <para>Consider the following: Imagine that you have a Linux-based system where you have configured the ACLs on various files in a file system. If you remove the disk drive that contains the file system that in turn contains the files whose ACLs you've configure and install that disk drive in another Linux-based system, those ACLs will probably have the same meaning.</para>
@@ -681,7 +930,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000003B400000280BB99FF2B.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -700,6 +949,33 @@
 </section>
 <section>
 <title>Configuration Management</title>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Does it scale?</emphasis></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/1000000000000331000002A060EC6A1C.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>The point of this section is to note for the students that Configuration Management is a valuable approach to managing an ever growing number of computer systems in the enterprise's networks. They need to do all of the steps in the SKiP Method and then use Configuration Management to scale those efforts to the enterprise.</para>
@@ -734,7 +1010,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000285000000F179E18188.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -746,24 +1022,36 @@
 <para>From Harden/Secure: In this case, the computer system has not yet been installed in the production environment. It is still in the air-gapped test environment. It does have all of the applications needed to operate it in a production environment. This happens only once.</para>
 <para>From Improve: In this case, the computer system has been installed in the production environment. It has been changed in some way by the Respond or Improve steps to be discussed later and it needs to be characterized again because of these changes.</para>
 <para>No matter how the computer system entered this step, the next task is to characterize its behavior. To summarize, the idea is simple: if you know how the computer system works normally, it is easier to recognize when is operating abnormally. If you spot abnormal behavior, you then need to look for other signs of attack and intrusion.</para>
-
-<screenshot>
-<mediaobject>
-<imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
-</imageobject>
-</mediaobject>
-</screenshot>
 <para>In our block of wood analogy, our master crafter prepares his Web server by inspecting it so that he can learn all about it. By X-raying his Web server, he can see the knots in the wood, the depth of the hardware he's selected to attach his Web server to its holder outside of his shop, and all other defects originally in the wood and those introduced by his chiseling. He knows all about his Web server and is now able to recognize any changes that occur over time.</para>
 <para>On a computer system, characterization entails examining a system's operation and performance under normal conditions and recording expected behavior as the system's known, baseline state. This baseline state also contains information (also called attributes) about expected changes at the network, system (including kernel), process, user, file, folder/directory, and hardware levels. Once a trusted baseline state is captured, SAs subsequently compare attributes of an executing system to the baseline to learn if something has change. The SA can then make an informed judgment as to whether or not the change is acceptable and expected.</para>
 <para>One way to think about the distinction between Harden/Secure and the characterization part in Prepare is that hardening attempts to solve known problems by applying known solutions, whereas characterization helps to identify new problems. In using a characterization baseline for comparison, problems can be identified through anomaly-based detection techniques, that is, departures from normal behavior, so that new solutions can be researched and applied.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Where should characterization information be stored?</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/100000000000032B00000330C4E5DF72.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>For each of the attributes of the system being characterized, namely files and folders/directories, the network, the kernel, processes, and hardware, the characterization task produces data that will ultimately be used in the Detect step in the SKiP Method to determine if the computer system is working normally. The integrity of that characterization data is vital to the process of determining anomalous behavior. How should that characterization data be managed and where should it be stored?</para>
 <para>How that data is managed and where it's stored depends on the applications selected to do the characterization and anomalous behavior detection tasks. This is an important issue. If an intruder is able to change characterization data, they can change the definition of normal operation to include their activities. They could then easily defeat anomaly-based intrusion detection if they can change that data. So, it is vital to spend the resources needed to improve the integrity of characterization data.</para>
 <para>&techBegin;</para>
@@ -771,13 +1059,33 @@
 <para>These days one of the easiest ways to improve the integrity of the characterization data and the configurations that produce it is to create CDROMs that contain it. Use cryptographic checksums and digital signatures like those provided with PGP11 and GPG 12 to help ensure characterization baseline integrity. Both of these techniques help to reduce the likelihood that the characterization data and configuration can be altered by anyone, including an intruder.</para>
 <para>&techEnd;</para>
 <para>Now let's begin to look at the attributes of the system that are being characterized, starting with files and folders/directories.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Changes to files and folders/directories</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/100000000000030C000002C36C2984D8.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>The following are the suggested readings: </para>
@@ -793,13 +1101,33 @@
 <para>OSSEC is one example of an integrity monitor. It is a open source product. The system administrator can define a database of file attributes and the acceptable changes to them. Once configured, OSSEC's output shows all of the anomalous file and folder/directory behavior via email.</para>
 <para>There are also other integrity monitors available. Some are free while others are commercial products. All are fundamentally related in what they do and how they operate.</para>
 <para>&techEnd;</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Changes to the Operating System</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000002D50000018D2DF48469.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>There are file integrity monitors that exist besides OSSEC, such as Tripwire (commercial), AIDE (open source), AFICK (Open Source), but OSSEC has a number of features that the other applications don't have.</para>
@@ -812,42 +1140,106 @@
 <para>On Linux systems, adding drivers and other modules to the kernel can be prohibited as can changes to the special files that reference kernel memory. This means that the kernel can be made unchangeable beyond a specified point in the system boot process.</para>
 <para>Note that in this case, the kernel's integrity is not checked, but controls are used to limit what can be done. This gives the administrator more confidence that the system is running as expected and that an intruder has not altered it.</para>
 <para>This is an area where ad hoc techniques need to be used. On a Linux system, the lsmod (list modules) program lists the modules presently loaded in the kernel. It gives their name, size, and a count of the number of uses. This type of information can be used to determine how the kernel may change over time. OSSEC can be configured to alert on changes to hardware or modules on a Linux system.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Changes to processes and attributes</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/100000000000023D000001C72172CA56.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+<entry valign="top">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
-<para>There are no applications on par with tripwire that help the SA do this task.</para>
+<para>OSSEC has some time-based monitoring capabilities.</para>
 <para>&instructEnd;</para>
 ]]>
 <para>When a system operates, users run programs at specific times or under certain circumstances. To fully characterize that behavior, it is necessary to know who runs what programs, when they routinely run, and some notion of the resources that they consume. For example, if a program claiming to be the disk backup program runs at 10:00 a.m. on a weekday and consumes 28Mb of virtual memory, is this normal behavior?</para>
 <para>&techBegin;</para>
-<para>This functionality can be thought of as "Tripwire for Processes," and some products are emerging that begin to provide this information. Examples include Emerald13 from SRI and Panoptis14. These applications can help the system administrator understand more about processes behavior.</para>
+<para>This functionality can be thought of as "OSSEC for Processes," and some products are emerging that begin to provide this information. Examples include Emerald13 from SRI and Panoptis14. These applications can help the system administrator understand more about processes behavior.</para>
 <para>&techEnd;</para>
 <para>This is another case where ad hoc techniques are needed to determine what's normal and therefore what's not. Most systems provide some type of process accounting. This creates the raw data that can be analyzed to look for anomalous activity. Unfortunately, the burden of doing that analysis falls on SAs.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Characterizing network traffic</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/100000000000017400000148D1885738.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+<entry valign="top">
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>When a system operates, it consumes and produces network traffic. To fully characterize that behavior, it is necessary to know the volume of traffic consumed and produced versus the time of day versus. the network identity of the consumer/producer. For example, is a large volume of Web traffic produced for a network address in a foreign country at 2:00 a.m. normal behavior?</para>
 <para>Ad hoc techniques are needed to analyze this collected data and give a characterization of the network.</para>
 <para>&techBegin;</para>
 <para>Applications such as Argus15 describe the connections made versus. time of day versus. network identity. Other useful applications are NetScout16 and TrafficShaper17.</para>
 <para>&techEnd;</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Characterizing hardware</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000294000002A6CE911B33.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>When a computer system operates, the hardware should remain unchanged, that is, adding new hardware such as a modem or another network interface card is likely unexpected. For example, is the addition of a second Ethernet controller on a desktop workstation normal behavior?</para>
 <para>There are many hardware inventory programs, but they are not packaged in such a way that they report the set of changes from a known configuration. Such functionality can be thought of as "Tripwire for the hardware." The system administrator will again have to rely on site-specific applications and procedures to identify changes in a system's hardware inventory and whether or not they are expected.</para>
 <para>&techBegin;</para>
@@ -855,6 +1247,13 @@
 <para>&techEnd;</para>
 
 <para>As before, there are many applications that make the raw data files needed to characterize a system but there are few, if any, applications that can report changes over time. You will have to do that analysis yourself.</para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/100000000000025E0000023EB9A1CCD4.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
 <para>After completing this task, the system administrator has generated a system characterization baseline and knows the following:</para>
 <itemizedlist>
 <listitem><para>The expected changes in files and directories and the operating system</para></listitem>
@@ -882,14 +1281,33 @@
 <listitem><para>Understanding, selecting, configuring, installing, and maintaining applications for intrusion detection and response. Such mechanisms must be in place well before they need to be used.</para></listitem>
 </itemizedlist>
 <para>At the completion of this step the first time through the SKiP Method, the computer system can be put into production as a member of an SFU.</para>
-
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Who checks the checkers?</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000325000002E5E0B6A6D7.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>The following are the suggested readings:</para>
@@ -927,19 +1345,48 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000285000000F1851F1086.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
 <para>The Detect step is next. This is the step where a computer system or network infrastructure component spends most of its life. The transition occurs from the Prepare step once the system or component is initially ready for production or it has already been in production and changes were made in the Respond step that necessitated its repeated characterization.</para>
 <para>Detect always occurs when the system or component is running in a production setting. SAs continuously look for signs of an intrusion, reviews operating system and applications vendor information, and reviews applications to add to the arsenal.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Unexpected changes</emphasis></para>
+<itemizedlist>
+<listitem><para>Acceptable - update characterization</para></listitem>
+<listitem><para>Unacceptable intrusion?</para></listitem>
+</itemizedlist>
+<para><emphasis role="bold">External stimulus</emphasis></para>
+<itemizedlist>
+<listitem><para>Patches/new versions for OS and applications</para></listitem>
+<listitem><para>New versions of tools</para></listitem>
+</itemizedlist>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000002080000014EF113007D.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>The following are the suggested readings:</para>
@@ -967,13 +1414,33 @@
 <listitem><para>The difference is truly anomalous and indicates that something has been tampered with on the system. They move to Respond and proceeds with those practices.</para></listitem>
 </orderedlist>
 <para>In addition, some external stimulus can also cause a transition from Detect to Respond. This includes the release of a relevant patch or a new tool. This transition is normally under administrator control and can be scheduled based on priority and available time.</para>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>SAs look at the characterization information from the Prepare step and compare it with what's going on right now.</para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000001F60000017C37379EBB.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>Basically, the applications and techniques used to characterize a computer system in the Prepare step are used in the Detect step to compare the current state of the system with the expected state. Any disagreement has to be reconciled and usually results in a transition to the Respond step.</para>
 </section>
 <section>
@@ -995,22 +1462,14 @@
 </section>
 <section>
 <title>Respond</title>
-
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/1000000000000285000000F15DDB99EA.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
 <para>The Detect step detected something that requires a response. It may be as simple as applying a patch or as complicated as recovering from the effects of an intruder's activities (which may involve criminal investigation and prosecution in addition to the more technical tasks traditionally handled by SAs).</para>
-<screenshot>
-<mediaobject>
-<imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
-</imageobject>
-</mediaobject>
-</screenshot>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>The following are the suggested readings:</para>
@@ -1024,6 +1483,53 @@
 </itemizedlist>
 <para>&instructEnd;</para>
 ]]>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para>Diagnose/take off-line</para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/10000000000002030000015E4C9FE6E2.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+<entry valign="middle">
+<para>
+Repair
+</para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/10000000000002A9000001F7451B400D.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+<entry valign="bottom">
+<para>Return to production</para>
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/10000000000002040000012E2881DD3E.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>Once a problem is discovered, our master crafter needs to respond to the problem. In this case, the crafter selected hardware that wasn't up to the task; it wasn't strong enough to hold the Web server, so it crashed to the ground. The crafter needs to repair the wood and then select hardware better suited to the weight of the Web server.</para>
 <para>On a computer systems, and again once a problem is discovered, SAs perform several practices to Respond to and contain the problem. The response can be as simple as taking minimal to no action by accepting the risk or taking significant steps to contain and recover from the problem. Successful response means that the system is recovered to a configuration and operational capability that existed before the compromise.</para>
 <para>If the transition to Respond results from anomalous behavior caused by an intrusion, an administrator does the following:</para>
@@ -1039,13 +1545,6 @@
 <para>If the transition to Respond is the result of some other external stimulus, that stimulus is addressed and then the process transitions to Improve. For example, if the stimulus is the release of a patch from a vendor, the administrator applies the patch that constitutes completion of Respond.</para>
 <para>Respond activities take place when the system is operating in a production mode. Systems may be unavailable for a period of time while repairs are made.</para>
 <para>An administrator needs a test environment to more fully understand the nature of the intrusion. In this environment, an administrator may be able to run a quarantined version of any captured attack tools to learn which vulnerabilities the intruder has used to gain access, thus ensuring that these means of access have been removed before the systems are returned to operation.</para>
-<screenshot>
-<mediaobject>
-<imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
-</imageobject>
-</mediaobject>
-</screenshot>
 <![%instructor;[
 <para>&instructBegin;</para>
 <para>The following are the suggested readings:</para>
@@ -1055,6 +1554,33 @@
 </orderedlist>
 <para>&instructEnd;</para>
 ]]>
+<informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Computer forensics</emphasis></para>
+</entry>
+<entry valign="top">
+<screenshot>
+<mediaobject>
+<imageobject>
+<imagedata fileref="images/100000000000025200000261F8D954BD.png"/>
+</imageobject>
+</mediaobject>
+</screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
 <para>With computer systems playing a more prominent role in crimes, there was a need for experts to analyze computer systems used in crimes. A break-in to a computer system that you manage may be used in a crime and therefore, may need to be analyzed to gather the information needed for prosecution. This task is called computer forensics.</para>
 <para>Computer forensics</para>
 <itemizedlist>
@@ -1097,18 +1623,40 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/100000000000027D000000F18C9F349D.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
-<para>The Response activities have ended and we progress to the Improve step in the SKiP Method. The key to this step is to evaluate how the whole process went with an eye toward improving it when the next security event happens. It is important to make time to do this evaluation while the memory of the events that brought the computer system to this point is still fresh in your mind.</para>
+<para>The Response activities have <informaltable frame="none" pgwide="0">
+<tgroup cols="3" rowsep="1">
+<thead>
+<row>
+<entry><para></para></entry>
+<entry><para></para></entry>
+<entry><para></para></entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry valign="top">
+<para><emphasis role="bold">Post mortem</emphasis></para>
+<para><emphasis role="bold">Update policies and procedures</emphasis></para>
+<para><emphasis role="bold">Update response tools</emphasis></para>
+<para><emphasis role="bold">Support business case</emphasis></para>
+</entry>
+<entry valign="top">
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000001BF000001493F71C740.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>The Response activities have ended and we progress to the Improve step in the SKiP Method. The key to this step is to evaluate how the whole process went with an eye toward improving it when the next security event happens. It is important to make time to do this evaluation while the memory of the events that brought the computer system to this point is still fresh in your mind.</para>
 <para>Our master crafter has responded to the bolts breaking on the Web server by fixing the wood and selecting and installing higher weight-rated bolts and installing a sensor that tells him about the state of the sign. He then returned the Web server to production-hanging it on the post outside of his shop after X-raying it again. The Improve step consists of changing the practices and procedures that surround his Web Server. For example, he could look more often at the server to see if it was still attached, or he could hire somebody to do this for him.</para>
 <para>Back in the realm of computer systems, improvement actions typically occur following Detect or Respond. Improvement actions may include the following:</para>
 <itemizedlist>
@@ -1174,7 +1722,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/100000000000033F000001184A49C942.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -1182,7 +1730,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/skip-flow.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -1193,7 +1741,7 @@
 <screenshot>
 <mediaobject>
 <imageobject>
-<imagedata fileref="../course-images/survive-define_1.jpg"/>
+<imagedata fileref="images/10000000000003660000013BC26D3AF6.png"/>
 </imageobject>
 </mediaobject>
 </screenshot>
@@ -1208,13 +1756,13 @@
 </itemizedlist>
 <para>The steps are as follows:</para>
 <itemizedlist>
-<listitem><para>Vendor Provides systems that are general-purpose and need to be handcrafted to meet an organization's needs.</para></listitem>
-<listitem><para>Harden/Secure the system against known problems.</para></listitem>
-<listitem><para>Prepare the system so that the administrator will be able to spot anomalies that may indicate the occurrence of unknown problems.</para></listitem>
-<listitem><para>Detect those anomalies and other changes, such as the release of a patch, related to the system.</para></listitem>
-<listitem><para>Respond to them when they occur.</para></listitem>
-<listitem><para>Improve the practices and procedures after fixing the systems.</para></listitem>
-<listitem><para>Repeat the process as long as the organization needs to protect the information assets on the system and the system itself. The SKiP Method should be applied until the system is retired.</para></listitem>
+<listitem><para><emphasis role="bold">Vendor Provides systems that are general-purpose and need to be handcrafted to meet an organization's needs.</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Harden/Secure the system against known problems.</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Prepare the system so that the administrator will be able to spot anomalies that may indicate the occurrence of unknown problems.</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Detect those anomalies and other changes, such as the release of a patch, related to the system.</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Respond to them when they occur.</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Improve the practices and procedures after fixing the systems.</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Repeat the process as long as the organization needs to protect the information assets on the system and the system itself. The SKiP Method should be applied until the system is retired.</emphasis></para></listitem>
 </itemizedlist>
 </section>
 <section>
