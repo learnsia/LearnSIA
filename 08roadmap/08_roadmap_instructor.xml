@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % instructor "IGNORE">
+<!ENTITY instructBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/instruct-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY instructEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/instruct-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/syllabus-begin.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY syllabusEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../05identification/images/syllabus-end.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY techBegin "<screenshot><mediaobject><imageobject><imagedata fileref='../00introduction/images/tech-timeouts.jpg'/></imageobject></mediaobject></screenshot>">
+<!ENTITY techEnd "<screenshot><mediaobject><imageobject><imagedata fileref='../00introduction/images/tech-timeouts-end.jpg'/></imageobject></mediaobject></screenshot>">
+]>
+<article lang="">
+<articleinfo>
+<copyright>
+<year></year>
+<holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+<section>
+   <para>Principle 8:  Roadmap        Instructor Workbook</para>
+   <para>
+      <anchor id="_1210669615"/>
+      <inlinegraphic fileref="embedded:graphics1" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>&syllabusBegin;</para>
+
+      <para><inlinegraphic fileref="embedded:graphics2" width="6.3028inch" depth="0.3209inch"/>This module provides insight into the decisions IT staff face when evaluating processes and technology that offer risk mitigation and management as well as survivability and information assurance to the enterprise. The module will focus on establishing a framework for understanding risks and evaluating mitigation strategies, which include technology and process modifications.</para>
+   <para>This module should take 2 hours, including lecture and class discussions.</para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics3" width="6.3547inch" depth="0.3228inch"/>The required reading must be done in advance of this class and students may be quizzed on the materials.</para>
+   <para>&syllabusEnd;</para>
+</section>
+<section>
+   <para>Required readings: </para>
+   <orderedlist>
+      <listitem>
+         <para>"Security Attribute Evaluation Method: A Cost-Benefit Approach." [Butler 02]</para>
+      </listitem>
+   </orderedlist>
+   <para>Recommended readings: </para>
+   <orderedlist>
+      <listitem>
+         <para>"How Do You Know If Something's Amiss? - Characterize Your Systems" [Allen 02a]</para>
+      </listitem>
+      <listitem>
+         <para>"'Open Sesame or Not?'-Use the Right Access Controls."[Allen 02b]</para>
+      </listitem>
+      <listitem>
+         <para>"Stick to the Essentials: Securing Network Servers." [Allen 02c]</para>
+      </listitem>
+      <listitem>
+         <para>Detecting Signs of Intrusion [Allen 00]</para>
+      </listitem>
+      <listitem>
+         <para>Securing Network Servers [Allen 00a]</para>
+      </listitem>
+   </orderedlist>
+</section>
+<section>
+   <para>
+      <anchor id="_1210669611"/>
+      <inlinegraphic fileref="embedded:graphics4" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>Making the right technology choices when it comes to survivability and information assurance should not be a guessing game. It seems now, however, that the IT managers and administrators are more often left on their own to accurately characterize risks, decide upon the level of criticality of those risks, and then take appropriate steps to mitigate or manage those risks. This is, of course, an unfair request of the IT organization within any enterprise. The best process for identifying, understanding, categorizing, prioritizing, and mitigating risks is the result of a joint effort between the IT organization (who will be the technical experts in this process) and the operations staff within the enterprise. Each decision made should be the result of communication and understanding between the two organizations and should accurately reflect the organization's risk mitigation needs.</para>
+   <para>This module will serve as a template for IT managers to handle any risk mitigation and survivability and information assurance issues which arise within their organization.</para>
+</section>
+<section>
+<title>Learning Outcomes</title>
+<para>Candidate criteria for making technology selection and deployment choices</para>
+<para>A process for technology and process evaluation</para>
+<para>Measurement of survivability requirements against that technology and process</para>
+   <para>After completing this module, you will be able to describe and apply these implementation concepts.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Understanding the Real CIA Needs of the Data/System</emphasis></para>
+<para><emphasis role="bold">Evaluating Technology Against Those Needs</emphasis></para>
+<para><emphasis role="bold">Cost vs. Benefit Analysis</emphasis></para>
+<para><emphasis role="bold">Example Questions for a Roadmap</emphasis></para>
+<para><emphasis role="bold">Exercise: Authentication and Encryption</emphasis></para>
+<![%instructor;[
+<para>&instructBegin;</para>
+   <para>
+      <anchor id="_1210669603"/>
+      <inlinegraphic fileref="embedded:graphics6" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>These are the topics that will be covered in this module.</para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics7" width="6inch" depth="0.3236inch"/>
+   </para>
+   <para>Time Allocation: 1.5 hours for lecture/discussion with additional 30 minutes for group work/further class discussion</para>
+   <para>Teaching Tips:</para>
+   <para>This module builds on the understanding of Risk and CIA from earlier modules. It may be prudent to review some of the risk topics at this point-specifically understanding how risk exposure is calculated (to remind students that not all risks are equal).</para>
+   <para>The lecture (approx. 1.5 hours) should be intertwined with "appetizer" questions on each important issue and group discussions to get students involved in digesting the concepts presented.</para>
+   <para>The 'homework' at the end of the module can be either assigned to the students or discussed in class (as the first example is discussed in class). The decision depends on the understanding of the students at each point.</para>
+]]>
+</section>
+<section>
+<title>Learning Outcomes</title>
+<para>Candidate criteria for making technology selection and deployment choices</para>
+<para>A process for technology and process evaluation</para>
+<para>Measurement of survivability requirements against that technology and process</para>
+   <para>After completing this module, you will be able to describe and apply these implementation concepts.</para>
+</section>
+<section>
+<title>Topics</title>
+<para><emphasis role="bold">Understanding the Real CIA Needs of the Data/System</emphasis></para>
+<para>Evaluating Technology Against Those Needs</para>
+<para>Cost vs. Benefit Analysis</para>
+<para>Example Questions for a Roadmap</para>
+<para>Exercise: Authentication and Encryption</para>
+</section>
+<section>
+<title>Understanding CIA Requirements</title>
+<para>Technology and process decisions should be made with the action Confidentiality, Integrity, and Availability needs of the system/data in question as the main driver.</para>
+<orderedlist>
+<listitem><para>Too often, technologists chase technology</para></listitem>
+<listitem><para>Understanding the nexus between technology and needs will ultimately drive real survivability requirements</para></listitem>
+</orderedlist>
+<para><emphasis role="bold">But how do we understand CIA needs?</emphasis></para>
+<orderedlist>
+<listitem><para>Risk Assessment!</para></listitem>
+</orderedlist>
+   <para>
+      <inlinegraphic fileref="embedded:graphics11" width="0.9547inch" depth="1.0236inch"/>Security policy and administrator actions to implement policy are (or should be) information or data centric, (i.e., the asset requiring fundamental protection is data in some form). Refer to <para emphasis role="bold">Principle 2: Everything is Data</emphasis>.</para>
+   <para>Data may be represented in reports, spreadsheets, databases such as those containing sensitive customer data or salary/payroll information, user work files, sensitive administration files such as those containing user passwords, diagrams and schematics, applications software, security tools, and email. Thus, the first asset category in the technology roadmap is data and the actions taken to secure data confidentiality, integrity, and availability, regardless of where the data reside.</para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics12" width="0.8inch" depth="0.9028inch"/>To be accessed electronically, data reside on one or more technology assets (see <para emphasis role="bold">Principle 3: Not all data is of equal value to the enterprise - risk must be managed</emphasis></para>) or hosts. Thus, securing a host is the focus of the second asset category in the roadmap to meet confidentiality, integrity, availability, and privacy requirements as well as authentication, non-repudiation, and authorization needs.</para>
+   <para>Data can be transmitted from one host to another via an internal network. Securing internal networks and the data that transits them is the roadmap's third asset category. </para>
+   <para>Internal networks are often connected to public networks such as the Internet. Data can be transmitted via such public networks to other sites. Securing Internet access, and the data that travels the Internet, becomes the focus of the fourth asset category in the roadmap. Keep in mind that as you move outward from an organization's data-centric protection actions, there is less and less control over the asset.  This is certainly true when data leave an organization's network and are transmitted via the Internet.</para>
+   <para>Last, but certainly not least, is the protection of data, hosts, internal networks, and Internet access when faced with a security incident or intrusion.  The incident may involve reconnaissance for later attacks (such as probing, scanning, or installing distributed denial-of-service agents); an attempted attack that fails; or a successful attack (intrusion) that can compromise networks, hosts, and data. Policy implementation would not be complete without implementing protection strategies and actions intended to detect signs of intrusion and respond to them. </para>
+   <para>While these asset categories are presented sequentially for the purpose of roadmap presentation and discussion, actions taken to secure assets in each category are often done in parallel.</para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics13" width="0.7902inch" depth="0.9063inch"/>As you consider protection actions to take for each asset as determined by the roadmap, also consider the steps within SKiP (<para emphasis role="bold">Principle 7: Security Knowledge in Practice</emphasis></para>).  For example, the order of roadmap actions to protect a data asset could be structured as Harden/Secure actions, Prepare actions, Detect actions, Respond actions, and Improve actions.</para>
+   <para>Each information asset within an enterprise has different requirements of <para emphasis role="bold">confidentiality</emphasis></para>, <para emphasis role="bold">integrity</emphasis></para>, and <para emphasis role="bold">availability</emphasis></para> that should be:</para>
+   <orderedlist>
+      <listitem>
+         <para>Communicated throughout the organization, especially from the owner of the asset to the person(s) responsible for its safety and security</para>
+      </listitem>
+      <listitem>
+         <para>Detailed, explaining under what conditions and to what degree the requirements must be enforced</para>
+      </listitem>
+      <listitem>
+         <para>Documented, describing the requirements, the responsible owner(s), and party charged with its protection</para>
+      </listitem>
+   </orderedlist>
+   <para>Security and survivability requirements should be understood at all levels of the organization involved in the asset's protection.  They should be described with enough detail for a specific requirement to be placed on the responsible owner (manager, user, system/security administrator, etc.) or the technology protecting the asset.  They should be documented in security policies and plans.</para>
+   <para>These security requirements, which are based on operational requirements for that data and information within the enterprise, will be our driver for understanding and mitigating risks. These security requirements will also drive our technology decisions, implementations, and process changes.</para>
+</section>
+   <para>
+      <anchor id="_1210669592"/>
+      <inlinegraphic fileref="embedded:graphics14" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>Risks are traditionally captured as a description that can then be measured both qualitatively and quantitatively.  Again, let's use the example above to demonstrate this point.  Qualifying the risk in the scenario means understanding the negative impact with respect to the asset as well as the likelihood of the threat.  This impact occurs when the asset is destroyed, modified, interrupted, or disclosed.  To the home user, qualifying the risk means looking at the result of having their personal information disclosed and the impact.  In this case, the users will probably be most concerned with their financial liability, identity loss, and laws and regulations to which they may be subjected, as established by a qualitative scale (or criteria) for evaluating the risk (such as high, medium, or low).</para>
+   <para>Quantifying the risk means understanding the possibility of the risk existing or coming to fruition.  Here the home user attempts to measure the probability or likelihood of someone performing several different attacks whose goals are to retrieve his or her personal information. This measurement takes into account questions such as the following:</para>
+   <orderedlist>
+      <listitem>
+         <para>How likely is it that someone may observe the information in transit between the home user and the website (and possibly decode the encrypted network traffic)?</para>
+      </listitem>
+      <listitem>
+         <para>How likely is it that the software making the exchange of personal information is vulnerable to attack?</para>
+      </listitem>
+      <listitem>
+         <para>How likely is it to be singled out as a victim over all of the other Web commerce transactions happening at the Web site of purchase?</para>
+      </listitem>
+      <listitem>
+         <para>How likely is it that an attacker might gain access to the information once it has arrived at the website?</para>
+      </listitem>
+   </orderedlist>
+   <para>These are just a small sample of the risks involved in this simple transaction.  For the individual to really understand these risks, he or she must appreciate the potential impact of these risks.  This demands an understanding of the potential that threat sources (humans, system problems, viruses, etc.) have in exploiting and abusing vulnerabilities that result in risk. This potential falls into a continuum ranging from negligible to actual, over the life of the information being transmitted, stored, and processed.</para>
+   <para>
+      <anchor id="_1210669588"/>
+      <inlinegraphic fileref="embedded:graphics15" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics16" width="0.7898inch" depth="0.8909inch"/>        Remember from Principle 3: Not all data is of equal value to the enterprise-        risk must be managed that the output from a risk assessment will include the following types of information:</para>
+   <orderedlist>
+      <listitem>
+         <para>List of information assets</para>
+      </listitem>
+      <listitem>
+         <para>The CIA requirements for those assets</para>
+      </listitem>
+      <listitem>
+         <para>The most important/critical risks to those assets</para>
+      </listitem>
+      <listitem>
+         <para>Some idea of how to reduce or manage those risks</para>
+      </listitem>
+   </orderedlist>
+   <para>Now that we are ready to start the mitigation process, we must take the information which was gained from the risk assessment and use technology/process to start to address any risk we are not willing to accept. This process will require knowledge in the following areas:</para>
+   <orderedlist>
+      <listitem>
+         <para>What technology/process is currently in place which is involved in the mitigation of the risks in question?</para>
+      </listitem>
+      <listitem>
+         <para>If that technology/process is not sufficient, what technologies/processes should be considered?</para>
+      </listitem>
+      <listitem>
+         <para>How much do those CIA requirements mean to the enterprise in terms of investment in changes? How critical is the information and the protection and assurance of that information?</para>
+      </listitem>
+   </orderedlist>
+   <para>
+      <anchor id="_1210669585"/>
+      <inlinegraphic fileref="embedded:graphics17" width="5inch" depth="3.75inch"/>
+   </para>
+   
+   <para>
+      <anchor id="_1210669581"/>
+      <inlinegraphic fileref="embedded:graphics18" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>Choosing security technologies and tools in an ad hoc, arbitrary manner or based on what's most popular can produce disappointing results and often falls short of meeting enterprise objectives. Like any other important decision, administrators and their managers need to have a set of decision criteria to use as the basis for technology selection as well as to justify the investment of financial and staff resources.</para>
+   
+   <para>
+      <inlinegraphic fileref="embedded:graphics19" width="0.8inch" depth="0.9028inch"/>Risk identification, evaluation, and management were discussed in Principle 3: Not all data is of equal value to the enterprise - risk must be managed. All technology choices should be made in the context of mitigating high priority risks to achieving security requirements for critical assets that tie to enterprise objectives.</para>
+   <para>Each new technology has an initial purchase and training cost as well as a lifecycle cost. Often organizations do not take into account the resources required to install, operate, maintain, and support users on a new technology during its useful lifetime. Resources include dollars, staff skills and expertise, opportunity cost (taking care of one technology at the expense of others), interfacing with the supplier, etc. An organization needs to consider all of these factors in building the business case for technology selection.</para>
+   <para>The technology's features and complexity affect life cycle resource demands. More features typically create more complexity, which increases the need for greater staff skill and pre-production checkout and test prior to rolling out updates. Compatibility and interoperability with existing technologies needs to be factored in and again, mismatches can significantly increase life cycle costs.</para>
+   <para>
+      <anchor id="_1210669577"/>
+      <inlinegraphic fileref="embedded:graphics20" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>In this process it may become clear that there are gaps between what is in place with respect to CIA and what needs to be in place. For example, if there is a need for strict authentication (i.e., no unauthorized users should gain access to any resources on the network) and there are hosts on the network which are legacy systems with no authentication scheme at all in place (i.e., Windows 95) - it would be clear that current technologies would need to be replaced or augmented with additional technology/process.</para>
+   
+   <para>
+      <inlinegraphic fileref="embedded:graphics21" width="0.789inch" depth="0.8902inch"/>When there is a gap identified between what is needed for CIA and what is in place for the information and information systems within the enterprise, the enterprise must then decide how to proceed. These options are the classic risk mitigation strategies discussed in Principle 3: Not all data is of equal value to the enterprise - risk must be managed:</para>
+   <orderedlist>
+      <listitem>
+         <para>Mitigate</para>
+      </listitem>
+      <listitem>
+         <para>Transfer</para>
+      </listitem>
+      <listitem>
+         <para>Avoid</para>
+      </listitem>
+      <listitem>
+         <para>Accept</para>
+      </listitem>
+   </orderedlist>
+   <para>When the decision is to avoid or mitigate, the technology and/or processes must be evaluated and possibly changed to, in fact, reduce that risk. Obviously, the risk can be accepted as-is (i.e., there is not sufficient reason to change) or it can be transferred (through insurance).</para>
+   <para>It is primarily the mitigate option which will drive technology changes and be the response which drives the rest of the Roadmap steps.</para>
+   <para>
+      <anchor id="_1210669574"/>
+      <inlinegraphic fileref="embedded:graphics22" width="5inch" depth="3.75inch"/>
+   </para>
+   
+   <para>
+      <anchor id="_1210669570"/>
+      <inlinegraphic fileref="embedded:graphics23" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>Only with complete understanding of the needs of the information asset with respect to CIA can the most important question in this entire process be asked: How much money do these CIA requirements mean to us as an organization? Once this question is answered (to the best of the ability of the organization) the work to move the organization toward the desired state can be started. Naturally, this question is very difficult.</para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics24" width="5.9953inch" depth="0.322inch"/>
+   </para>
+   <para>Class Discussion </para>
+   <para>Give the students some examples of an enterprise doing a risk assessment and the specific assets and risks associated with those assets and then start some discussion about what those risks and assets are worth to the organization.</para>
+   <para>Examples:</para>
+   <orderedlist>
+      <listitem>
+         <para>amazon.com and their inventory system</para>
+      </listitem>
+      <listitem>
+         <para>A corner shoe store which has a web site to advertise sales and specials </para>
+      </listitem>
+      <listitem>
+         <para>An insurance agency and their customer (patient) database</para>
+      </listitem>
+   </orderedlist>
+   <para>There is no right or wrong answer-but students should understand that these examples will have dramatically different costs/benefits for risk mitigation based on the mission, the data, the regulatory environment, etc.</para>
+   <para>
+      <inlinegraphic fileref="embedded:graphics25" width="5.9957inch" depth="0.322inch"/>
+   </para>
+   <para>
+      <anchor id="_1210669566"/>
+      <inlinegraphic fileref="embedded:graphics26" width="5inch" depth="3.75inch"/>
+   </para>
+   
+   <para>
+      <anchor id="_1210669562"/>
+      <inlinegraphic fileref="embedded:graphics27" width="5inch" depth="3.75inch"/>
+   </para>
+   <para>The following section is meant to show a high-level thought process, characterized by the sets of questions and possible answers, for working through a roadmap. It is meant as a set of 'thinking' questions, providing you with one way to approach the roadmap.</para>
+   <para>These questions are often open-ended and depend completely on the enterprise for which a 'roadmap evaluation' is going to be conducted. They capture the thought process which would be followed when performing one of these evaluations.</para>
+   
+   <para>Q1: What are the CIA Needs?</para>
+   
+   <para>Answers will include statements like:</para>
+   <para>Q2: Is Current Technology Sufficient?</para>
+   <para>Q3: What Technology is Available?</para>
+   <para>This question focuses on what is available to solve our technology problems.</para>
+   <para>For example, when evaluating authentication, the list may look like this:</para>
+   
+   <para>Q4: What are Costs/Benefits?</para>
+   <para>Once the list is complete, the technologies must be evaluated against various scoring criteria-depending on the enterprise.</para>
+   
+   <para>The operational requirements and the security/survivability requirements are inseparable!</para>
+   
+   <para>Doing the evaluation of technology may range from simple or complex </para>
+   <para>Q5: What is Our Recommendation?</para>
+   
+   <para>
+      <anchor id="_1210669559"/>
+      <inlinegraphic fileref="embedded:graphics28" width="5inch" depth="3.75inch"/>
+   </para>
+   
+   
+   
+   <para>
+      <anchor id="_1210669554"/>
+      <inlinegraphic fileref="embedded:graphics29" width="5inch" depth="3.75inch"/>
+   </para>
+</article>

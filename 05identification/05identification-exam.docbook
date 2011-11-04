@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS/DTD DocBook DocBook 4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+]>
+
+<article>
+<articleinfo>
+<copyright>
+<year></year>
+  <holder>This course contains materials from "Survivability and Information Assurance" (copyright 2005 Carnegie Mellon University) with special permission of the Software Engineering Institute at Carnegie Mellon University.</holder>
+</copyright>
+</articleinfo>
+
+<section>
+<title>Exam - Introduction</title>
+
+<para><emphasis role="bold">Authentication.</emphasis></para>
+
+<para>Overview: These are the exam questions for Module #5: Authentication.</para>
+
+<qandaset>
+
+<qandaentry>
+<question><para>Describe the difference between authentication and authorization.</para></question>
+<answer><para><emphasis role="bold">Authentication is confirming to the system or host that you are who you say you are; authorization is having the rights to do some task or access some data on the host based normally on who you are.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>Define non-repudiation.</para></question>
+<answer><para><emphasis role="bold">Non-repudiation is the ability to ensure that a party to a contract or a communication cannot deny the authenticity of their signature on a document or the sending of a message that they originated.</emphasis></para></answer>
+</qandaentry>
+
+<qandaentry>
+
+<question><para>List three types of 'something you know' which can be used in authentication.</para></question>
+<answer>
+<para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Password</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">PIN</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Username</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Passphrase</emphasis></para></listitem>
+</orderedlist>
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>What topics might you expect to see covered in a general security policy?</para></question>
+<answer>
+<para>
+<orderedlist>
+<listitem><para><emphasis role="bold"><emphasis role="bold">Staff roles and responsibilities including system administrators</emphasis></emphasis></para></listitem>
+<listitem><para><emphasis role="bold"><emphasis role="bold">Password policy and protection</emphasis></emphasis></para></listitem>
+<listitem><para><emphasis role="bold"><emphasis role="bold">Network connectivity and access (internal, external, Internet), and monitoring</emphasis></emphasis></para></listitem>
+<listitem><para><emphasis role="bold"><emphasis role="bold">System access control privileges including special administrator privileges</emphasis></emphasis></para></listitem>
+<listitem><para><emphasis role="bold"><emphasis role="bold">Information backup</emphasis></emphasis></para></listitem>
+<listitem><para><emphasis role="bold"><emphasis role="bold">Contingency planning and disaster recovery</emphasis></emphasis></para></listitem>
+<listitem><para><emphasis role="bold"><emphasis role="bold">Physical security</emphasis></emphasis></para></listitem>
+</orderedlist>
+</para>
+</answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>List two types of "something you have"  which can be used in authentication.</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Token</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Smart-card</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">One-time password list</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+<qandaentry>
+
+<question><para>What are two drawbacks of biometrics?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Cost</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Inaccuracy (not 100% accurate)</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Privacy issues</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Hardware issues</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>When you browse to a secure web server, does that server present you with a digital signature or a digital certificate?</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Digital Certificate</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+
+<qandaentry>
+<question><para>List three of the normal fields which are present on a digital certificate.</para></question>
+<answer><para>
+<orderedlist>
+<listitem><para><emphasis role="bold">Owner's public key</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Owner's name</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Expiration date of the public key</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Name of the issuer (the CA that issued the digital ID)</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Serial number of the digital ID</emphasis></para></listitem>
+<listitem><para><emphasis role="bold">Digital signature of the issuer</emphasis></para></listitem>
+</orderedlist>
+</para></answer>
+</qandaentry>
+
+</qandaset>
+
+</section>
+</article>
